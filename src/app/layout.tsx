@@ -32,7 +32,7 @@ export default function RootLayout({
         className={`font-sans ${inter.variable} max-w-screen overflow-x-clip bg-white text-sm font-light text-black md:text-base`}
       >
         <Nav />
-        {children}
+        <div className="pt-20">{children}</div>{" "}
       </body>
     </html>
   );
