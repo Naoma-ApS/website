@@ -1,10 +1,15 @@
 import Image from "next/image";
+import image1 from "@assets/om_os_stock-scaled.jpg";
+import image2 from "@assets//Per&jonas.jpg";
+import image3 from "@assets/Nabil&amel.jpg";
+import image4 from "@assets/TableFromTop.jpg";
+
 export default function AboutUsPage() {
   return (
     <>
       <div className="relative h-96 w-full">
         <Image
-          src="/om_os_stock-scaled.jpg"
+          src={image1}
           alt="Background Image"
           layout="fill"
           objectFit="cover"
@@ -57,7 +62,7 @@ export default function AboutUsPage() {
           </div>
           <div className="w-full pl-8 md:w-2/5 ">
             <Image
-              src="/Nabil&amel.jpg"
+              src={image3}
               alt="Image"
               width={600}
               height={600}
@@ -74,7 +79,7 @@ export default function AboutUsPage() {
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-2/5 ">
             <Image
-              src="/Per&jonas.jpg"
+              src={image2}
               alt="Image"
               width={750}
               height={750}
@@ -163,7 +168,7 @@ export default function AboutUsPage() {
 
           <div className="w-full md:w-2/5 ">
             <Image
-              src="/TableFromTop.jpg"
+              src={image4}
               alt="Image"
               width={750}
               height={750}

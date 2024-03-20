@@ -1,4 +1,6 @@
 import { Nav } from "@components/Nav";
+import { Footer } from "@components/Footer";
+
 import "@styles/globals.css";
 import { type Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -32,7 +34,7 @@ export default function RootLayout({
         className={`font-sans ${inter.variable} max-w-screen overflow-x-clip bg-white text-sm font-light text-black md:text-base`}
       >
         <Nav />
-        <div className="pt-20">{children}</div>{" "}
+        <div className="pt-20">{children}</div> <Footer />
       </body>
     </html>
   );
