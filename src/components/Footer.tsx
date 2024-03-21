@@ -8,7 +8,7 @@ import { RiLinkedinFill } from "react-icons/ri";
 export function Footer() {
   return (
     <footer>
-      <div className="flex w-full items-center justify-between border bg-white px-12 py-10">
+      <div className="z-40 flex w-full items-center justify-between border bg-white px-12 py-10">
         <div>
           <Link href={"/"} className="text-3xl">
             <Image src={logo} alt="logo" width={150} height={80} />

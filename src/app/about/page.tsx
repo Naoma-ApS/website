@@ -25,14 +25,14 @@ export default function AboutUsPage() {
           </header>
         </div>
       </div>
-      <div className="mx-5 gap-12 px-4 py-16">
+      <div className="mx-52 gap-12 px-4 py-16">
         <h1 className="text-5xl font-extrabold  ">
           <span className="text-left text-black">Historien om NAOMA</span>
         </h1>
 
         <div className="flex flex-col md:flex-row">
           <div className="w-full pr-8 md:w-3/5 ">
-            <p className="pt-5 text-2xl">
+            <p className="pt-5 text-xl">
               I 2019 blev NAOMA ApS (benævnt som Naoma), oprettet af
               ingeniørerne Nabil og Amel.
               <br />
@@ -44,7 +44,7 @@ export default function AboutUsPage() {
               <hr className="my-5" />
               NA(bil) O(g) (le)MA
             </p>
-            <p className="text-2xl">
+            <p className="text-xl">
               <br />
               Der drømte om at skabe en virksomhed, hvor de kunne hjælpe andre
               virksomheder og enkelte kunder med at styre deres projekter på en
@@ -88,7 +88,7 @@ export default function AboutUsPage() {
             />
           </div>
           <div className="w-full pl-8 md:w-3/5 ">
-            <p className="text-2xl">
+            <p className="text-xl">
               samarbejde med kunder, leverandører og andre interessenter vil vi
               sikre, at vores ydelser fremstår som kvalitetsydelser, der
               overholder gældende lov- og myndighedskrav.
@@ -129,7 +129,7 @@ export default function AboutUsPage() {
         </h1>
         <div className="flex flex-col md:flex-row">
           <div className="w-full pr-8 md:w-3/5 ">
-            <ul className="list-disc pl-8 text-2xl">
+            <ul className="list-disc pl-8 text-xl">
               <li>
                 Hos os er feedback en rutine. Vi er åbne for feedback fra alle
                 for at sikre en løbende optimering af kvaliteten på vores
