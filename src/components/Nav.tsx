@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -26,12 +26,12 @@ export function Nav() {
   };
 
   return (
-    <nav className="h-18 fixed left-0 top-0 z-30 w-full border px-10 py-2 backdrop-blur">
+    <nav className="h-18 fixed left-0 top-0 z-30 w-full px-10 py-2 backdrop-blur">
       <div className="flex items-center justify-between">
         <Link href={"/"}>
-          <a className="text-3xl">
+          <p className="text-3xl">
             <Image src={logo} alt="logo" width={100} height={80} />
-          </a>
+          </p>
         </Link>
         <div className="flex gap-4">
           <div
@@ -40,25 +40,55 @@ export function Nav() {
             onMouseLeave={handleYdelserMouseLeave}
           >
             <Link href="/services">
-              <a className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
+              <p className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
                 Ydelser
-              </a>
+              </p>
             </Link>
             {ydelserDropdownVisible && (
               <div className="width-4 absolute left-0 top-full flex flex-col rounded-lg border border-gray-200 bg-white p-2">
-                <Link href={"/services/Railway"}>
-                  <a className="rounded-lg px-2 py-2 hover:bg-gray-200">
-                    Jernbane
-                  </a>
+                <Link
+                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
+                  href={"/services/Railway"}
+                >
+                  Jernbane
                 </Link>
-                {/* Add similar links for other services */}
+                <Link
+                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
+                  href={"/services/TrafficSystem"}
+                >
+                  Vej system
+                </Link>
+                <Link
+                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
+                  href={"/services/Management"}
+                >
+                  Management
+                </Link>
+                <Link
+                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
+                  href={"/services/Energy"}
+                >
+                  Energi
+                </Link>
+                <Link
+                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
+                  href={"/services/ClientConsultancy"}
+                >
+                  Bygherrerådgivning
+                </Link>
+                <Link
+                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
+                  href={"/services/Automation"}
+                >
+                  Automation
+                </Link>
               </div>
             )}
           </div>
           <Link href={"/insights"}>
-            <a className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
+            <p className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
               Insights
-            </a>
+            </p>
           </Link>
           <div
             className="relative"
@@ -66,26 +96,32 @@ export function Nav() {
             onMouseLeave={handleOmNaomaMouseLeave}
           >
             <Link href="/about">
-              <a className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
+              <p className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
                 Om NAOMA
-              </a>
+              </p>
             </Link>
             {omNaomaDropdownVisible && (
               <div className="absolute left-0 top-full flex w-36 flex-col rounded-lg border border-gray-200 bg-white p-2">
-                <Link href={"/about"}>
-                  <a className="rounded-lg px-2 py-2 hover:bg-gray-200">
-                    Om NAOMA
-                  </a>
+                <Link
+                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
+                  href={"/about"}
+                >
+                  Om NAOMA
                 </Link>
-                {/* Add similar links for other about pages */}
+                <Link
+                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
+                  href={"/about/jobs"}
+                >
+                  Jobs
+                </Link>
               </div>
             )}
           </div>
 
           <Link href={"/contact"}>
-            <a className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
+            <p className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
               Kontakt os
-            </a>
+            </p>
           </Link>
         </div>
       </div>
