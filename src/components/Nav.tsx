@@ -1,128 +1,69 @@
 "use client";
 
-import Image from "next/image";
+import React from "react";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+} from "@nextui-org/react";
 import Link from "next/link";
-import { useState } from "react";
+import Image from "next/image";
 import logo from "@assets/logoNaoma.svg";
 
 export function Nav() {
-  const [ydelserDropdownVisible, setYdelserDropdownVisible] = useState(false);
-  const [omNaomaDropdownVisible, setOmNaomaDropdownVisible] = useState(false);
-
-  const handleYdelserMouseEnter = () => {
-    setYdelserDropdownVisible(true);
-  };
-
-  const handleYdelserMouseLeave = () => {
-    setYdelserDropdownVisible(false);
-  };
-
-  const handleOmNaomaMouseEnter = () => {
-    setOmNaomaDropdownVisible(true);
-  };
-
-  const handleOmNaomaMouseLeave = () => {
-    setOmNaomaDropdownVisible(false);
-  };
-
   return (
-    <nav className="h-18 fixed left-0 top-0 z-30 w-full px-10 py-2 backdrop-blur">
+    <nav className="h-18 fixed left-0 top-0 z-30 w-full px-10 py-2 backdrop-blur-[24px]">
       <div className="flex items-center justify-between">
-        <Link href={"/"}>
-          <p className="text-3xl">
-            <Image src={logo} alt="logo" width={100} height={80} />
-          </p>
+        <Link href={"/"} className="text-3xl">
+          {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
+          <Image src={logo} alt="logo" width={100} height={80} />
         </Link>
         <div className="flex gap-4">
-          <div
-            className="relative"
-            onMouseEnter={handleYdelserMouseEnter}
-            onMouseLeave={handleYdelserMouseLeave}
-          >
-            <Link href="/services">
-              <p className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
-                Ydelser
-              </p>
-            </Link>
-            {ydelserDropdownVisible && (
-              <div className="width-4 absolute left-0 top-full flex flex-col rounded-lg border border-gray-200 bg-white p-2">
-                <Link
-                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
-                  href={"/services/Railway"}
-                >
-                  Jernbane
-                </Link>
-                <Link
-                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
-                  href={"/services/TrafficSystem"}
-                >
-                  Vej system
-                </Link>
-                <Link
-                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
-                  href={"/services/Management"}
-                >
-                  Management
-                </Link>
-                <Link
-                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
-                  href={"/services/Energy"}
-                >
-                  Energi
-                </Link>
-                <Link
-                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
-                  href={"/services/ClientConsultancy"}
-                >
+          <Dropdown>
+            <DropdownTrigger>
+              <a className="cursor-pointer">Ydelser</a>
+            </DropdownTrigger>
+            <DropdownMenu className="rounded-lg bg-white ">
+              <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
+                <Link href={"/services/Railway"}>Jernbane</Link>
+              </DropdownItem>
+              <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
+                <Link href={"/services/TrafficSystem"}>Vej system</Link>
+              </DropdownItem>
+              <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
+                <Link href={"/services/Management"}>Management</Link>
+              </DropdownItem>
+              <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
+                <Link href={"/services/Energy"}>Energi</Link>
+              </DropdownItem>
+              <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
+                <Link href={"/services/ClientConsultancy"}>
                   Bygherrerådgivning
                 </Link>
-                <Link
-                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
-                  href={"/services/Automation"}
-                >
-                  Automation
-                </Link>
-              </div>
-            )}
-          </div>
-          <Link href={"/insights"}>
-            <p className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
-              Insights
-            </p>
-          </Link>
-          <div
-            className="relative"
-            onMouseEnter={handleOmNaomaMouseEnter}
-            onMouseLeave={handleOmNaomaMouseLeave}
-          >
-            <Link href="/about">
-              <p className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
-                Om NAOMA
-              </p>
-            </Link>
-            {omNaomaDropdownVisible && (
-              <div className="absolute left-0 top-full flex w-36 flex-col rounded-lg border border-gray-200 bg-white p-2">
-                <Link
-                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
-                  href={"/about"}
-                >
-                  Om NAOMA
-                </Link>
-                <Link
-                  className="rounded-lg px-2 py-2 hover:bg-gray-200"
-                  href={"/about/jobs"}
-                >
-                  Jobs
-                </Link>
-              </div>
-            )}
-          </div>
+              </DropdownItem>
+              <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
+                <Link href={"/services/Automation"}>Automation</Link>
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
 
-          <Link href={"/contact"}>
-            <p className="px-2 py-2 duration-200 hover:rounded-lg hover:bg-gray-200">
-              Kontakt os
-            </p>
-          </Link>
+          <Dropdown>
+            <DropdownTrigger>
+              <a className="cursor-pointer">Om NAOMA</a>
+            </DropdownTrigger>
+            <DropdownMenu className="rounded-lg border-0 bg-white">
+              <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
+                <Link href={"/about"}>Om NAOMA</Link>
+              </DropdownItem>
+              <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
+                <Link href={"/about/jobs"}>Jobs</Link>
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+
+          <Link href={"/insights"}>Insights</Link>
+          <Link href={"/contact"}>Kontakt os</Link>
         </div>
       </div>
     </nav>
