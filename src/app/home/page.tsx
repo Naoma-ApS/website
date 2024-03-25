@@ -24,14 +24,13 @@ import { BlogCard } from "@components/Blog/BlogCard";
 export default function HomePage() {
   return (
     <>
-      <iframe
-        className="relative top-0 -mt-32 w-screen grayscale"
-        src="https://player.vimeo.com/video/819043327?autoplay=1&loop=1&background=1"
-        width="100%"
-        height="1090"
-      />
-      <div className="absolute bottom-0 z-10 mb-10 ml-20">
-        <h1 className="text-5xl font-semibold text-white drop-shadow-2xl md:text-6xl">
+      <div className="pt-5/100 relative h-0 pb-[56.25%]">
+        <iframe
+          className="absolute left-0 top-0 -mt-16 h-full w-full grayscale"
+          src="https://player.vimeo.com/video/819043327?autoplay=1&loop=1&background=1"
+          allowFullScreen
+        ></iframe>
+        <h1 className="absolute bottom-24 left-10 text-3xl font-semibold text-white drop-shadow-2xl md:text-6xl">
           Innovative løsninger til <br /> en skiftende verden
         </h1>
       </div>
@@ -44,7 +43,7 @@ export default function HomePage() {
         </div>
 
         {/* Logo grid */}
-        <div className="mx-32 my-5 grid grid-cols-6 items-center justify-center grayscale-[50%]">
+        <div className="mx-32 my-5 grid grid-cols-6 items-center justify-center gap-2 grayscale-[50%]">
           {/* Column 1 */}
           <div className="col-span-1">
             <Image src={Aarsleff} alt="Image 1" width={100} height={200} />
