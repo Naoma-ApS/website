@@ -7,7 +7,7 @@ import image4 from "@assets/TableFromTop.jpg";
 export default function AboutUsPage() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative -mt-4 h-96 w-full md:mt-0">
         <Image
           src={image1}
           alt="Background Image"
@@ -25,7 +25,7 @@ export default function AboutUsPage() {
           </header>
         </div>
       </div>
-      <div className="mx-52 gap-12 px-4 py-16">
+      <div className="mx-auto max-w-7xl gap-12 px-5 py-16">
         <h1 className="text-5xl font-extrabold  ">
           <span className="text-left text-black">Historien om NAOMA</span>
         </h1>
@@ -39,7 +39,7 @@ export default function AboutUsPage() {
               <br />
               <p>
                 NAOMA
-                <span className="ml-72">ɛn-eɪ-əʊ-ɛm-eɪ</span>
+                <span className="ml-24 md:ml-72">ɛn-eɪ-əʊ-ɛm-eɪ</span>
               </p>
               <hr className="my-5" />
               NA(bil) O(g) (le)MA
@@ -60,7 +60,7 @@ export default function AboutUsPage() {
               jernbane, el, bygherrerådgivning,
             </p>
           </div>
-          <div className="w-full pl-8 md:w-2/5 ">
+          <div className="w-full py-5 md:w-2/5 md:py-0">
             <Image
               src={image3}
               alt="Image"
@@ -77,7 +77,7 @@ export default function AboutUsPage() {
           <span className="text-left text-black">Kvalitet er i vores DNA</span>
         </h1>
         <div className="flex flex-col md:flex-row">
-          <div className="w-full md:w-2/5 ">
+          <div className="w-full py-5 md:w-2/5 md:py-0">
             <Image
               src={image2}
               alt="Image"
@@ -166,7 +166,7 @@ export default function AboutUsPage() {
             </ul>
           </div>
 
-          <div className="w-full md:w-2/5 ">
+          <div className="w-full py-5 md:w-2/5 md:py-0 ">
             <Image
               src={image4}
               alt="Image"

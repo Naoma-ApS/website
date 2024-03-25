@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import "react-multi-carousel/lib/styles.css";
+import UpCounter from "src/components/UpCounter";
 
 import Aarsleff from "@assets/LOGOer/Aarsleff_Rail_Primaer_tofarver-removebg-preview-300x300.png";
 import midtjyske from "@assets/LOGOer/Logo_midtjyske_jernbaner-removebg-preview-300x168.png";
@@ -10,14 +13,13 @@ import Rina from "@assets/LOGOer/RINA_rgb_nopayoff-removebg-preview-300x231.png"
 import wsp from "@assets/LOGOer/wsp_RGB-300x143.png";
 import image7 from "@assets/HomePage/IMG_2145-circle.jpg";
 
-import { MdOutlineHandshake, MdPeopleAlt, MdTrain } from "react-icons/md";
+import { MdOutlineHandshake, MdTrain } from "react-icons/md";
 import { FaRoad } from "react-icons/fa";
 import { LiaSearchDollarSolid } from "react-icons/lia";
 import { SlEnergy } from "react-icons/sl";
 import { BsBuildings } from "react-icons/bs";
 import { LuCode2 } from "react-icons/lu";
 import { GrMapLocation } from "react-icons/gr";
-import { HiOutlinePresentationChartBar } from "react-icons/hi";
 import { frontPageBlogs } from "@components/Blog/blogs/frontpage";
 import { BlogCard } from "@components/Blog/BlogCard";
 
@@ -29,13 +31,13 @@ export default function HomePage() {
           className="absolute left-0 top-0 -mt-16 h-full w-full grayscale"
           src="https://player.vimeo.com/video/819043327?autoplay=1&loop=1&background=1"
           allowFullScreen
-        ></iframe>
+        />
         <h1 className="absolute bottom-24 left-10 text-3xl font-semibold text-white drop-shadow-2xl md:text-6xl">
           Innovative løsninger til <br /> en skiftende verden
         </h1>
       </div>
 
-      <div className="mx-auto max-w-7xl px-5 md:px-0">
+      <div className="mx-auto max-w-7xl px-5">
         <div className="mt-8 flex items-center justify-center">
           <h1 className="text-center text-2xl font-semibold text-black md:text-4xl">
             Udvalgte kunder, samarbejdspartnere og leverandører hos NAOMA
@@ -43,7 +45,7 @@ export default function HomePage() {
         </div>
 
         {/* Logo grid */}
-        <div className="mx-32 my-5 grid grid-cols-6 items-center justify-center gap-2 grayscale-[50%]">
+        <div className="my-5 grid max-w-7xl grid-cols-6 items-center justify-center gap-2 grayscale-[50%]">
           {/* Column 1 */}
           <div className="col-span-1">
             <Image src={Aarsleff} alt="Image 1" width={100} height={200} />
@@ -84,7 +86,7 @@ export default function HomePage() {
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-center md:mt-16 md:flex-row">
-          <p className="w-full py-5 text-base md:text-2xl">
+          <p className="w-full py-5 text-base md:text-xl">
             NAOMA er drevet af et team af erfarne og dygtige talenter, der
             leverer innovative løsninger til vores kunder. Kvalitet, samarbejde
             og løbende udvikling gennem dialog med kunder og leverandører, er
@@ -218,7 +220,7 @@ export default function HomePage() {
             <h1 className="text-2xl font-semibold text-black md:text-4xl">
               Hvorfor vælge NAOMA?
             </h1>
-            <p className="py-5 text-base md:text-2xl">
+            <p className="py-5 text-base md:text-lg">
               Vi er en virksomhed, hvor energi, dynamik og innovation mødes for
               at skabe banebrydende løsninger for vores kunder.
               <br />
@@ -244,51 +246,31 @@ export default function HomePage() {
         <hr className=" my-20" />
 
         {/* // Stats section */}
-        <div className="justify-center gap-20 text-center text-3xl md:flex">
-          <div className="flex flex-col items-center border-r pr-10">
-            <div className="mb-4 flex size-12 items-center justify-center rounded-full bg-blue-100 md:size-24">
-              <GrMapLocation className="text-3xl md:text-7xl" />
-            </div>
-            <p>
-              Vi har
-              <br /> kunder i <br />{" "}
-              <span className="text-3xl md:text-6xl">5</span> <br />
-              lande
-            </p>
-          </div>
-          <div className="flex flex-col items-center border-r pr-10">
-            <div className="mb-4 flex size-12 items-center justify-center rounded-full bg-blue-100 md:size-24">
-              <MdOutlineHandshake className="text-3xl md:text-7xl" />
-            </div>
-            <p>
-              Succesfuldt
-              <br /> arbejdet med
-              <br /> <span className="text-3xl md:text-6xl">17</span> <br />
-              kunder
-            </p>
-          </div>
-          <div className="flex flex-col items-center border-r pr-10">
-            <div className="mb-4 flex size-12 items-center justify-center rounded-full bg-blue-100 md:size-24">
-              <HiOutlinePresentationChartBar className="text-3xl md:text-7xl" />
-            </div>
-            <p>
-              Succesfuldt
-              <br /> afsluttet
-              <br /> <span className="text-3xl md:text-6xl">53</span> <br />
-              projekter
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="mb-4 flex size-12 items-center justify-center rounded-full bg-blue-100 md:size-24">
-              <MdPeopleAlt className="text-3xl md:text-7xl" />
-            </div>
-            <p>
-              Vi har <br />
-              mere end
-              <br /> <span className="text-3xl md:text-6xl">11</span> <br />
-              specialister
-            </p>
-          </div>
+        <div className="justify-center gap-20 text-center text-lg md:flex md:text-2xl">
+          <UpCounter
+            icon={<GrMapLocation className="text-3xl md:text-7xl" />}
+            label="Vi har kunder i"
+            label2="lande"
+            finalCount={5}
+          />
+          <UpCounter
+            icon={<MdOutlineHandshake className="text-3xl md:text-7xl" />}
+            label="Vi har succesfuldt arbejdet med"
+            label2="kunder"
+            finalCount={17}
+          />
+          <UpCounter
+            icon={<SlEnergy className="text-3xl md:text-7xl" />}
+            label="Succesfuldt afsluttet"
+            label2="projekter"
+            finalCount={53}
+          />
+          <UpCounter
+            icon={<LuCode2 className="text-3xl md:text-7xl" />}
+            label="Vi har mere end"
+            label2="specialister"
+            finalCount={11}
+          />
         </div>
       </div>
     </>
