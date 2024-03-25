@@ -13,6 +13,7 @@ import Rina from "@assets/LOGOer/RINA_rgb_nopayoff-removebg-preview-300x231.png"
 import wsp from "@assets/LOGOer/wsp_RGB-300x143.png";
 import image7 from "@assets/HomePage/IMG_2145-circle.jpg";
 
+import { HiOutlinePresentationChartBar } from "react-icons/hi";
 import { MdOutlineHandshake, MdTrain } from "react-icons/md";
 import { FaRoad } from "react-icons/fa";
 import { LiaSearchDollarSolid } from "react-icons/lia";
@@ -260,8 +261,10 @@ export default function HomePage() {
             finalCount={17}
           />
           <UpCounter
-            icon={<SlEnergy className="text-3xl md:text-7xl" />}
-            label="Succesfuldt afsluttet"
+            icon={
+              <HiOutlinePresentationChartBar className="text-3xl md:text-7xl" />
+            }
+            label="Vi har succesfuldt afsluttet"
             label2="projekter"
             finalCount={53}
           />

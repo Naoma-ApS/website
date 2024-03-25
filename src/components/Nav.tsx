@@ -28,35 +28,39 @@ export function Nav() {
         <div className="flex gap-4">
           <Dropdown>
             <DropdownTrigger>
-              <a className="cursor-pointer">Ydelser</a>
+              <a className="cursor-pointer duration-200 hover:text-gray-300">
+                Ydelser
+              </a>
             </DropdownTrigger>
             <DropdownMenu className="rounded-lg bg-white ">
               <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
-                <Link href={"/services/Railway"}>Jernbane</Link>
+                <Link href={"/services/railway"}>Jernbane</Link>
               </DropdownItem>
               <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
-                <Link href={"/services/TrafficSystem"}>Vej system</Link>
+                <Link href={"/services/trafficSystem"}>Vej system</Link>
               </DropdownItem>
               <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
-                <Link href={"/services/Management"}>Management</Link>
+                <Link href={"/services/management"}>Management</Link>
               </DropdownItem>
               <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
-                <Link href={"/services/Energy"}>Energi</Link>
+                <Link href={"/services/energy"}>Energi</Link>
               </DropdownItem>
               <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
-                <Link href={"/services/ClientConsultancy"}>
+                <Link href={"/services/clientConsultancy"}>
                   Bygherrerådgivning
                 </Link>
               </DropdownItem>
               <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
-                <Link href={"/services/Automation"}>Automation</Link>
+                <Link href={"/services/automation"}>Automation</Link>
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
 
           <Dropdown>
             <DropdownTrigger>
-              <a className="cursor-pointer">Om NAOMA</a>
+              <a className="cursor-pointer duration-200 hover:text-gray-300">
+                Om NAOMA
+              </a>
             </DropdownTrigger>
             <DropdownMenu className="rounded-lg border-0 bg-white">
               <DropdownItem className="my-1 rounded-lg border-0 hover:bg-gray-200">
@@ -68,8 +72,12 @@ export function Nav() {
             </DropdownMenu>
           </Dropdown>
 
-          <Link href={"/insights"}>Insights</Link>
-          <Link href={"/contact"}>Kontakt os</Link>
+          <Link className="duration-200 hover:text-gray-300" href={"/insights"}>
+            Insights
+          </Link>
+          <Link className="duration-200 hover:text-gray-300" href={"/contact"}>
+            Kontakt os
+          </Link>
         </div>
       </div>
     </nav>
