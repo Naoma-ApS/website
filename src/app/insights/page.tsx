@@ -12,6 +12,20 @@ export default function AboutUsPage() {
           </header>
         </div>
       </div>
+
+      <div className="flex items-center justify-center">
+        <iframe
+          id="abcdef"
+          name="abcdef"
+          src="https://www.linkedin.com/company/30589743"
+          width="1400"
+          height="900"
+        >
+          {/* <a href="http://anotherexternaldomain.com" target="_blank">
+          <img src="http://externaldomain.com?pic=99" alt="" />
+        </a> */}
+        </iframe>
+      </div>
     </>
   );
 }
