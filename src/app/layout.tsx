@@ -4,6 +4,7 @@ import { Footer } from "@components/Footer";
 import "@styles/globals.css";
 import { type Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Providers } from "@lib/providers";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,13 +31,16 @@ export default function RootLayout({
           content="width=device-width, height=device-height, initial-scale=1"
         />
       </head>
-      <body
-        className={`font-sans ${inter.variable} max-w-screen overflow-x-clip bg-white text-sm font-light text-black md:text-base`}
-      >
-        <Nav />
-        <div className="py-16 ">{children}</div>
-        <Footer />
-      </body>
+      <Providers>
+        <body
+          className={`font-sans ${inter.variable} max-w-screen overflow-x-clip bg-white text-sm font-light text-black md:text-base`}
+          suppressHydrationWarning
+        >
+          <Nav />
+          <div className="py-16 ">{children}</div>
+          <Footer />
+        </body>
+      </Providers>
     </html>
   );
 }

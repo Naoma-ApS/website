@@ -1,9 +1,44 @@
-import { Input } from "@nextui-org/react";
-import React from "react";
+"use client";
+
+import { Input, Textarea } from "@nextui-org/react";
+import { useState } from "react";
 import Image from "next/image";
 import image from "@assets/kontakt.jpg";
+import { useForm } from "react-hook-form";
+import sendEmail from "@lib/sendContactEmail";
 
-export default function AboutUsPage() {
+export interface ContactFormData {
+  email: string;
+  title: string;
+  message: string;
+}
+
+export default function ContactPage() {
+  const [errorsWhenSubmitting, setErrorsWhenSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const {
+    handleSubmit,
+    register,
+    formState: { errors, isSubmitting },
+  } = useForm<ContactFormData>();
+
+  async function onSubmit(data: ContactFormData) {
+    try {
+      await sendEmail(data);
+      setErrorsWhenSubmitting(false);
+      setSuccess(true);
+    } catch (error) {
+      setErrorsWhenSubmitting(true);
+      throw new Error(JSON.stringify(error));
+    }
+  }
+
+  function validateEmail(email: string): boolean {
+    const checkRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    return checkRegex.test(email);
+  }
+
   return (
     <>
       <div className="relative h-96 w-full">
@@ -25,50 +60,64 @@ export default function AboutUsPage() {
         </div>
       </div>
       <div className="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
-        <form action="#" className="space-y-8">
-          <div>
-            <label htmlFor="email">Din email</label>
-            <Input
-              type="email"
-              id="email"
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm"
-              classNames={{ inputWrapper: "h-10 mx-2" }}
-              placeholder="navn@eksempel.com"
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="subject">Emne</label>
-            <Input
-              classNames={{ inputWrapper: "h-10 mx-2" }}
-              type="text"
-              id="subject"
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm"
-              placeholder="Hvad handler din forespørsel om?"
-              required
-            />
-          </div>
-          <div className="sm:col-span-2">
-            <label
-              htmlFor="message"
-              className="mb-2 block text-sm font-medium text-black"
+        <div className="flex flex-col gap-8">
+          <Input
+            {...register("email", {
+              required: { value: true, message: "Email er påkrævet" },
+              validate: (email) => validateEmail(email) || "Email er ugyldig",
+            })}
+            label="Email"
+            labelPlacement="inside"
+            errorMessage={errors.email?.message}
+            required
+          />
+          <Input
+            {...register("title", {
+              required: { value: true, message: "Navn er påkrævet" },
+            })}
+            label="Emne"
+            labelPlacement="inside"
+            errorMessage={errors.title?.message}
+            required
+          />
+          <Textarea
+            {...register("message", {
+              required: { value: true, message: "Besked er påkrævet" },
+            })}
+            label="Besked"
+            errorMessage={errors.message?.message}
+            labelPlacement="inside"
+            required
+          />
+          <div className="flex flex-col gap-2">
+            <button
+              type="submit"
+              disabled={isSubmitting || success}
+              onClick={handleSubmit(onSubmit)}
+              className="rounded-lg bg-black px-5 py-3 text-center text-sm font-medium text-white hover:bg-gray-500 focus:outline-none focus:ring-4 sm:w-fit"
             >
-              Besked:
-            </label>
-            <textarea
-              id="message"
-              rows={6}
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm"
-              placeholder=""
-            ></textarea>
+              Send message
+            </button>
+            {errorsWhenSubmitting && !isSubmitting && (
+              <p className="text-red-500">
+                Noget gik galt, prøv venligst igen. Hvis problem fortsætter,
+                send venligst en email til
+                <a
+                  className="ml-1 underline duration-300 hover:text-red-700"
+                  href="mailto:kontakt@naoma.dk"
+                >
+                  kontakt@naoma.dk
+                </a>
+              </p>
+            )}
+            {success && !isSubmitting && (
+              <p className="text-green-600">
+                Din besked er blevet sendt. Tak! Vi vender tilbage hurtigst
+                muligt på din email.
+              </p>
+            )}
           </div>
-          <button
-            type="submit"
-            className="rounded-lg bg-black px-5 py-3 text-center text-sm font-medium text-white hover:bg-gray-500 focus:outline-none focus:ring-4 sm:w-fit"
-          >
-            Send message
-          </button>
-        </form>
+        </div>
       </div>
     </>
   );
