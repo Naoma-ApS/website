@@ -1,8 +1,5 @@
 import Image from "next/image";
 import image1 from "@assets/om_os_stock-scaled.jpg";
-import image2 from "@assets//Per&jonas.jpg";
-import image3 from "@assets/Nabil&amel.jpg";
-import image4 from "@assets/TableFromTop.jpg";
 import { jobs } from "src/app/about/jobs/jobs";
 import { BlogCard } from "@components/Blog/BlogCard";
 

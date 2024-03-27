@@ -4,7 +4,6 @@ import image2 from "@assets/vejebelysning.jpeg";
 import image3 from "@assets/projektstyring.jpg";
 import image4 from "@assets/ITS.png";
 import image5 from "@assets/trafik.jpeg";
-import image6 from "@assets/sikkerhed.jpeg";
 import { frontPageBlogs } from "@components/Blog/blogs/frontpage";
 import { BlogCard } from "@components/Blog/BlogCard";
 

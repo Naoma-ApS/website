@@ -1,5 +1,5 @@
-import Image from "next/image";
-import cover from "@assets/BlogImages/Skyrmbillede_2023-10-20_112142-transformed-700x538.png";
+// import Image from "next/image";
+// import cover from "@assets/BlogImages/Skyrmbillede_2023-10-20_112142-transformed-700x538.png";
 
 export default function intern() {
   return (
