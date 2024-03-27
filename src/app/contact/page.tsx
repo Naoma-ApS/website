@@ -1,6 +1,6 @@
 "use client";
 
-import { Input, Textarea } from "@nextui-org/react";
+import { Button, Input, Textarea } from "@nextui-org/react";
 import { useState } from "react";
 import Image from "next/image";
 import image from "@assets/kontakt.jpg";
@@ -90,14 +90,14 @@ export default function ContactPage() {
             required
           />
           <div className="flex flex-col gap-2">
-            <button
+            <Button
               type="submit"
               disabled={isSubmitting || success}
               onClick={handleSubmit(onSubmit)}
-              className="rounded-lg bg-black px-5 py-3 text-center text-sm font-medium text-white hover:bg-gray-500 focus:outline-none focus:ring-4 sm:w-fit"
+              className="w-1/5 rounded-full border border-black bg-black px-4 py-2 text-white duration-100 hover:scale-105 hover:shadow-xl"
             >
               Send message
-            </button>
+            </Button>
             {errorsWhenSubmitting && !isSubmitting && (
               <p className="text-red-500">
                 Noget gik galt, prøv venligst igen. Hvis problem fortsætter,

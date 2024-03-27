@@ -18,7 +18,10 @@ export default function ITS() {
         />
         <div className="absolute inset-0 flex items-center justify-center drop-shadow-2xl">
           <header>
-            <h1 className="text-7xl font-bold text-white">Trafik Analyse</h1>
+            <h1 className="text-4xl font-bold text-white md:text-7xl">
+              Trafik Analyse
+            </h1>
+            <hr />
           </header>
         </div>
       </div>

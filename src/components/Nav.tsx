@@ -24,7 +24,7 @@ export function Nav() {
             alt="logo"
             width={100}
             height={80}
-            className="max-w-[60%] md:max-w-[100%]"
+            className="min-w-[40%] max-w-[60%] md:max-w-[100%]"
           />
         </Link>
         <div className="flex gap-4">
@@ -35,7 +35,7 @@ export function Nav() {
               </Button>
             </DropdownTrigger>
             <DropdownMenu className="flex rounded-lg bg-white">
-              <DropdownSection showDivider>
+              <DropdownSection showDivider className="w-1/2">
                 <DropdownItem
                   className="my-1 rounded-lg border-0 hover:bg-gray-100"
                   href="/services/railway"
@@ -91,10 +91,38 @@ export function Nav() {
                 </DropdownItem>
                 <DropdownItem
                   className="my-1 rounded-lg border-0 hover:bg-gray-100"
-                  href="/services/management"
-                  key="management"
+                  href="/services/management/byggeledelse"
+                  key="Byggeledelse"
                 >
-                  Bygledelse
+                  Byggeledelse
+                </DropdownItem>
+                <DropdownItem
+                  className="my-1 rounded-lg border-0 hover:bg-gray-100"
+                  href="/services/management/projektledelse"
+                  key="Byggeledelse"
+                >
+                  Projektledelse
+                </DropdownItem>
+                <DropdownItem
+                  className="my-1 rounded-lg border-0 hover:bg-gray-100"
+                  href="/services/management/risikoledelse"
+                  key="Byggeledelse"
+                >
+                  Risikoledelse
+                </DropdownItem>
+                <DropdownItem
+                  className="my-1 rounded-lg border-0 hover:bg-gray-100"
+                  href="/services/management/strategiudvikling"
+                  key="Byggeledelse"
+                >
+                  Strategiudvikling
+                </DropdownItem>
+                <DropdownItem
+                  className="my-1 rounded-lg border-0 hover:bg-gray-100"
+                  href="/services/management/undervisning"
+                  key="Byggeledelse"
+                >
+                  Undervisning
                 </DropdownItem>
               </DropdownSection>
               <DropdownSection showDivider>
@@ -103,7 +131,35 @@ export function Nav() {
                   href="/services/energy"
                   key="energy"
                 >
-                  Energi
+                  <p className="font-bold underline">Energi</p>
+                </DropdownItem>
+                <DropdownItem
+                  className="my-1 rounded-lg border-0 hover:bg-gray-100"
+                  href="/services/energy/solarPower"
+                  key="solarPower"
+                >
+                  Solenergi
+                </DropdownItem>
+                <DropdownItem
+                  className="my-1 rounded-lg border-0 hover:bg-gray-100"
+                  href="/services/energy/windPower"
+                  key="solarPower"
+                >
+                  Vindenergi
+                </DropdownItem>
+                <DropdownItem
+                  className="my-1 rounded-lg border-0 hover:bg-gray-100"
+                  href="/services/energy/elnet"
+                  key="elnet"
+                >
+                  Elnet
+                </DropdownItem>
+                <DropdownItem
+                  className="my-1 rounded-lg border-0 hover:bg-gray-100"
+                  href="/services/energy/storage"
+                  key="storage"
+                >
+                  Lagring & BMS
                 </DropdownItem>
               </DropdownSection>
               <DropdownSection showDivider>
@@ -112,7 +168,7 @@ export function Nav() {
                   href="/services/clientConsultancy"
                   key="clientConsultancy"
                 >
-                  Bygherrerådgivning
+                  <p className="font-bold underline">Bygherrerådgivning</p>
                 </DropdownItem>
               </DropdownSection>
               <DropdownSection showDivider>
@@ -121,7 +177,7 @@ export function Nav() {
                   href="/services/automation"
                   key="automation"
                 >
-                  Automation
+                  <p className="font-bold underline">Automation</p>
                 </DropdownItem>
               </DropdownSection>
             </DropdownMenu>

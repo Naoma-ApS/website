@@ -50,7 +50,7 @@ export default function intern() {
             Arbejdsopgaverne er varierede, blandt andet omfattet af:
             <br />
             <br />
-            <ul className="list-disc pl-8 text-xl">
+            <ul className="text-md list-disc pl-8 md:text-xl">
               <li>Forundersøgelser</li>
 
               <li>Fagtekniske bidrag</li>
@@ -78,7 +78,7 @@ export default function intern() {
               Dine Kvalifikationer:
               <br />
             </p>
-            <ul className="list-disc pl-8 text-xl">
+            <ul className="text-md list-disc pl-8 md:text-xl">
               <li>
                 Kommende stærkstrømsingeniør under uddannelse med behov for
                 praktikophold

@@ -6,11 +6,9 @@ export default function intern() {
     <>
       <div className="mx-auto max-w-7xl gap-12 px-5 py-16">
         <h1 className="mb-5 text-2xl font-semibold md:mb-10 md:text-5xl">
-          <span className="text-black">
-            Praktikophold med mulighed for afgangsprojekt
-          </span>
+          <span className="text-black">Opdateres...</span>
         </h1>
-
+        {/* 
         <div className=" flex items-center justify-center">
           <Image
             src={cover}
@@ -112,7 +110,7 @@ export default function intern() {
             Ønsker du yderligere oplysninger, er du velkommen til at kontakte
             NAOMA på kontakt@naoma.dk eller (+45 31 62 76 61/ +45 41 77 36 41)
           </p>
-        </p>
+        </p> */}
       </div>
     </>
   );

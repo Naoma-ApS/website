@@ -64,7 +64,7 @@ export default function korestrom() {
             Arbejdsopgaverne er varierede, blandt andet omfattet af:
             <br />
             <br />
-            <ul className="list-disc pl-8 text-xl">
+            <ul className="list-disc pl-8 md:text-xl">
               <li>Forundersøgelser</li>
 
               <li>Fagtekniske bidrag</li>
@@ -82,7 +82,7 @@ export default function korestrom() {
               Dine faglige kvalifikationer:
               <br /> <br />
             </p>
-            <ul className="list-disc pl-8 text-xl">
+            <ul className="list-disc pl-8 md:text-xl">
               <li>
                 Du er uddannet ingeniør eller elinstallatør med minimum 3 års
                 erfaring med projektering af stærkstrøms- eller
@@ -98,7 +98,7 @@ export default function korestrom() {
               Dine personlige kvalifikationer:
               <br /> <br />
             </p>
-            <ul className="list-disc pl-8 text-xl">
+            <ul className="list-disc pl-8 md:text-xl">
               <li>
                 Du er initiativrig og har lyst til at udvikle dig med øje for
                 resultatet,

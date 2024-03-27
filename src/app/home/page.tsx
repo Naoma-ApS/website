@@ -132,7 +132,7 @@ export default function HomePage() {
         <div className="my-8 grid gap-12 md:grid-cols-3">
           {/* Column 1 */}
           <div className="col-span-1">
-            <Link href="/railway">
+            <Link href="/services/railway">
               <h1 className="flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <MdTrain className="text-xl md:text-4xl" /> Jernbane
               </h1>
@@ -145,7 +145,7 @@ export default function HomePage() {
 
           {/* Column 2 */}
           <div className="col-span-1">
-            <Link href="/roadSystem">
+            <Link href="/services/trafficSystem">
               <h1 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <FaRoad className="text-xl md:text-4xl" /> Vej system
               </h1>
@@ -158,7 +158,7 @@ export default function HomePage() {
 
           {/* Column 3 */}
           <div className="col-span-1">
-            <Link href="/Management">
+            <Link href="/services/management">
               <h1 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <LiaSearchDollarSolid className="text-xl md:text-4xl" />
                 Management
@@ -174,7 +174,7 @@ export default function HomePage() {
           {/* // ekspertise section */}
           {/* Column 4 */}
           <div className="col-span-1">
-            <Link href="/Energy">
+            <Link href="/services/energy">
               <h1 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <SlEnergy className="text-xl md:text-4xl" /> Energi
               </h1>
@@ -187,7 +187,7 @@ export default function HomePage() {
 
           {/* Column 5 */}
           <div className="col-span-1 ">
-            <Link href="/Bygherrerådgivning">
+            <Link href="/services/clientConsultancy">
               <h1 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <BsBuildings className="text-xl md:text-4xl" />
                 Bygherrerådgivning
@@ -201,7 +201,7 @@ export default function HomePage() {
 
           {/* Column 6 */}
           <div className="col-span-1">
-            <Link href="/Automation">
+            <Link href="/services/automation">
               <h1 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <LuCode2 className="text-xl md:text-4xl" /> Automation
               </h1>

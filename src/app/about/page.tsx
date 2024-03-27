@@ -76,7 +76,7 @@ export default function AboutUsPage() {
         <h1 className="pb-8 text-5xl font-extrabold ">
           <span className="text-left text-black">Kvalitet er i vores DNA</span>
         </h1>
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col gap-5 md:flex-row">
           <div className="w-full py-5 md:w-2/5 md:py-0">
             <Image
               src={image2}
@@ -87,7 +87,7 @@ export default function AboutUsPage() {
               className="rounded-lg"
             />
           </div>
-          <div className="w-full pl-8 md:w-3/5 ">
+          <div className="w-full  md:w-3/5 ">
             <p className="text-xl">
               samarbejde med kunder, leverandører og andre interessenter vil vi
               sikre, at vores ydelser fremstår som kvalitetsydelser, der
