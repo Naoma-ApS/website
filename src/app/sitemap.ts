@@ -7,6 +7,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+      url: "http://localhost:3000/contact",
+      lastModified: new Date(),
+    },
+    {
+      url: "http://localhost:3000/insights",
+      lastModified: new Date(),
+    },
+    {
+      url: "http://localhost:3000/about",
+      lastModified: new Date(),
+    },
+    {
+      url: "http://localhost:3000/about/jobs",
+      lastModified: new Date(),
+    },
+    {
+      url: "http://localhost:3000/about/jobs/highCurrent",
+      lastModified: new Date(),
+    },
+    {
+      url: "http://localhost:3000/about/jobs/korestrom",
+      lastModified: new Date(),
+    },
+    {
+      url: "http://localhost:3000/about/jobs/batteryTrains",
+      lastModified: new Date(),
+    },
+    {
+      url: "http://localhost:3000/about/jobs/Intern",
+      lastModified: new Date(),
+    },
+    {
       url: "http://localhost:3000/services/railway",
       lastModified: new Date(),
     },
