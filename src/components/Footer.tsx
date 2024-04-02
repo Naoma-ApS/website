@@ -4,6 +4,7 @@ import logo from "@assets/logoNaoma.svg";
 import { FaPhone } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export function Footer() {
   return (
@@ -11,7 +12,12 @@ export function Footer() {
       <div className="z-40 w-full items-center justify-between border bg-white px-12 py-10 md:flex">
         <div>
           <Link href={"/"} className="text-3xl">
-            <Image src={logo} alt="logo" width={150} height={80} />
+            <Image
+              src={logo as StaticImport}
+              alt="logo"
+              width={150}
+              height={80}
+            />
           </Link>
           <div className="ml-4 text-gray-400">
             <p>Innovative løsninger til en skiftende verden.</p>

@@ -3,6 +3,7 @@ import cover from "@assets/coverBygge.jpeg";
 import Image1 from "@assets/byggeledelse.jpeg";
 import logo from "@assets/logoNaoma.svg";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export default function starkstrom() {
   return (
@@ -62,7 +63,12 @@ export default function starkstrom() {
             <FaArrowRightArrowLeft />
           </div>
           <div className="w-1/4">
-            <Image src={logo} alt="logo" quality={100} className="rounded-lg" />
+            <Image
+              src={logo as StaticImport}
+              alt="logo"
+              quality={100}
+              className="rounded-lg"
+            />
           </div>
           <div className="text-2xl md:text-5xl">
             <FaArrowRightArrowLeft />
