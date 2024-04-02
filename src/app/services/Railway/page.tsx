@@ -189,8 +189,8 @@ export default function railway() {
           rådgivning og service i forbindelse med jernbanesikkerhed. Kontakt os
           for at høre mere om, hvordan vi kan hjælpe med at sikre en pålidelig
           og sikker drift af dit jernbanesystem.
-          <div className=" w-3/4">
-            <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
+          <div className=" w-2/5 md:w-3/4">
+            <h2 className="text-left text-xl font-semibold text-black md:text-3xl">
               Jernbanesikkerhed
             </h2>
             <Image
