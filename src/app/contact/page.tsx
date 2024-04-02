@@ -96,7 +96,7 @@ export default function ContactPage() {
               onClick={handleSubmit(onSubmit)}
               className="w-1/4 rounded-full border border-black bg-black px-4 py-2 text-white duration-100 hover:scale-105 hover:shadow-xl md:w-1/5"
             >
-              Send message
+              Send besked
             </Button>
             {errorsWhenSubmitting && !isSubmitting && (
               <p className="text-red-500">
