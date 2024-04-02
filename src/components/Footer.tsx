@@ -39,7 +39,7 @@ export function Footer() {
         </div>
       </div>
       <div className="flex items-center justify-between px-12 py-8 text-gray-400">
-        <p>@naoma2023</p>
+        <p>© {new Date().getFullYear()} Naoma. All rights reserved</p>
         <Link
           href={"https://dk.linkedin.com/company/naoma"}
           target="_blank"

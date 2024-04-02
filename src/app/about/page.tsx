@@ -17,7 +17,9 @@ export default function AboutUsPage() {
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <header>
-            <h1 className="text-7xl font-bold text-white">Om NAOMA</h1>
+            <h1 className="text-center text-7xl font-bold text-white">
+              Om NAOMA
+            </h1>
             <hr />
             <div className="text-center text-2xl text-white">
               Stiftet i København - 2019
@@ -25,6 +27,7 @@ export default function AboutUsPage() {
           </header>
         </div>
       </div>
+
       <div className="mx-auto max-w-7xl gap-12 px-5 py-16">
         <h1 className="text-5xl font-extrabold  ">
           <span className="text-left text-black">Historien om NAOMA</span>

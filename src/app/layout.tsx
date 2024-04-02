@@ -37,7 +37,7 @@ export default function RootLayout({
           suppressHydrationWarning
         >
           <Nav />
-          <div className="py-16 ">{children}</div>
+          <div className="pb-12">{children}</div>
           <Footer />
         </body>
       </Providers>

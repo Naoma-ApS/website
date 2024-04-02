@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import "react-multi-carousel/lib/styles.css";
@@ -33,16 +31,16 @@ export default function HomePage() {
           src="https://player.vimeo.com/video/819043327?autoplay=1&loop=1&background=1"
           allowFullScreen
         />
-        <h1 className="absolute bottom-24 left-10 text-3xl font-semibold text-white drop-shadow-2xl md:text-6xl">
+        <h1 className="absolute bottom-24 left-10 text-3xl font-semibold text-white drop-shadow-2xl md:text-6xl lg:bottom-72">
           Innovative løsninger til <br /> en skiftende verden
         </h1>
       </div>
 
       <div className="mx-auto max-w-7xl px-5">
         <div className="mt-8 flex items-center justify-center">
-          <h1 className="text-center text-2xl font-semibold text-black md:text-4xl">
+          <h2 className="text-center text-2xl font-semibold text-black md:text-4xl">
             Udvalgte kunder, samarbejdspartnere og leverandører hos NAOMA
-          </h1>
+          </h2>
         </div>
 
         {/* Logo grid */}
@@ -81,9 +79,9 @@ export default function HomePage() {
 
         {/* Løsninger til en verden i forandring */}
         <div className="flex items-center justify-center">
-          <h1 className="text-center text-2xl font-semibold text-black md:text-4xl">
+          <h2 className="text-center text-2xl font-semibold text-black md:text-4xl">
             Løsninger til en verden i forandring
-          </h1>
+          </h2>
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-center md:mt-16 md:flex-row">
@@ -108,9 +106,9 @@ export default function HomePage() {
 
         {/* blog section */}
         <div>
-          <h1 className="mb-10 text-center text-2xl font-semibold text-black md:text-4xl">
+          <h2 className="mb-10 text-center text-2xl font-semibold text-black md:text-4xl">
             Seneste nyheder fra NAOMA
-          </h1>
+          </h2>
         </div>
         <div className="grid-cols-4 gap-6 px-5 text-center md:grid md:px-0">
           {frontPageBlogs.map((blog, index) => (
@@ -133,9 +131,9 @@ export default function HomePage() {
           {/* Column 1 */}
           <div className="col-span-1">
             <Link href="/services/railway">
-              <h1 className="flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
+              <h2 className="flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <MdTrain className="text-xl md:text-4xl" /> Jernbane
-              </h1>
+              </h2>
             </Link>
             <p className="md:text-base">
               Løsninger til at klare de stigende offentlige togrejser for at
@@ -146,9 +144,9 @@ export default function HomePage() {
           {/* Column 2 */}
           <div className="col-span-1">
             <Link href="/services/trafficSystem">
-              <h1 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
+              <h2 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <FaRoad className="text-xl md:text-4xl" /> Vej system
-              </h1>
+              </h2>
             </Link>
             <p className="md:text-base">
               Transportsystemer der hjælper med at løse nogle af de trafikale
@@ -159,10 +157,10 @@ export default function HomePage() {
           {/* Column 3 */}
           <div className="col-span-1">
             <Link href="/services/management">
-              <h1 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
+              <h2 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <LiaSearchDollarSolid className="text-xl md:text-4xl" />
                 Management
-              </h1>
+              </h2>
             </Link>
             <p className="md:text-base">
               Skab den ændring der betyder noget. Identificere og sætte retning
@@ -175,9 +173,9 @@ export default function HomePage() {
           {/* Column 4 */}
           <div className="col-span-1">
             <Link href="/services/energy">
-              <h1 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
+              <h2 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <SlEnergy className="text-xl md:text-4xl" /> Energi
-              </h1>
+              </h2>
             </Link>
             <p className="md:text-base">
               Forkusere på energieffektivering, energiplanlægning, produtkion og
@@ -188,10 +186,10 @@ export default function HomePage() {
           {/* Column 5 */}
           <div className="col-span-1 ">
             <Link href="/services/clientConsultancy">
-              <h1 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
+              <h2 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <BsBuildings className="text-xl md:text-4xl" />
                 Bygherrerådgivning
-              </h1>
+              </h2>
             </Link>
             <p className="md:text-base">
               Helhedsorienteret bygherrerådgivning på en bredvifte af
@@ -202,9 +200,9 @@ export default function HomePage() {
           {/* Column 6 */}
           <div className="col-span-1">
             <Link href="/services/automation">
-              <h1 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
+              <h2 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
                 <LuCode2 className="text-xl md:text-4xl" /> Automation
-              </h1>
+              </h2>
             </Link>
             <p className="md:text-base">
               Optimere og effektivisere processer gennem avanceret automation,
@@ -218,9 +216,9 @@ export default function HomePage() {
         {/* // why choose naoma section */}
         <div className="flex flex-col items-center justify-center md:flex-row">
           <div className="w-full md:w-4/5 ">
-            <h1 className="text-2xl font-semibold text-black md:text-4xl">
+            <h2 className="text-2xl font-semibold text-black md:text-4xl">
               Hvorfor vælge NAOMA?
-            </h1>
+            </h2>
             <p className="py-5 text-base md:text-lg">
               Vi er en virksomhed, hvor energi, dynamik og innovation mødes for
               at skabe banebrydende løsninger for vores kunder.

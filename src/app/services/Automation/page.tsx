@@ -51,7 +51,7 @@ export default function railway() {
               className=" rounded-lg"
             />
           </div>
-          <div>
+          <div className="my-5 md:my-0">
             <h2 className=" text-xl font-semibold  md:text-3xl">
               Komplette løsninger til dine automatiseringsbehov
             </h2>
@@ -191,12 +191,12 @@ export default function railway() {
                 <br />
                 <br /> Vi bruger alle de nødvendige og tilpassense teknologier
                 og værktøjer, såsom low level coding, script programmering til
-                Programmerbare Logik Controllere (PLC'er), Human-Machine
-                Interfaces (HMI'er) og Supervisory Control and Data Acquisition
-                (SCADA) systemer, for at sikre, at vores design er effektive,
-                effektive og pålidelige. Vi arbejder tæt sammen med vores kunder
-                for at sikre, at designet opfylder deres behov og overstiger
-                deres forventninger. <br />
+                Programmerbare Logik Controllere (PLC&apos;er), Human-Machine
+                Interfaces (HMI&apos;er) og Supervisory Control and Data
+                Acquisition (SCADA) systemer, for at sikre, at vores design er
+                effektive, effektive og pålidelige. Vi arbejder tæt sammen med
+                vores kunder for at sikre, at designet opfylder deres behov og
+                overstiger deres forventninger. <br />
                 <br /> Under implementeringsfasen arbejder vores team af
                 automatiseringsingeniører hårdt på at installere og konfigurere
                 automatiseringssystemet. Vi følger bedste praksis og
