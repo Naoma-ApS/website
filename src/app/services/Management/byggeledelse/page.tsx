@@ -1,7 +1,7 @@
 import Image from "next/image";
 import cover from "@assets/coverBygge.jpeg";
 import Image1 from "@assets/byggeledelse.jpeg";
-import logo from "@assets/logo.png";
+import logo from "@assets/logoNaoma.svg";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 
 export default function starkstrom() {

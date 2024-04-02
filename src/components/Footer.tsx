@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@assets/logo.png";
+import logo from "@assets/logoNaoma.svg";
 import { FaPhone } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
