@@ -14,23 +14,24 @@ export const frontPageBlogs: Blog[] = [
   },
   {
     title: "Stærkstrømsingeniør til Jernbanen",
-    imageSrc: image9,
+    imageSrc: image11,
     alt: "Stærkstrømsingeniør til Jernbanen",
-    href: "/blog/stærkstrømsingeniør-til-jernbanen",
+    href: "/about/jobs/highCurrent",
     content: "Stærkstrømsingeniør til Jernbanen",
   },
   {
     title: "Ingeniør til Kørestrøm",
     imageSrc: image10,
     alt: "Ingeniør til Kørestrøm",
-    href: "/blog/ingeniør-til-kørestrøm",
+    href: "/about/jobs/korestrom",
     content: "Ingeniør til Kørestrøm",
   },
   {
-    title: "NAOMA hjælper med at byde velkommen til Danmarks første jernbane",
-    imageSrc: image11,
-    alt: "NAOMA hjælper med at byde velkommen til Danmarks første jernbane",
-    href: "/blog/naoma-hjælper-med-at-byde-velkommen-til-danmarks-første-jernbane",
-    content: "NAOMA hjælper med at byde velkommen til Danmarks første jernbane",
+    title: "NAOMA hjælper med at byde velkommen til Danmarks første batteritog",
+    imageSrc: image9,
+    alt: "NAOMA hjælper med at byde velkommen til Danmarks første batteritog",
+    href: "/about/jobs/batteryTrains",
+    content:
+      "NAOMA hjælper med at byde velkommen til Danmarks første batteritog",
   },
 ];

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import cover from "@assets/BlogImages/mjba_siteinspection-1400x1076.jpeg";
+import cover from "@assets/BlogImages/stroem-1400x1076.jpg";
 
 export default function korestrom() {
   return (
