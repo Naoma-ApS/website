@@ -29,7 +29,7 @@ export default function AboutUsPage() {
       </div>
 
       <div className="mx-auto max-w-7xl gap-12 px-5 py-16">
-        <h1 className="text-5xl font-extrabold  ">
+        <h1 className="text-2xl font-extrabold md:text-5xl  ">
           <span className="text-left text-black">Historien om NAOMA</span>
         </h1>
 
@@ -76,7 +76,7 @@ export default function AboutUsPage() {
         </div>
         <hr className="my-16 border-gray-400" />
 
-        <h1 className="pb-8 text-5xl font-extrabold ">
+        <h1 className="pb-8 text-2xl font-extrabold md:text-5xl ">
           <span className="text-left text-black">Kvalitet er i vores DNA</span>
         </h1>
         <div className="flex flex-col gap-5 md:flex-row">
@@ -127,7 +127,7 @@ export default function AboutUsPage() {
         </div>
         <hr className="my-16 border-gray-400" />
 
-        <h1 className="pb-8 text-5xl font-extrabold ">
+        <h1 className="pb-8 text-2xl font-extrabold md:text-5xl ">
           <span className="text-left text-black">Vores værdier</span>
         </h1>
         <div className="flex flex-col md:flex-row">
@@ -180,54 +180,6 @@ export default function AboutUsPage() {
             />
           </div>
         </div>
-
-        {/* <div className="mt-16 flex flex-col md:flex-row">
-          <div className="w-full md:w-1/3">
-            <p>
-              <h1 className="text-2xl">Innovation</h1>
-              NAOMA tænker muligheder frem for begrænsninger. Ordet NEJ kender
-              NAOMA ikke til. Der er netop det, der gør os innovative.
-              <Image
-                src="/about-1-1.jpg"
-                alt="Image"
-                width={750}
-                height={750}
-                quality={100}
-                className="rounded-lg"
-              />
-            </p>
-          </div>
-
-          <div className="flex w-full flex-row md:w-2/3">
-            <div className="w-1/2">
-              <p>
-                <h1 className="text-2xl">Performance</h1>
-                Vores målsætning er at finde kreative og innovative løsninger så
-                vores kunder opnår fuld tilfredshed
-                <Image
-                  src="/perform.png"
-                  alt="Image"
-                  width={750}
-                  height={750}
-                  quality={100}
-                  className="rounded-lg"
-                />
-              </p>
-            </div>
-            <div className="w-1/2">
-              <p>
-                <Image
-                  src="/om_os_stock1.jpeg"
-                  alt="Image"
-                  width={750}
-                  height={750}
-                  quality={100}
-                  className="rounded-lg"
-                />
-              </p>
-            </div>
-          </div>
-        </div> */}
       </div>
     </>
   );
