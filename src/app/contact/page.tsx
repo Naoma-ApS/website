@@ -3,7 +3,7 @@
 import { Button, Input, Textarea } from "@nextui-org/react";
 import { useState } from "react";
 import Image from "next/image";
-import image from "@assets/kontakt.jpg";
+import image from "@assets/Kontakt.jpg";
 import { useForm } from "react-hook-form";
 import sendEmail from "@lib/sendContactEmail";
 

@@ -9,7 +9,7 @@ import bdk from "@assets/LOGOer/Logo-CMYK-2-dark-300x161.png";
 import bhf from "@assets/LOGOer/logo-removebg-preview.png";
 import Rina from "@assets/LOGOer/RINA_rgb_nopayoff-removebg-preview-300x231.png";
 import wsp from "@assets/LOGOer/wsp_RGB-300x143.png";
-import image7 from "@assets/HomePage/IMG_2145-circle.jpg";
+import image7 from "@assets/Homepage/IMG_2145-circle.jpg";
 
 import { HiOutlinePresentationChartBar } from "react-icons/hi";
 import { MdOutlineHandshake, MdTrain } from "react-icons/md";
