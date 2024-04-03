@@ -91,18 +91,18 @@ export default function railway() {
         </div>
 
         <div className="block sm:hidden ">
-        <p className="my-10 items-center justify-center gap-6 text-base md:text-lg">
-        <div className="w-full">
+          <p className="my-10 items-center justify-center gap-6 text-base md:text-lg">
+            <div className="w-full">
               <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
                 Erfaring og de rette kompetencer
               </h2>
               <div className="justify-flex flex w-full justify-center">
-              <Image
-                src={image4}
-                alt="image4"
-                quality={100}
-                className="my-10 rounded-full w-3/4"
-              />
+                <Image
+                  src={image4}
+                  alt="image4"
+                  quality={100}
+                  className="my-10 w-3/4 rounded-full"
+                />
               </div>
             </div>
             Som byggeherrerådgiver tilbyder NAOMA stærke kompetencer og erfaring
@@ -117,7 +117,6 @@ export default function railway() {
             fase.
             <br />
             <br />
-           
           </p>
         </div>
       </div>

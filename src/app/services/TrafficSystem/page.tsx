@@ -147,7 +147,7 @@ export default function railway() {
                 src={image5}
                 alt="image5"
                 quality={100}
-                className="my-10 rounded-full w-3/4"
+                className="my-10 w-3/4 rounded-full"
               />
             </div>
           </div>

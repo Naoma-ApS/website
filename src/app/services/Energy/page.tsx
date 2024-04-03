@@ -87,7 +87,7 @@ export default function Energy() {
                   src={vind}
                   alt="vind"
                   quality={100}
-                  className="sm:w-1/2 rounded-full "
+                  className="rounded-full sm:w-1/2 "
                 />
               </div>
             </Link>
@@ -102,7 +102,7 @@ export default function Energy() {
                   src={sol}
                   alt="sol"
                   quality={100}
-                  className="sm:w-1/2 rounded-full"
+                  className="rounded-full sm:w-1/2"
                 />
               </div>
             </Link>
@@ -119,7 +119,7 @@ export default function Energy() {
                   src={El}
                   alt="El"
                   quality={100}
-                  className="sm:w-1/2 rounded-full"
+                  className="rounded-full sm:w-1/2"
                 />
               </div>
             </Link>
@@ -135,7 +135,7 @@ export default function Energy() {
                   src={battery}
                   alt="battery"
                   quality={100}
-                  className="sm:w-1/2 rounded-full grayscale"
+                  className="rounded-full grayscale sm:w-1/2"
                 />
               </div>
             </Link>

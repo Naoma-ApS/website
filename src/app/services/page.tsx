@@ -21,9 +21,11 @@ export default function services() {
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <header>
-            <h1 className="text-center text-4xl md:text-7xl font-bold text-white">Ydelser</h1>
+            <h1 className="text-center text-4xl font-bold text-white md:text-7xl">
+              Ydelser
+            </h1>
             <hr />
-            <div className="text-center text-lg md:text-2xl text-white">
+            <div className="text-center text-lg text-white md:text-2xl">
               Ekspertiser og områder
             </div>
           </header>
@@ -178,7 +180,7 @@ export default function services() {
                   href="/services/ClientConsultancy"
                   className="hover:underline"
                 > */}
-                  <li>Opdateres...</li>
+                <li>Opdateres...</li>
                 {/* </Link> */}
               </ul>
             </p>
@@ -194,7 +196,7 @@ export default function services() {
             <p className="text-md text-left ">
               <ul className="list-disc pl-8 text-base md:text-lg">
                 {/* <Link href="/services/Automation" className="hover:underline"> */}
-                  <li>Opdateres...</li>
+                <li>Opdateres...</li>
                 {/* </Link> */}
               </ul>
             </p>

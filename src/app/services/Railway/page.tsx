@@ -21,9 +21,11 @@ export default function railway() {
         />
         <div className="absolute inset-0 flex items-center justify-center drop-shadow-2xl">
           <header>
-            <h1 className="text-center text-3xl md:text-7xl font-bold text-white">Jernbane</h1>
+            <h1 className="text-center text-3xl font-bold text-white md:text-7xl">
+              Jernbane
+            </h1>
             <hr />
-            <div className="text-center text-lg md:text-2xl text-white">
+            <div className="text-center text-lg text-white md:text-2xl">
               Ekspertiser og områder
             </div>
           </header>
