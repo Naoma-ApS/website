@@ -54,7 +54,7 @@ export function Footer() {
           rel="noopener noreferrer"
           className="text-3xl"
         >
-          <RiLinkedinFill className=" mr-60 text-3xl text-black" />
+          <RiLinkedinFill className=" text-3xl text-black md:mr-60" />
         </Link>
       </div>
     </footer>

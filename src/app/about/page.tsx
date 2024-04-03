@@ -43,6 +43,7 @@ export default function AboutUsPage() {
               <p>
                 NAOMA
                 {/* <span className="ml-24 md:ml-72">ɛn-eɪ-əʊ-ɛm-eɪ</span> */}
+                <span className="ml-24 md:ml-72">[na-o-ma]</span>
               </p>
               <hr className="my-5" />
               NA(bil) O(g) (le)MA
