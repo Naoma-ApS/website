@@ -266,7 +266,7 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <hr className=" my-20" />
+        <hr className=" my-20 border-0" />
 
         {/* // Stats section */}
         <div className="justify-center gap-20 text-center text-lg md:flex md:text-2xl">
