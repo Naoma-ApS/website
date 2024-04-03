@@ -47,7 +47,7 @@ export default function HomePage() {
         />
       </div>
       <h1 className="absolute bottom-24 left-10 text-3xl font-semibold text-white drop-shadow-2xl  ">
-        Innovative løsninger til <br /> en skiftende verden
+        Innovative løsninger til en skiftende verden
       </h1>
       <div className="mx-auto max-w-7xl px-5">
         <div className="sm:hidden">
