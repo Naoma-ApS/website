@@ -55,28 +55,30 @@ export default function starkstrom() {
           kontrakter, tidsrammer, budgetter og kvalitet af byggeriet går op i en
           højere enhed.
         </p>
-        <p className="justify-flex my-8 flex items-center justify-center gap-5">
-          <h1 className="text-md font-semibold text-black md:text-3xl">
-            Arbjedsprocesser
-          </h1>
-          <div className="text-2xl md:text-5xl">
-            <FaArrowRightArrowLeft />
-          </div>
-          <div className="w-1/4">
-            <Image
-              src={logo as StaticImport}
-              alt="logo"
-              quality={100}
-              className="rounded-lg"
-            />
-          </div>
-          <div className="text-2xl md:text-5xl">
-            <FaArrowRightArrowLeft />
-          </div>
-          <h1 className="text-md font-semibold text-black md:text-3xl">
-            Entreprenører
-          </h1>
-        </p>
+        <div className="hidden md:block">
+          <p className="justify-flex my-8 flex items-center justify-center gap-5">
+            <h1 className="text-xl font-semibold text-black md:text-3xl">
+              Arbjedsprocesser
+            </h1>
+            <div className="text-2xl md:text-5xl">
+              <FaArrowRightArrowLeft />
+            </div>
+            <div className="w-1/4">
+              <Image
+                src={logo as StaticImport}
+                alt="logo"
+                quality={100}
+                className="rounded-lg"
+              />
+            </div>
+            <div className="text-2xl md:text-5xl">
+              <FaArrowRightArrowLeft />
+            </div>
+            <h1 className="text-xl font-semibold text-black md:text-3xl">
+              Entreprenører
+            </h1>
+          </p>
+        </div>
         <hr className=" my-20" />
 
         <h1 className="my-5 text-xl font-semibold text-black md:text-3xl">

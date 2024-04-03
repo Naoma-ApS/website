@@ -27,12 +27,9 @@ export function Nav() {
     { title: "Kontakt os", href: "/contact" },
   ];
 
-  const handleMenuItemClick = () => {
-    setIsMenuOpen(false);
-  };
-
   return (
     <Navbar
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       className="h-10 w-full bg-transparent backdrop-blur-md md:h-16"
       classNames={{
@@ -53,16 +50,16 @@ export function Nav() {
         </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          // className="ml-auto sm:hidden"
+          className="ml-auto sm:hidden"
         />
       </NavbarContent>
 
       {isMenuOpen && (
-        <NavbarMenu className="-mt-7 mb-7 h-1/2 bg-white/50">
+        <NavbarMenu className="top-10 h-screen bg-white/50">
           {menuLinks.map((link, index) => (
             <NavbarMenuItem key={index}>
               <Link href={link.href}>
-                <p onClick={handleMenuItemClick}>{link.title}</p>
+                <p onClick={() => setIsMenuOpen(!isMenuOpen)}>{link.title}</p>
               </Link>
             </NavbarMenuItem>
           ))}
@@ -76,7 +73,7 @@ export function Nav() {
         {menuLinks.map((link, index) => (
           <NavbarItem key={index}>
             <Link href={link.href}>
-              <p onClick={handleMenuItemClick}>{link.title}</p>
+              <p>{link.title}</p>
             </Link>
           </NavbarItem>
         ))}
