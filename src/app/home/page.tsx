@@ -39,14 +39,16 @@ export default function HomePage() {
       </div>
 
       {/* mobile video */}
-      <div className="absolute left-0 top-0 h-full  w-[300vw] overflow-hidden sm:hidden">
+      <div className="absolute -left-[34rem] top-0 h-full  w-[370vw] overflow-hidden sm:hidden">
         <iframe
-          className="realative -right-[300px] h-full w-full grayscale"
+          className="realative h-full w-full grayscale"
           src="https://player.vimeo.com/video/819043327?autoplay=1&loop=1&background=1"
           allowFullScreen
         />
       </div>
-
+      <h1 className="absolute bottom-24 left-10 text-3xl font-semibold text-white drop-shadow-2xl  ">
+        Innovative løsninger til <br /> en skiftende verden
+      </h1>
       <div className="mx-auto max-w-7xl px-5">
         <div className="sm:hidden">
           <hr className=" my-20 border-0 " />
