@@ -31,7 +31,7 @@ export default function HomePage() {
           src="https://player.vimeo.com/video/819043327?autoplay=1&loop=1&background=1"
           allowFullScreen
         />
-        <h1 className="absolute bottom-24 left-10 text-3xl font-semibold text-white drop-shadow-2xl md:text-6xl lg:bottom-72">
+        <h1 className="absolute bottom-24 left-10 text-2xl font-semibold text-white drop-shadow-2xl md:text-6xl lg:bottom-72">
           Innovative løsninger til <br /> en skiftende verden
         </h1>
       </div>
