@@ -121,7 +121,7 @@ export default function HomePage() {
             af ydelser, der omfatter jernbane, el, bygherrerådgivning, ledelse,
             automatisering, undervisning og energi.
           </p>
-          <div className="items-center px-10 md:w-2/5 md:px-0">
+          <div className="w-4/5 items-center px-10 md:w-2/5 md:px-0">
             <Image
               src={image7}
               alt="Image"
