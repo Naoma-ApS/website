@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import "react-multi-carousel/lib/styles.css";
 import UpCounter from "src/components/UpCounter";
+import React, { useEffect } from "react";
 
 import Aarsleff from "@assets/LOGOer/Aarsleff_Rail_Primaer_tofarver-removebg-preview-300x300.png";
 import midtjyske from "@assets/LOGOer/Logo_midtjyske_jernbaner-removebg-preview-300x168.png";
@@ -22,7 +25,23 @@ import { GrMapLocation } from "react-icons/gr";
 import { frontPageBlogs } from "@components/Blog/blogs/frontpage";
 import { BlogCard } from "@components/Blog/BlogCard";
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const $body = document.documentElement;
+      // "Disable" the horizontal scroll.
+      if ($body.scrollLeft !== 0) {
+        $body.scrollLeft = 0;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="pt-5/100 relative hidden h-0 pb-[56.25%] sm:block">
@@ -304,4 +323,5 @@ export default function HomePage() {
       </div>
     </>
   );
-}
+};
+export default HomePage;
