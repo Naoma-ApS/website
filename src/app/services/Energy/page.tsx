@@ -27,7 +27,7 @@ export default function Energy() {
         </div>
       </div>
       <div className="mx-auto mt-10 max-w-7xl px-5">
-        <h2 className="mb-5 text-3xl font-semibold text-black md:text-6xl">
+        <h2 className="mb-5 text-xl font-semibold text-black md:text-4xl">
           NAOMA: Pionerer inden for Grøn Energi med Bæredygtige Løsninger for
           Fremtiden
         </h2>
