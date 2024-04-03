@@ -56,7 +56,7 @@ export default function starkstrom() {
           højere enhed.
         </p>
         <p className="justify-flex my-8 flex items-center justify-center gap-5">
-          <h1 className="text-xl font-semibold text-black md:text-3xl">
+          <h1 className="text-md font-semibold text-black md:text-3xl">
             Arbjedsprocesser
           </h1>
           <div className="text-2xl md:text-5xl">
@@ -73,7 +73,7 @@ export default function starkstrom() {
           <div className="text-2xl md:text-5xl">
             <FaArrowRightArrowLeft />
           </div>
-          <h1 className="text-xl font-semibold text-black md:text-3xl">
+          <h1 className="text-md font-semibold text-black md:text-3xl">
             Entreprenører
           </h1>
         </p>

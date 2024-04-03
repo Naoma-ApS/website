@@ -77,8 +77,8 @@ export default function Energy() {
           <br />
         </p>
         <div className="mb-16 flex items-center text-center">
-          <div className="w-full rounded-full px-5 py-5 duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-xl">
-            <Link href={"energy/solarPower"} className="text-3xl ">
+          <div className="w-full rounded-full px-5 py-5 duration-300 hover:-translate-y-5 hover:scale-105 ">
+            <Link href={"Energy/solarPower"} className="text-3xl ">
               <h2 className="mb-5 text-xl font-semibold hover:underline md:text-3xl ">
                 Solenergi
               </h2>
@@ -87,13 +87,13 @@ export default function Energy() {
                   src={vind}
                   alt="vind"
                   quality={100}
-                  className="w-1/2 rounded-full "
+                  className="sm:w-1/2 rounded-full "
                 />
               </div>
             </Link>
           </div>
-          <div className="w-full gap-8 rounded-full px-5 py-5 text-center duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-xl">
-            <Link href={"energy/windPower"} className="text-3xl ">
+          <div className="w-full gap-8 rounded-full px-5 py-5 text-center duration-300 hover:-translate-y-5 hover:scale-105 ">
+            <Link href={"Energy/windPower"} className="text-3xl ">
               <h2 className="mb-5 items-center text-center text-xl font-semibold hover:underline md:text-3xl">
                 Vindenergi
               </h2>
@@ -102,15 +102,15 @@ export default function Energy() {
                   src={sol}
                   alt="sol"
                   quality={100}
-                  className="w-1/2 rounded-full"
+                  className="sm:w-1/2 rounded-full"
                 />
               </div>
             </Link>
           </div>
         </div>
         <div className="flex items-center text-center">
-          <div className="w-full rounded-full px-5 py-5 duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-xl">
-            <Link href={"energy/elnet"} className="text-3xl">
+          <div className="w-full rounded-full px-5 py-5 duration-300 hover:-translate-y-5 hover:scale-105 ">
+            <Link href={"Energy/elnet"} className="text-3xl">
               <h2 className="mb-5 text-xl font-semibold hover:underline md:text-3xl">
                 Elnet
               </h2>
@@ -119,14 +119,14 @@ export default function Energy() {
                   src={El}
                   alt="El"
                   quality={100}
-                  className="w-1/2 rounded-full"
+                  className="sm:w-1/2 rounded-full"
                 />
               </div>
             </Link>
           </div>
 
-          <div className="w-full gap-8 rounded-full px-5 py-5 text-center duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-xl">
-            <Link href={"energy/storage"} className="text-3xl">
+          <div className="w-full gap-8 rounded-full px-5 py-5 text-center duration-300 hover:-translate-y-5 hover:scale-105 ">
+            <Link href={"Energy/storage"} className="text-3xl">
               <h2 className="mb-5 items-center text-center text-xl font-semibold hover:underline md:text-3xl">
                 Lagring & BMS
               </h2>
@@ -135,7 +135,7 @@ export default function Energy() {
                   src={battery}
                   alt="battery"
                   quality={100}
-                  className="w-1/2 rounded-full grayscale"
+                  className="sm:w-1/2 rounded-full grayscale"
                 />
               </div>
             </Link>

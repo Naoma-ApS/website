@@ -59,20 +59,22 @@ export default function railway() {
         <hr className=" my-20" />
 
         <h1 className=" mb-5 text-center text-3xl font-semibold text-black md:text-5xl">
-          Hvad vi laver?
+          Hvad laver vi?
         </h1>
 
-        <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
+        <p className="my-10 items-center justify-center gap-6 text-base sm:flex md:text-lg">
           <div className="w-full">
             <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
               Projektstyring
             </h2>
-            <Image
-              src={image3}
-              alt="image3"
-              quality={100}
-              className="my-10 rounded-full"
-            ></Image>
+            <div className="justify-flex flex w-full justify-center">
+              <Image
+                src={image3}
+                alt="image3"
+                quality={100}
+                className="my-10 rounded-full"
+              />
+            </div>
           </div>
           Levering af succesfulde projekter til tiden og inden for budgettet hos
           NAOMA.
@@ -87,37 +89,67 @@ export default function railway() {
           budgettet og til de højeste kvalitetsstandarder.
         </p>
 
-        <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
-          ITS bliver stadig vigtigere for at skabe effektive og sikre
-          transportsystemer. Hos NAOMA er vi specialiserede i at designe og
-          implementere ITS-løsninger, der anvender de nyeste teknologier til at
-          optimere trafikflowet, mindske trafikpropper og forbedre sikkerheden.
-          Vores ITS-løsninger er skræddersyede til at opfylde vores kunders og
-          deres samfunds unikke behov og er designet til at være skalerbare og
-          fremtidssikrede.
-          <div className="w-full">
-            <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
-              Intelligent Traffic System (ITS)
-            </h2>
-            <Image
-              src={image4}
-              alt="image4"
-              quality={100}
-              className="my-10 rounded-full "
-            ></Image>
-          </div>
-        </p>
-        <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
+        <div className="hidden sm:block ">
+          <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
+            ITS bliver stadig vigtigere for at skabe effektive og sikre
+            transportsystemer. Hos NAOMA er vi specialiserede i at designe og
+            implementere ITS-løsninger, der anvender de nyeste teknologier til
+            at optimere trafikflowet, mindske trafikpropper og forbedre
+            sikkerheden. Vores ITS-løsninger er skræddersyede til at opfylde
+            vores kunders og deres samfunds unikke behov og er designet til at
+            være skalerbare og fremtidssikrede.
+            <div className="w-full">
+              <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
+                Intelligent Traffic System (ITS)
+              </h2>
+              <Image
+                src={image4}
+                alt="image4"
+                quality={100}
+                className="my-10 rounded-full "
+              ></Image>
+            </div>
+          </p>
+        </div>
+
+        <div className="block sm:hidden ">
+          <p className="my-10 items-center justify-center gap-6 text-base md:text-lg">
+            <div className="w-full">
+              <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
+                Intelligent Traffic System (ITS)
+              </h2>
+              <div className="justify-flex flex w-full justify-center">
+                <Image
+                  src={image4}
+                  alt="image4"
+                  quality={100}
+                  className="my-10 w-3/4 rounded-full "
+                />
+              </div>
+            </div>
+            ITS bliver stadig vigtigere for at skabe effektive og sikre
+            transportsystemer. Hos NAOMA er vi specialiserede i at designe og
+            implementere ITS-løsninger, der anvender de nyeste teknologier til
+            at optimere trafikflowet, mindske trafikpropper og forbedre
+            sikkerheden. Vores ITS-løsninger er skræddersyede til at opfylde
+            vores kunders og deres samfunds unikke behov og er designet til at
+            være skalerbare og fremtidssikrede.
+          </p>
+        </div>
+
+        <p className="my-10 items-center justify-center gap-6 text-base sm:flex md:text-lg">
           <div className=" w-full">
             <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
               Trafik Analyse
             </h2>
-            <Image
-              src={image5}
-              alt="image5"
-              quality={100}
-              className="my-10 rounded-full"
-            ></Image>
+            <div className="justify-flex flex w-full justify-center">
+              <Image
+                src={image5}
+                alt="image5"
+                quality={100}
+                className="my-10 rounded-full w-3/4"
+              />
+            </div>
           </div>
           Vi forstår, at effektive transportsystemer starter med en grundig
           forståelse af trafikmønstre og -flow. Derfor tilbyder vi ekspertise

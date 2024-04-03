@@ -21,9 +21,9 @@ export default function railway() {
         />
         <div className="absolute inset-0 flex items-center justify-center drop-shadow-2xl">
           <header>
-            <h1 className="text-7xl font-bold text-white">Jernbane</h1>
+            <h1 className="text-center text-3xl md:text-7xl font-bold text-white">Jernbane</h1>
             <hr />
-            <div className="text-center text-2xl text-white">
+            <div className="text-center text-lg md:text-2xl text-white">
               Ekspertiser og områder
             </div>
           </header>
@@ -64,29 +64,29 @@ export default function railway() {
           bæredygtig måde, som giver pålidelige løsninger og gør ambitiøse mål
           til virkelighed.
         </p>
-        <Image
-          src={image2}
-          alt="image2"
-          quality={100}
-          className="my-10 rounded-lg"
-        />
+
+        <div className="w- my-10 rounded-lg">
+          <Image src={image2} alt="image2" quality={100} />
+        </div>
         <hr className=" my-20" />
 
         <h1 className=" mb-5 text-center text-3xl font-semibold text-black md:text-5xl">
-          Hvad vi laver?
+          Hvad laver vi?
         </h1>
 
-        <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
+        <p className=" my-10 items-center justify-center gap-6 text-base md:flex md:text-lg">
           <div className="w-full">
             <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
               Projektstyring
             </h2>
-            <Image
-              src={image3}
-              alt="image3"
-              quality={100}
-              className="my-10 rounded-full"
-            ></Image>
+            <div className="justify-flex flex w-full justify-center">
+              <Image
+                src={image3}
+                alt="image3"
+                quality={100}
+                className="my-10 rounded-full"
+              />
+            </div>
           </div>
           Levering af succesfulde projekter til tiden og inden for budgettet hos
           NAOMA.
@@ -103,50 +103,93 @@ export default function railway() {
           budgettet og til de højeste kvalitetsstandarder.
         </p>
 
-        <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
-          Kørestrøm er en afgørende faktor inden for jernbanetransport, da den
-          leverer strøm til togene og muliggør bevægelse af lokomotiver og vogne
-          på sporene. Kørestrømssystemet består af en række teknologier og
-          udstyr, der skal fungere sammen for at opretholde et stabilt og
-          pålideligt strømforsyningssystem.
-          <br />
-          <br />
-          Hos NAOMA er vi eksperter i kørestrømsteknik og kan levere
-          skræddersyede løsninger til at imødekomme dine unikke behov. Vi kan
-          designe systemer som tage højde for alle dele såsom strømledninger,
-          skinner, kabler, transformerstationer og fordelingsanlæg, der sikrer
-          en stabil og pålidelig strømforsyning til jernbanen.
-          <br />
-          <br />
-          Vores team af specialister har ekspertise inden for kørestrømsdesign
-          og kan hjælpe med at optimere strømforsyningssystemet og forbedre
-          effektiviteten og pålideligheden i jernbanetransporten. Vi arbejder
-          med den nyeste teknologi og udstyr for at sikre, at vores
-          kørestrømsløsninger er fremtidssikrede og kan tilpasses fremtidige
-          behov og krav.
-          <div className="w-full">
-            <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
-              Kørestrøm
-            </h2>
-            <Image
-              src={image4}
-              alt="image4"
-              quality={100}
-              className="my-10 rounded-full "
-            ></Image>
-          </div>
-        </p>
-        <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
-          <div className=" w-3/4">
+        <div className="hidden sm:block ">
+          <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
+            Kørestrøm er en afgørende faktor inden for jernbanetransport, da den
+            leverer strøm til togene og muliggør bevægelse af lokomotiver og
+            vogne på sporene. Kørestrømssystemet består af en række teknologier
+            og udstyr, der skal fungere sammen for at opretholde et stabilt og
+            pålideligt strømforsyningssystem.
+            <br />
+            <br />
+            Hos NAOMA er vi eksperter i kørestrømsteknik og kan levere
+            skræddersyede løsninger til at imødekomme dine unikke behov. Vi kan
+            designe systemer som tage højde for alle dele såsom strømledninger,
+            skinner, kabler, transformerstationer og fordelingsanlæg, der sikrer
+            en stabil og pålidelig strømforsyning til jernbanen.
+            <br />
+            <br />
+            Vores team af specialister har ekspertise inden for kørestrømsdesign
+            og kan hjælpe med at optimere strømforsyningssystemet og forbedre
+            effektiviteten og pålideligheden i jernbanetransporten. Vi arbejder
+            med den nyeste teknologi og udstyr for at sikre, at vores
+            kørestrømsløsninger er fremtidssikrede og kan tilpasses fremtidige
+            behov og krav.
+            <div className="w-full">
+              <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
+                Kørestrøm
+              </h2>
+              <Image
+                src={image4}
+                alt="image4"
+                quality={100}
+                className="my-10 rounded-full "
+              ></Image>
+            </div>
+          </p>
+        </div>
+
+        <div className="block sm:hidden ">
+          <p className="my-10 items-center justify-center gap-6 text-base md:text-lg">
+            <div className="w-full">
+              <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
+                Kørestrøm
+              </h2>
+              <div className="justify-flex flex w-full justify-center">
+                <Image
+                  src={image4}
+                  alt="image4"
+                  quality={100}
+                  className="my-10 w-3/4 rounded-full "
+                ></Image>
+              </div>
+            </div>
+            Kørestrøm er en afgørende faktor inden for jernbanetransport, da den
+            leverer strøm til togene og muliggør bevægelse af lokomotiver og
+            vogne på sporene. Kørestrømssystemet består af en række teknologier
+            og udstyr, der skal fungere sammen for at opretholde et stabilt og
+            pålideligt strømforsyningssystem.
+            <br />
+            <br />
+            Hos NAOMA er vi eksperter i kørestrømsteknik og kan levere
+            skræddersyede løsninger til at imødekomme dine unikke behov. Vi kan
+            designe systemer som tage højde for alle dele såsom strømledninger,
+            skinner, kabler, transformerstationer og fordelingsanlæg, der sikrer
+            en stabil og pålidelig strømforsyning til jernbanen.
+            <br />
+            <br />
+            Vores team af specialister har ekspertise inden for kørestrømsdesign
+            og kan hjælpe med at optimere strømforsyningssystemet og forbedre
+            effektiviteten og pålideligheden i jernbanetransporten. Vi arbejder
+            med den nyeste teknologi og udstyr for at sikre, at vores
+            kørestrømsløsninger er fremtidssikrede og kan tilpasses fremtidige
+            behov og krav.
+          </p>
+        </div>
+
+        <p className="my-10 items-center justify-center gap-6 text-base sm:flex md:text-lg">
+          <div className=" w-full">
             <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
               Stærkstrøm
             </h2>
-            <Image
-              src={image5}
-              alt="image5"
-              quality={100}
-              className="my-10 rounded-full"
-            ></Image>
+            <div className="justify-flex flex w-full justify-center">
+              <Image
+                src={image5}
+                alt="image5"
+                quality={100}
+                className="my-10 w-3/4 rounded-full"
+              />
+            </div>
           </div>
           Stærkstrøm er en vigtig komponent i jernbanetransport, da det sikrer
           en stabil og pålidelig strømforsyning til jernbanesystemet. For at
@@ -164,43 +207,87 @@ export default function railway() {
           din jernbanetransport.
         </p>
 
-        <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
-          Jernbanesikkerhed er afgørende for en sikker og pålidelig drift af
-          jernbanesystemet. Det omfatter beskyttelse og potentialeudligning
-          (BPU), CE-certificering, risikovurdering og sikkerhedsledelse.
-          <br />
-          <br />
-          BPU inkluderer installation af jordingsanlæg og lynafledere for at
-          minimere risikoen for skader på udstyr og mennesker samt forhindre
-          farlige situationer forårsaget af spændingsforskelle.
-          <br />
-          <br />
-          CE-certificering garanterer, at jernbaneprodukter og -udstyr opfylder
-          de nødvendige sikkerhedsstandarder i EU.
-          <br />
-          <br />
-          Risikovurdering identificerer potentielle farer og risici i
-          jernbanesystemet, og sikkerhedsledelse involverer udvikling af
-          sikkerhedsplaner og -procedurer, træning af personale og overvågning
-          af sikkerhedspræstationer.
-          <br />
-          <br />
-          Vi har eksperter inden for BPU og CSM, og vi tilbyder professionel
-          rådgivning og service i forbindelse med jernbanesikkerhed. Kontakt os
-          for at høre mere om, hvordan vi kan hjælpe med at sikre en pålidelig
-          og sikker drift af dit jernbanesystem.
-          <div className=" w-2/5 md:w-3/4">
-            <h2 className="text-left text-xl font-semibold text-black md:text-3xl">
-              Jernbanesikkerhed
-            </h2>
-            <Image
-              src={image6}
-              alt="image6"
-              quality={100}
-              className="my-10 rounded-full"
-            ></Image>
-          </div>
-        </p>
+        <div className="hidden sm:block ">
+          <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
+            Jernbanesikkerhed er afgørende for en sikker og pålidelig drift af
+            jernbanesystemet. Det omfatter beskyttelse og potentialeudligning
+            (BPU), CE-certificering, risikovurdering og sikkerhedsledelse.
+            <br />
+            <br />
+            BPU inkluderer installation af jordingsanlæg og lynafledere for at
+            minimere risikoen for skader på udstyr og mennesker samt forhindre
+            farlige situationer forårsaget af spændingsforskelle.
+            <br />
+            <br />
+            CE-certificering garanterer, at jernbaneprodukter og -udstyr
+            opfylder de nødvendige sikkerhedsstandarder i EU.
+            <br />
+            <br />
+            Risikovurdering identificerer potentielle farer og risici i
+            jernbanesystemet, og sikkerhedsledelse involverer udvikling af
+            sikkerhedsplaner og -procedurer, træning af personale og overvågning
+            af sikkerhedspræstationer.
+            <br />
+            <br />
+            Vi har eksperter inden for BPU og CSM, og vi tilbyder professionel
+            rådgivning og service i forbindelse med jernbanesikkerhed. Kontakt
+            os for at høre mere om, hvordan vi kan hjælpe med at sikre en
+            pålidelig og sikker drift af dit jernbanesystem.
+            <div className=" w-2/5 md:w-3/4">
+              <h2 className="text-left text-xl font-semibold text-black md:text-3xl">
+                Jernbanesikkerhed
+              </h2>
+              <Image
+                src={image6}
+                alt="image6"
+                quality={100}
+                className="my-10 rounded-full"
+              ></Image>
+            </div>
+          </p>
+        </div>
+
+        <div className="block sm:hidden ">
+          <p className="my-10 items-center justify-center gap-6 text-base md:text-lg">
+            <div className=" w-full">
+              <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
+                Jernbanesikkerhed
+              </h2>
+              <div className="justify-flex flex w-full justify-center">
+                <Image
+                  src={image6}
+                  alt="image6"
+                  quality={100}
+                  className="my-10 w-3/4 rounded-full"
+                />
+              </div>
+            </div>
+            Jernbanesikkerhed er afgørende for en sikker og pålidelig drift af
+            jernbanesystemet. Det omfatter beskyttelse og potentialeudligning
+            (BPU), CE-certificering, risikovurdering og sikkerhedsledelse.
+            <br />
+            <br />
+            BPU inkluderer installation af jordingsanlæg og lynafledere for at
+            minimere risikoen for skader på udstyr og mennesker samt forhindre
+            farlige situationer forårsaget af spændingsforskelle.
+            <br />
+            <br />
+            CE-certificering garanterer, at jernbaneprodukter og -udstyr
+            opfylder de nødvendige sikkerhedsstandarder i EU.
+            <br />
+            <br />
+            Risikovurdering identificerer potentielle farer og risici i
+            jernbanesystemet, og sikkerhedsledelse involverer udvikling af
+            sikkerhedsplaner og -procedurer, træning af personale og overvågning
+            af sikkerhedspræstationer.
+            <br />
+            <br />
+            Vi har eksperter inden for BPU og CSM, og vi tilbyder professionel
+            rådgivning og service i forbindelse med jernbanesikkerhed. Kontakt
+            os for at høre mere om, hvordan vi kan hjælpe med at sikre en
+            pålidelig og sikker drift af dit jernbanesystem.
+          </p>
+        </div>
 
         <hr className=" my-20" />
 
