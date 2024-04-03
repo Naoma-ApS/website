@@ -53,12 +53,12 @@ export function Nav() {
         </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="ml-auto sm:hidden"
+          // className="ml-auto sm:hidden"
         />
       </NavbarContent>
 
       {isMenuOpen && (
-        <NavbarMenu>
+        <NavbarMenu className="bg-white/50 h-1/2 -mt-7 mb-7">
           {menuLinks.map((link, index) => (
             <NavbarMenuItem key={index}>
               <Link href={link.href}>
