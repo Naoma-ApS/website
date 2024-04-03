@@ -39,7 +39,7 @@ export default function HomePage() {
       </div>
 
       {/* mobile video */}
-      <div className="absolute -left-[34rem] top-0 h-full  w-[370vw] overflow-hidden sm:hidden">
+      <div className="absolute -left-[34rem] top-0 h-full  w-[370vw] overflow-x-hidden sm:hidden">
         <iframe
           className="realative h-full w-full grayscale"
           src="https://player.vimeo.com/video/819043327?autoplay=1&loop=1&background=1"

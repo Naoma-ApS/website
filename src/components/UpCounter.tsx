@@ -57,7 +57,7 @@ const UpCounter: React.FC<UpCounterProps> = ({
   return (
     <div
       ref={elementRef}
-      className="my-10 flex flex-col items-center border-t pr-10 sm:border-r  sm:border-t-0 md:my-0"
+      className="my-10 flex flex-col items-center border-t sm:pr-10 sm:border-r  sm:border-t-0 md:my-0"
     >
       <div className="mb-4 mt-10 flex size-12 items-center justify-center rounded-full bg-blue-100 sm:mt-0 md:size-24">
         {icon}
