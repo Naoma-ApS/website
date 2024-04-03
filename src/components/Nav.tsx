@@ -58,7 +58,7 @@ export function Nav() {
       </NavbarContent>
 
       {isMenuOpen && (
-        <NavbarMenu className="bg-white/50 h-1/2 -mt-7 mb-7">
+        <NavbarMenu className="-mt-7 mb-7 h-1/2 bg-white/50">
           {menuLinks.map((link, index) => (
             <NavbarMenuItem key={index}>
               <Link href={link.href}>

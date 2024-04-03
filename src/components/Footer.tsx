@@ -11,14 +11,16 @@ export function Footer() {
     <footer>
       <div className="z-40 w-full items-center justify-between border bg-white px-12 py-10 md:flex">
         <div>
-          <Link href={"/"} className="text-3xl">
-            <Image
-              src={logo as StaticImport}
-              alt="logo"
-              width={150}
-              height={80}
-            />
-          </Link>
+          <div className="mb-4 md:mb-0">
+            <Link href={"/"} className="text-3xl">
+              <Image
+                src={logo as StaticImport}
+                alt="logo"
+                width={150}
+                height={80}
+              />
+            </Link>
+          </div>
           <div className="ml-4 text-gray-400">
             <p>Innovative løsninger til en skiftende verden.</p>
             <p>Vi står klar med ekspertisen.</p>
@@ -44,7 +46,7 @@ export function Footer() {
           <p className="mt-4">kontakt@naoma.dk</p>
         </div>
       </div>
-      <div className="flex items-center justify-between px-12 py-8 text-gray-400">
+      <div className="flex items-center justify-between gap-48 px-12 py-8 text-gray-400 md:gap-0">
         <p>© {new Date().getFullYear()} Naoma. All rights reserved</p>
         <Link
           href={"https://dk.linkedin.com/company/naoma"}

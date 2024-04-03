@@ -17,11 +17,11 @@ export default function AboutUsPage() {
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <header>
-            <h1 className="text-center text-7xl font-bold text-white">
+            <h1 className="text-center text-4xl font-bold text-white md:text-7xl">
               Om NAOMA
             </h1>
             <hr />
-            <div className="text-center text-2xl text-white">
+            <div className="text-center text-lg text-white md:text-2xl">
               Stiftet i København - 2019
             </div>
           </header>
@@ -35,7 +35,7 @@ export default function AboutUsPage() {
 
         <div className="flex flex-col md:flex-row">
           <div className="w-full pr-8 md:w-3/5 ">
-            <p className="pt-5 text-xl">
+            <p className="pt-5 text-base md:text-xl">
               I 2019 blev NAOMA ApS (benævnt som Naoma), oprettet af
               ingeniørerne Nabil og Amel.
               <br />
@@ -47,7 +47,7 @@ export default function AboutUsPage() {
               <hr className="my-5" />
               NA(bil) O(g) (le)MA
             </p>
-            <p className="text-xl">
+            <p className="text-base md:text-xl">
               <br />
               Der drømte om at skabe en virksomhed, hvor de kunne hjælpe andre
               virksomheder og enkelte kunder med at styre deres projekter på en
@@ -91,7 +91,7 @@ export default function AboutUsPage() {
             />
           </div>
           <div className="w-full  md:w-3/5 ">
-            <p className="text-xl">
+            <p className="text-base md:text-xl">
               samarbejde med kunder, leverandører og andre interessenter vil vi
               sikre, at vores ydelser fremstår som kvalitetsydelser, der
               overholder gældende lov- og myndighedskrav.
@@ -132,7 +132,7 @@ export default function AboutUsPage() {
         </h1>
         <div className="flex flex-col md:flex-row">
           <div className="w-full pr-8 md:w-3/5 ">
-            <ul className="list-disc pl-8 text-xl">
+            <ul className="list-disc pl-8 text-base md:text-xl">
               <li>
                 Hos os er feedback en rutine. Vi er åbne for feedback fra alle
                 for at sikre en løbende optimering af kvaliteten på vores
