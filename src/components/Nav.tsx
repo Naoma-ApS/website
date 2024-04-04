@@ -57,7 +57,7 @@ export function Nav() {
         <NavbarMenu className="top-[36px] bg-transparent backdrop-blur-none ">
           {menuLinks.map((link, index) => (
             <NavbarMenuItem
-              className=" -mx-6 -my-[4px] bg-white/90 px-1 py-1 font-normal"
+              className=" -mx-6 -my-[4px] bg-white/90 px-1 py-1 font-light"
               key={index}
             >
               <Link href={link.href}>
