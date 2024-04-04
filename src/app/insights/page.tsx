@@ -1,7 +1,7 @@
-export default function AboutUsPage() {
+export default function insight() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative h-60 w-full">
         <div className="absolute inset-0 flex items-center justify-center">
           <header>
             <h1 className="text-7xl font-bold text-black">Insights</h1>
@@ -12,12 +12,11 @@ export default function AboutUsPage() {
           </header>
         </div>
       </div>
-
-      <div className="flex items-center justify-center ">
+      <hr className="mx-auto my-20 max-w-7xl" />
+      <div className="flex h-[100vh] w-screen items-center justify-center">
         <iframe
-          src="https://www.juicer.io/api/feeds/naoma/iframe?truncate=600"
-          width="1000"
-          height="800"
+          className="h-full w-full"
+          src="https://www.juicer.io/api/feeds/naoma/iframe?truncate=900"
         />
       </div>
     </>
