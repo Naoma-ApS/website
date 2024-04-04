@@ -42,8 +42,8 @@ export default function HomePage() {
       </div>
 
       {/* Mobile video */}
-      <div className="relative -mt-10">
-        <div className=" relative overflow-hidden bg-black">
+      <div className="relative -mt-10 sm:hidden">
+        <div className=" relative overflow-hidden">
           <iframe
             className="items-center justify-center grayscale"
             width="1405"
