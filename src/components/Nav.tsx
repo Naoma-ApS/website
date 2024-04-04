@@ -54,9 +54,12 @@ export function Nav() {
       </NavbarContent>
 
       {isMenuOpen && (
-        <NavbarMenu className="top-10 h-screen bg-white/50">
+        <NavbarMenu className="top-[36px] bg-transparent backdrop-blur-none ">
           {menuLinks.map((link, index) => (
-            <NavbarMenuItem key={index}>
+            <NavbarMenuItem
+              className=" -mx-6 -my-[4px] bg-white/90 px-1 py-1 font-normal"
+              key={index}
+            >
               <Link href={link.href}>
                 <p onClick={() => setIsMenuOpen(!isMenuOpen)}>{link.title}</p>
               </Link>

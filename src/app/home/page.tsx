@@ -50,7 +50,7 @@ export default function HomePage() {
             height="790"
             src="https://player.vimeo.com/video/819043327?autoplay=1&loop=1&background=1"
           />
-          <h1 className="absolute bottom-[180px] left-5 text-3xl font-semibold text-white drop-shadow-2xl sm:hidden">
+          <h1 className="absolute bottom-[180px] left-3 text-3xl font-semibold text-white drop-shadow-2xl sm:hidden">
             Innovative løsninger til en skiftende verden
           </h1>
         </div>
