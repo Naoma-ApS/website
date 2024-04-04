@@ -25,23 +25,7 @@ import { GrMapLocation } from "react-icons/gr";
 import { frontPageBlogs } from "@components/Blog/blogs/frontpage";
 import { BlogCard } from "@components/Blog/BlogCard";
 
-const HomePage: React.FC = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const $body = document.documentElement;
-      // "Disable" the horizontal scroll.
-      if ($body.scrollLeft !== 0) {
-        $body.scrollLeft = 0;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+export default function HomePage() {
   return (
     <>
       <div className="pt-5/100 relative hidden h-0 pb-[56.25%] sm:block">
@@ -57,33 +41,22 @@ const HomePage: React.FC = () => {
         </h1>
       </div>
 
-      {/* mobile video */}
-      <div className="max-w-7xl overflow-hidden">
-        {/* mobile video */}
-        <div className="absolute -left-[34rem] top-0 h-full w-[370vw] sm:hidden">
+      {/* Mobile video */}
+      <div className="relative -mt-10">
+        <div className=" relative overflow-hidden bg-black">
           <iframe
-            className="relative h-full w-full grayscale"
+            className="items-center justify-center grayscale"
+            width="1405"
+            height="790"
             src="https://player.vimeo.com/video/819043327?autoplay=1&loop=1&background=1"
-            allowFullScreen
-          />
+          ></iframe>
+          <h1 className="absolute bottom-24 left-10 text-3xl font-semibold text-white drop-shadow-2xl sm:hidden ">
+            Innovative løsninger til en skiftende verden
+          </h1>
         </div>
       </div>
 
-      <h1 className="absolute bottom-24 left-10 text-3xl font-semibold text-white drop-shadow-2xl sm:hidden ">
-        Innovative løsninger til en skiftende verden
-      </h1>
       <div className="mx-auto max-w-7xl px-5">
-        <div className="sm:hidden">
-          <hr className=" my-20 border-0 " />
-          <hr className=" my-20 border-0 " />
-          <hr className=" my-20 border-0 " />
-          <hr className=" my-20 border-0 " />
-          <hr className=" my-20 border-0 " />
-          <hr className=" my-20 border-0 " />
-          <hr className=" my-20 border-0 " />
-          <hr className=" my-20 border-0 " />
-        </div>
-
         <div className="mt-8 flex items-center justify-center">
           <h2 className="text-center text-2xl font-semibold text-black md:text-4xl">
             Udvalgte kunder, samarbejdspartnere og leverandører hos NAOMA
@@ -323,5 +296,4 @@ const HomePage: React.FC = () => {
       </div>
     </>
   );
-};
-export default HomePage;
+}

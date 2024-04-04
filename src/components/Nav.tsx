@@ -12,7 +12,6 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Button,
 } from "@nextui-org/react";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
