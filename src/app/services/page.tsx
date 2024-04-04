@@ -32,10 +32,8 @@ export default function services() {
         </div>
       </div>
 
-      {/* // ekspertise section */}
       <div className="mx-auto max-w-7xl px-5">
         <div className="my-8 grid gap-12 md:grid-cols-3">
-          {/* Column 1 */}
           <div className="col-span-1">
             <Link href="/services/Railway">
               <h2 className="flex items-center gap-2 text-lg font-normal hover:scale-105 hover:underline md:text-2xl">
@@ -60,7 +58,6 @@ export default function services() {
             </p>
           </div>
 
-          {/* Column 2 */}
           <div className="col-span-1">
             <Link href="/services/TrafficSystem">
               <h2 className="mb-4 flex items-center gap-2 text-lg font-normal hover:scale-105 hover:underline md:text-2xl">
@@ -87,7 +84,20 @@ export default function services() {
             </p>
           </div>
 
-          {/* Column 3 */}
+          <div className="col-span-1 ">
+            <Link href="/services/ClientConsultancy">
+              <h2 className="mb-4 flex items-center gap-2 text-lg font-normal hover:scale-105 hover:underline md:text-2xl">
+                <BsBuildings className="text-xl md:text-4xl" />
+                Bygherrerådgivning
+              </h2>
+            </Link>
+            <p className="text-md text-left ">
+              <ul className="list-disc pl-8 text-base md:text-lg">
+                <li>Opdateres...</li>
+              </ul>
+            </p>
+          </div>
+
           <div className="col-span-1">
             <Link href="/services/Management">
               <h2 className="mb-4 flex items-center gap-2 text-lg font-normal hover:scale-105 hover:underline md:text-2xl">
@@ -131,8 +141,6 @@ export default function services() {
             </p>
           </div>
 
-          {/* // ekspertise section */}
-          {/* Column 4 */}
           <div className="col-span-1">
             <Link href="/services/Energy">
               <h2 className="mb-4 flex items-center gap-2 text-lg font-normal hover:scale-105 hover:underline md:text-2xl">
@@ -166,27 +174,6 @@ export default function services() {
             </p>
           </div>
 
-          {/* Column 5 */}
-          <div className="col-span-1 ">
-            <Link href="/services/ClientConsultancy">
-              <h2 className="mb-4 flex items-center gap-2 text-lg font-normal hover:scale-105 hover:underline md:text-2xl">
-                <BsBuildings className="text-xl md:text-4xl" />
-                Bygherrerådgivning
-              </h2>
-            </Link>
-            <p className="text-md text-left ">
-              <ul className="list-disc pl-8 text-base md:text-lg">
-                {/* <Link
-                  href="/services/ClientConsultancy"
-                  className="hover:underline"
-                > */}
-                <li>Opdateres...</li>
-                {/* </Link> */}
-              </ul>
-            </p>
-          </div>
-
-          {/* Column 6 */}
           <div className="col-span-1">
             <Link href="/services/Automation">
               <h2 className="mb-4 flex items-center gap-2 text-lg font-normal hover:scale-105 hover:underline md:text-2xl">
@@ -195,9 +182,7 @@ export default function services() {
             </Link>
             <p className="text-md text-left ">
               <ul className="list-disc pl-8 text-base md:text-lg">
-                {/* <Link href="/services/Automation" className="hover:underline"> */}
                 <li>Opdateres...</li>
-                {/* </Link> */}
               </ul>
             </p>
           </div>

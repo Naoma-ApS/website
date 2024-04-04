@@ -33,9 +33,11 @@ export function Footer() {
           </h1>
           <p className="my-4"> Hverdage kl. 8:00 - kl. 16:30</p>
 
-          <h1 className="mt-4 flex gap-4 text-lg text-black md:text-2xl">
-            <FaPhone /> Kontakt
-          </h1>
+          <Link href={"/contact"}>
+            <h1 className="mt-4 flex gap-4 text-lg text-black hover:scale-105 hover:underline  md:text-2xl">
+              <FaPhone /> Kontakt
+            </h1>
+          </Link>
           <div className="my-4">
             <p>
               +45 31 62 76 61
