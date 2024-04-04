@@ -1,11 +1,11 @@
 import Image from "next/image";
-import cover from "@assets/BlogImages/1697022731568-1400x1076.jpg";
+import cover from "@assets/BlogImages/Skyrmbillede_2023-10-20_112142-transformed-700x538.png";
 
 export default function intern() {
   return (
     <>
       <div className="mx-auto max-w-7xl gap-12 px-5 py-16">
-        <h1 className="mb-5 text-2xl font-semibold md:mb-10 md:text-5xl">
+        <h1 className="mb-5 text-center text-2xl font-semibold md:mb-10 md:text-5xl">
           <span className="text-black">
             Praktikophold med mulighed for afgangsprojekt
           </span>

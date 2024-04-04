@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image1 from "@assets/om_os_stock-scaled.jpg";
+import image1 from "@assets/coverJobs.jpeg";
 import { jobs } from "src/app/about/jobs/jobs";
 import { BlogCard } from "@components/Blog/BlogCard";
 

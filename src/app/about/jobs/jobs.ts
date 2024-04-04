@@ -6,7 +6,7 @@ import image10 from "@assets/BlogImages/Skyrmbillede_2023-10-20_112142-transform
 export const jobs: Blog[] = [
   {
     title: "Praktikophold med mulighed for afgangsprojekt",
-    imageSrc: image8,
+    imageSrc: image10,
     alt: "Praktikophold med mulighed for afgangsprojekt",
     href: "/about/jobs/Intern",
     content: "Praktikophold med mulighed for afgangsprojekt",
@@ -20,7 +20,7 @@ export const jobs: Blog[] = [
   },
   {
     title: "Ingeniør til Kørestrøm",
-    imageSrc: image10,
+    imageSrc: image8,
     href: "/about/jobs/korestrom",
     alt: "Ingeniør til Kørestrøm",
     content: "Ingeniør til Kørestrøm",

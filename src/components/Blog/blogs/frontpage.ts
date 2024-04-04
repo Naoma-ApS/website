@@ -7,7 +7,7 @@ import image11 from "@assets/BlogImages/stroem-1400x1076.jpg";
 export const frontPageBlogs: Blog[] = [
   {
     title: "Praktikophold med mulighed for afgangsprojekt",
-    imageSrc: image8,
+    imageSrc: image10,
     alt: "Praktikophold med mulighed for afgangsprojekt",
     href: "/about/jobs/Intern",
     content: "Praktikophold med mulighed for afgangsprojekt",
@@ -21,7 +21,7 @@ export const frontPageBlogs: Blog[] = [
   },
   {
     title: "Ingeniør til Kørestrøm",
-    imageSrc: image10,
+    imageSrc: image8,
     alt: "Ingeniør til Kørestrøm",
     href: "/about/jobs/korestrom",
     content: "Ingeniør til Kørestrøm",
