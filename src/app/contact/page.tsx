@@ -119,6 +119,16 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
+
+      <div>
+        <div id="map" className="h-[400px] w-screen">
+          <iframe
+            className="h-full w-full"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=Knabrostr%C3%A6de%203,%201210%20%20K%C3%B8benhavn+(NAOMA)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          />
+        </div>
+      </div>
     </>
   );
 }
