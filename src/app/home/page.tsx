@@ -43,14 +43,14 @@ export default function HomePage() {
 
       {/* Mobile video */}
       <div className="relative -mt-10 sm:hidden">
-        <div className=" relative overflow-hidden">
+        <div className="relative overflow-hidden">
           <iframe
-            className="items-center justify-center grayscale"
-            width="1405"
+            className="relative -left-[500px] grayscale"
+            width="1404"
             height="790"
             src="https://player.vimeo.com/video/819043327?autoplay=1&loop=1&background=1"
-          ></iframe>
-          <h1 className="absolute bottom-24 left-10 text-3xl font-semibold text-white drop-shadow-2xl sm:hidden ">
+          />
+          <h1 className="absolute bottom-24 left-10 text-3xl font-semibold text-white drop-shadow-2xl sm:hidden">
             Innovative løsninger til en skiftende verden
           </h1>
         </div>
