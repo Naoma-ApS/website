@@ -52,9 +52,11 @@ export default function ContactPage() {
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <header>
-            <h1 className="text-center text-4xl md:text-7xl font-bold text-white">Kontakt</h1>
+            <h1 className="text-center text-4xl font-bold text-white md:text-7xl">
+              Kontakt
+            </h1>
             <hr />
-            <div className="text-center text-lg md:text-2xl text-white">
+            <div className="text-center text-lg text-white md:text-2xl">
               Søg nye muligheder
             </div>
           </header>
@@ -125,7 +127,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="my-auto mx-5 w-2/3">
+          <div className="mx-5 my-auto w-2/3">
             <Image
               className="w-1/3 md:w-1/5"
               src={userIcon}
