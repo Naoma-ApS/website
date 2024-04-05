@@ -63,7 +63,7 @@ export default function ContactPage() {
 
       <div className="mx-auto max-w-7xl">
         <div className="justify-flex flex gap-5">
-          <div className=" my-10 w-2/3 justify-center border-r px-4 py-8 lg:py-8">
+          <div className=" my-10 w-2/4 justify-center border-r px-4 py-8 md:w-2/3 lg:py-8">
             <div className="flex flex-col gap-4 md:gap-8">
               <Input
                 {...register("email", {
@@ -141,7 +141,7 @@ export default function ContactPage() {
               <p className="mt-4">kontakt@naoma.dk</p>
             </div>
 
-            <hr className="my-3 mr-5" />
+            <hr className="my-3 md:mr-5" />
             <div>
               <p className="text-[1rem] font-normal md:text-xl">København</p>
               <p className="text-[0.7rem] md:text-base">
