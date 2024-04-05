@@ -62,8 +62,8 @@ export default function ContactPage() {
       </div>
 
       <div className="mx-auto max-w-7xl">
-        <div className="justify-flex flex gap-5">
-          <div className=" my-10 w-2/4 justify-center border-r px-4 py-8 md:w-2/3 lg:py-8">
+        <div className="justify-flex flex">
+          <div className=" my-10 w-4/5 justify-center border-r px-4 py-8 md:w-2/3 lg:py-8">
             <div className="flex flex-col gap-4 md:gap-8">
               <Input
                 {...register("email", {
@@ -99,7 +99,7 @@ export default function ContactPage() {
                   type="submit"
                   disabled={isSubmitting || success}
                   onClick={handleSubmit(onSubmit)}
-                  className="w-3/4 rounded-full border border-black bg-black px-4 py-2 text-white duration-100 hover:scale-105 hover:shadow-xl md:w-1/5"
+                  className="w-4/5 rounded-full border border-black bg-black px-4 py-2 text-white duration-100 hover:scale-105 hover:shadow-xl md:w-1/5"
                 >
                   Send besked
                 </Button>
@@ -125,14 +125,14 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="my-auto w-1/3">
+          <div className="my-auto mx-5 w-2/3">
             <Image
               className="w-1/3 md:w-1/5"
               src={userIcon}
               alt="icon"
               quality={100}
             />
-            <div className="mx4-4 my-4 text-[1rem] font-normal md:text-xl">
+            <div className="my-4 text-[0.7rem] font-normal md:text-xl">
               <p>
                 +45 31 62 76 61
                 <br />
@@ -143,7 +143,7 @@ export default function ContactPage() {
 
             <hr className="my-3 md:mr-5" />
             <div>
-              <p className="text-[1rem] font-normal md:text-xl">København</p>
+              <p className="text-[0.7rem] font-normal md:text-xl">København</p>
               <p className="text-[0.7rem] md:text-base">
                 Knabrostræde 3, 3 sal, <br />
                 1210 København K <br />
