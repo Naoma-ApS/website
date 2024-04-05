@@ -101,7 +101,7 @@ export default function ContactPage() {
                   type="submit"
                   disabled={isSubmitting || success}
                   onClick={handleSubmit(onSubmit)}
-                  className="w-4/5 rounded-full border border-black bg-black px-4 py-2 text-white duration-100 hover:scale-105 hover:shadow-xl md:w-1/5"
+                  className="w-4/5 rounded-full border border-black bg-black px-4 py-2 text-white duration-100 hover:scale-105 hover:shadow-xl md:w-2/5"
                 >
                   Send besked
                 </Button>

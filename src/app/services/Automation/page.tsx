@@ -8,7 +8,6 @@ import image3 from "@assets/komplet.jpg";
 import image4 from "@assets/automation2.jpg";
 
 export default function railway() {
-  const testningOgidriftsættelse = "";
   return (
     <>
       <div className="relative h-96 w-full">
