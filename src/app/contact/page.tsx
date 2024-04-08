@@ -64,8 +64,8 @@ export default function ContactPage() {
       </div>
 
       <div className="mx-auto max-w-7xl">
-        <div className="justify-flex flex">
-          <div className=" my-10 w-4/5 justify-center border-r px-4 py-8 md:w-2/3 lg:py-8">
+        <div className="justify-flex flex w-full flex-col gap-2 md:flex-row">
+          <div className=" md:w-9/10 my-10 justify-center px-4 py-8 md:w-4/5 md:border-r lg:py-8">
             <div className="flex flex-col gap-4 md:gap-8">
               <Input
                 {...register("email", {
@@ -127,14 +127,9 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="mx-5 my-auto w-2/3">
-            <Image
-              className="w-1/3 md:w-1/5"
-              src={userIcon}
-              alt="icon"
-              quality={100}
-            />
-            <div className="my-4 text-[0.7rem] font-normal md:text-xl">
+          <div className="mx-5 my-auto md:w-1/5">
+            <Image className="w-1/5" src={userIcon} alt="icon" quality={100} />
+            <div className="my-4 text-[1rem] font-normal md:text-xl">
               <p>
                 +45 31 62 76 61
                 <br />
@@ -144,9 +139,9 @@ export default function ContactPage() {
             </div>
 
             <hr className="my-3 md:mr-5" />
-            <div>
-              <p className="text-[0.7rem] font-normal md:text-xl">København</p>
-              <p className="text-[0.7rem] md:text-base">
+            <div className=" mb-8 md:mb-0">
+              <p className="text-[1rem] font-normal md:text-xl">København</p>
+              <p className="text-[0.8rem] md:text-base">
                 Knabrostræde 3, 3 sal, <br />
                 1210 København K <br />
                 Danmark
