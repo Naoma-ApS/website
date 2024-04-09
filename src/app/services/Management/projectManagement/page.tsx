@@ -1,5 +1,13 @@
 import Image from "next/image";
 import cover from "@assets/projektledelse.jpg";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projektledelse",
+
+  description:
+    "God og kompetent projektledelse er en forudsætning for et vellykket resultat – uanset opgavetypen. Hos NAOMA forstår vi, at energi-, infrastruktur-, bygge- og anlægsprojekter er omkostningstunge og kræver professionel projektledelse, hvis kundens ønsker og ambitioner skal realiseres.",
+};
 
 export default function projectManagement() {
   return (

@@ -1,6 +1,14 @@
 import Image from "next/image";
 import cover from "@assets/Management.png";
 import Link from "next/link";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Management",
+
+  description:
+    "Hos NAOMA arbejder vi for vellykkede projekter, hvor analyser, vurderinger, projektering, rådgivning samt respekt for kvalitet, tid og økonomi kører tæt parløb med kundens vision.",
+};
 
 export default function management() {
   return (

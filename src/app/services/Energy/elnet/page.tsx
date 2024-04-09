@@ -1,5 +1,13 @@
 import Image from "next/image";
 import cover from "@assets/coverElnet.jpg";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "EL-net",
+
+  description:
+    "Hos NAOMA rådgiver vi inden for kendte tekniske løsninger til elnettet. Det er afgørende, at brugerne har adgang til et pålideligt transmissions- og distributionsnet, hvorfor vi fokuserer på holdbare og langsigtede løsninger med høj forsyningskvalitet.",
+};
 
 export default function storage() {
   return (

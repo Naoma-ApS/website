@@ -13,7 +13,7 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import type { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);

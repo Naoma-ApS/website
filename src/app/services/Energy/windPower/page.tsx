@@ -1,5 +1,13 @@
 import Image from "next/image";
 import cover from "@assets/windenergy.jpg";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Vindenergi",
+
+  description:
+    "Danmark hører til de førende lande inden for udnyttelse og udvikling af vindenergi. De store fordele er, at vindenergi er en vedvarende energikilde, der tilmed er tæt på CO2-neutral.",
+};
 
 export default function windPower() {
   return (

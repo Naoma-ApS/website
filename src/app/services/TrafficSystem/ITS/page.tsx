@@ -1,5 +1,13 @@
 import Image from "next/image";
 import cover from "@assets/itsCover.jpeg";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Intelligent Traffic System (ITS)",
+
+  description:
+    "Hos NAOMA specialiserer vi os i design, implementering og optimering af intelligente trafiksystemer (ITS). Vores team af erfarne ingeniører, transportplanlæggere og softwareudviklere benytter de nyeste teknologier til at forbedre effektiviteten, sikkerheden og bæredygtigheden i transportnetværkene for vores kunder i både den offentlige og private sektor.",
+};
 
 export default function ITS() {
   return (

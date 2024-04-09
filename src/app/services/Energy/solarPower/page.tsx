@@ -1,5 +1,13 @@
 import Image from "next/image";
 import cover from "@assets/coverSol.jpg";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Solenergi",
+
+  description:
+    "Solen udgør den største energikilde på jorden og er en af de mest kendte bæredygtige energityper. Solenergi repræsenterer – på samme måde som vindenergi – en af de største vedvarende energiformer, vi har til rådighed, og er derfor en vigtig kilde i fremtidens grønne energiforsyning.",
+};
 
 export default function solarPower() {
   return (

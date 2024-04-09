@@ -1,5 +1,13 @@
 import Image from "next/image";
 import cover from "@assets/bms.png";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Lagring & BMS",
+
+  description:
+    "Lagring og BMS (Battery Management System) giver nu endnu bedre forudsætninger for at maksimerer gevinsten fra den grønne energi. F.eks. producerer et solcelleanlæg mest energi omkring middagstid, hvorimod forbruget typisk er størst om aftenen. Det forhold står skævt, da energien sendes ud til en lav pris for blot at måtte tilbagekøbes senere til en højere afgiftsbelagt pris, når elnettet er belastet.",
+};
 
 export default function storage() {
   return (

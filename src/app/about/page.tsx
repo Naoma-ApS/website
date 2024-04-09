@@ -3,6 +3,14 @@ import image1 from "@assets/om_os_stock-scaled.jpg";
 import image2 from "@assets//Per&jonas.jpg";
 import image3 from "@assets/Nabil&amel.jpg";
 import image4 from "@assets/TableFromTop.jpg";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Om NAOMA",
+
+  description:
+    "I 2019 blev NAOMA ApS (benævnt som Naoma), oprettet af ingeniørerne Nabil og Amel. De drømte om at skabe en virksomhed, hvor de kunne hjælpe andre virksomheder og enkelte kunder med at styre deres projekter på en optimerbar og tidsbesparende måde. Grundlæggerne bag NAOMA har en solid profil med sammenlagt 70+ års erfaring som projektledere på bred vifte af tekniske fag. De har således taget del i udviklingen på jernbaneområdet og inden for byggebranchen. ",
+};
 
 export default function AboutUsPage() {
   return (
@@ -50,7 +58,7 @@ export default function AboutUsPage() {
             </p>
             <p className="text-base md:text-xl">
               <br />
-              Der drømte om at skabe en virksomhed, hvor de kunne hjælpe andre
+              De drømte om at skabe en virksomhed, hvor de kunne hjælpe andre
               virksomheder og enkelte kunder med at styre deres projekter på en
               optimerbar og tidsbesparende måde. Grundlæggerne bag NAOMA har en
               solid profil med sammenlagt 70+ års erfaring som projektledere på

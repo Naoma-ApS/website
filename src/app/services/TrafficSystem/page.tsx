@@ -6,6 +6,14 @@ import image4 from "@assets/ITS.png";
 import image5 from "@assets/trafik.jpeg";
 import { frontPageBlogs } from "@components/Blog/blogs/frontpage";
 import { BlogCard } from "@components/Blog/BlogCard";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Veje",
+
+  description:
+    "Et moderne vejdesign er et komplekst fagområde, hvor trafikale behov, fremkommelighed, sikkerhed og tilpasning til omgivelserne alt sammen bør være en del af helhedstænkningen. Hos NAOMA forener vi trafikal, miljømæssig og socioøkonomisk indsigt med professionel projektering og styring, når der skal anlægges nye veje, motorveje, stisystemer etc.",
+};
 
 export default function railway() {
   return (

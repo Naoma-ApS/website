@@ -1,5 +1,13 @@
 import Image from "next/image";
 import cover from "@assets/projektledelse.jpg";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Risikoledelse",
+
+  description:
+    "God risikoledelse minimerer risici og optimerer sikkerheden i de sektorer, der arbejdes inden for. Hos NAOMA tager vi sikkerheden meget alvorligt – både i forhold til det personale, der arbejder på projektet, men også for de almene brugere, som f.eks. passagerer ved jernbanen, trafikanter etc.",
+};
 
 export default function riskManagement() {
   return (

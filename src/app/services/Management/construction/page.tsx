@@ -4,6 +4,14 @@ import Image1 from "@assets/byggeledelse.jpeg";
 import logo from "@assets/logoNaoma.svg";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import type { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Byggeledelse",
+
+  description:
+    "Professionel og effektiv byggeledelse er ikke bare essentielt for at realisere kundens vision, men altafgørende for tidsstyring, økonomi og kvalitet.",
+};
 
 export default function highCurrent() {
   return (

@@ -1,5 +1,13 @@
 import Image from "next/image";
 import cover from "@assets/coverStarkstrom.jpg";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Stærkstrøm",
+
+  description:
+    "Sikkerhed og effektivitet er mærkesager hos NAOMA. Som rådgivende ingeniører tager vi vores arbejde med el-anlæg meget alvorligt, særligt da sikrings- og stærkstrømsarbejde har stor relation til de tilstødende områder, der ofte er fyldt med personer.",
+};
 
 export default function highCurrent() {
   return (

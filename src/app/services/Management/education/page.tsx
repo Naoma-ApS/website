@@ -1,5 +1,12 @@
 import Image from "next/image";
 import cover from "@assets/projektledelse.jpg";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Undervisning",
+
+  description: "",
+};
 
 export default function riskManagement() {
   return (

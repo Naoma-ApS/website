@@ -1,3 +1,11 @@
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Insights",
+
+  description:
+    " I løbet af det seneste år har NAOMA udviklet sig betydeligt. Vi har haft mange nye betydningsfulde tilføjelser til vores team i år",
+};
 export default function insight() {
   return (
     <>

@@ -1,5 +1,5 @@
 import { env } from "@env";
-import { MetadataRoute } from "next";
+import { type MetadataRoute } from "next";
 
 function generateSitemap(): MetadataRoute.Sitemap {
   const endpointArray = [

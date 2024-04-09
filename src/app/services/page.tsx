@@ -7,6 +7,14 @@ import { SlEnergy } from "react-icons/sl";
 import { BsBuildings } from "react-icons/bs";
 import { LuCode2 } from "react-icons/lu";
 import Link from "next/link";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ydelser",
+
+  description:
+    "I dag har NAOMA en bred portefølje af ydelser, der omfatter jernbane, el, bygherrerådgivning, ledelse, automation, undervisning og energi.",
+};
 
 export default function services() {
   return (

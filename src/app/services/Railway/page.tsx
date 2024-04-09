@@ -7,6 +7,14 @@ import image5 from "@assets/starkstrom.jpg";
 import image6 from "@assets/sikkerhed.jpeg";
 import { frontPageBlogs } from "@components/Blog/blogs/frontpage";
 import { BlogCard } from "@components/Blog/BlogCard";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Jernbane",
+
+  description:
+    "Som ingeniører er vi hver dag med til at realisere nutidens og fremtidens baneprojekter. Vores kernefokus er skabe de bedste miljøvenlige transportmuligheder i et moderne samfund.",
+};
 
 export default function railway() {
   return (

@@ -5,6 +5,14 @@ import vind from "@assets/Wind_power.jpg";
 import sol from "@assets/solar-panel.jpg";
 import battery from "@assets/battery.jpg";
 import Link from "next/link";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Energi",
+
+  description:
+    "Nye energikoncepter og grøn omstilling står højt på den danske såvel som internationale politiske dagsorden. Hos NAOMA er vi specialister i effektive og bæredygtige løsninger inden for både vindenergi, solenergi, elnettet samt lagring og BMS.",
+};
 
 export default function Energy() {
   return (

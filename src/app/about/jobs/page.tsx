@@ -3,7 +3,16 @@ import image1 from "@assets/coverJobs.jpeg";
 import { jobs } from "src/app/about/jobs/jobs";
 import { BlogCard } from "@components/Blog/BlogCard";
 
-export default function AboutUsPage() {
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Jobs",
+
+  description:
+    "Skab din karriere med NAOMA: Udforsk vores ledige stillinger!,  Praktikophold med mulighed for afgangsprojekt · Stærkstrømsingeniør til Jernbanen · Ingeniør til Kørestrøm",
+};
+
+export default function Jobs() {
   return (
     <>
       <div className="relative h-96 w-full">

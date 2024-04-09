@@ -4,6 +4,14 @@ import { FaArrowRight } from "react-icons/fa";
 import image2 from "@assets/regression-analysis-veje-630x624.png";
 import image3 from "@assets/normal-disti-veje.png";
 import image4 from "@assets/AI-veje.png";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Trafik Analyse",
+
+  description:
+    "Mens byerne fortsætter med at vokse, og antallet af køretøjer på vejene stiger, bliver behovet for effektive transportsystemer mere presserende. Det er her, trafikanalyse kommer ind i billedet. Ved at analysere data fra forskellige kilder og anvende statistiske og matematiske modeller kan vi opnå værdifulde indsigter, der hjælper os med at optimere transportsystemer, reducere trafikpropper og forbedre sikkerheden.",
+};
 
 export default function ITS() {
   return (

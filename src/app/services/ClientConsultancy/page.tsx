@@ -2,6 +2,14 @@ import Image from "next/image";
 import cover from "@assets/BYG.jpg";
 import image3 from "@assets/value.jpg";
 import image4 from "@assets/Erfaring.jpg";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bygherrerådgivning",
+
+  description:
+    "Hos NAOMA tilbyder vi specialiseret bygherrerådgivning til både det offentligt og private kunder. Som bygherrerådgiver og tæt sparringspartner sikrer vi, at det er dine interesser, der bliver varetaget igennem hele forløbet. Vi er med helt fra den indledende behovsafklaring til den endelige realisering og aflevering af projektet.",
+};
 export default function railway() {
   return (
     <>

@@ -22,6 +22,14 @@ import { LuCode2 } from "react-icons/lu";
 import { GrMapLocation } from "react-icons/gr";
 import { frontPageBlogs } from "@components/Blog/blogs/frontpage";
 import { BlogCard } from "@components/Blog/BlogCard";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NAOMA",
+
+  description:
+    "NAOMA er drevet af et team af erfarne og dygtige talenter, der leverer innovative løsninger til vores kunder. Kvalitet, samarbejde og løbende udvikling gennem dialog med kunder og leverandører, er vores primære fokus i et hvert projekt. NAOMA har en bred portefølje af ydelser, der omfatter jernbane, el, bygherrerådgivning, ledelse, automatisering, undervisning og energi.",
+};
 
 export default function HomePage() {
   return (

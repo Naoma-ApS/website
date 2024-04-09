@@ -1,5 +1,13 @@
 import Image from "next/image";
 import cover from "@assets/jernbanesikkerhed.jpg";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Jernbanesikkerhed",
+
+  description:
+    "Et større fokus på sikkerhed giver færre ulykker. Sikkerhedsplanlægning for baneprojektet er essentielt præventivt arbejde, der skal forhindre personskader samt skader på materiel. Derfor bør sikkerhedsplaner indtænkes allerede fra projektstart, med henblik på at minimere risici samt leve op til krav for myndigheder og etablere et professionelt arbejdsmiljø.",
+};
 
 export default function highCurrent() {
   return (
