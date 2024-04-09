@@ -1,7 +1,7 @@
 import Image from "next/image";
 import cover from "@assets/BlogImages/mjba_siteinspection-1400x1076.jpeg";
 
-export default function korestrom() {
+export default function driveCurrent() {
   return (
     <>
       <div className="mx-auto max-w-7xl gap-12 px-5 py-16">

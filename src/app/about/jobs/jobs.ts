@@ -1,4 +1,4 @@
-import { Blog } from "src/components/Blog/types";
+import type { Blog } from "src/components/Blog/types";
 import image8 from "@assets/BlogImages/1697022731568-1400x1076.jpg";
 import image9 from "@assets/BlogImages/mjba_siteinspection-1400x1076.jpeg";
 import image10 from "@assets/BlogImages/Skyrmbillede_2023-10-20_112142-transformed-700x538.png";
@@ -21,7 +21,7 @@ export const jobs: Blog[] = [
   {
     title: "Ingeniør til Kørestrøm",
     imageSrc: image8,
-    href: "/about/jobs/korestrom",
+    href: "/about/jobs/driveCurrent",
     alt: "Ingeniør til Kørestrøm",
     content: "Ingeniør til Kørestrøm",
   },

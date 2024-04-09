@@ -1,7 +1,7 @@
 import Image from "next/image";
 import cover from "@assets/BlogImages/stroem-1400x1076.jpg";
 
-export default function korestrom() {
+export default function highCurrent() {
   return (
     <>
       <div className="mx-auto max-w-7xl gap-12 px-5 py-16">

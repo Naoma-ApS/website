@@ -1,7 +1,7 @@
 import Image from "next/image";
 import cover from "@assets/coverStarkstrom.jpg";
 
-export default function starkstrom() {
+export default function highCurrent() {
   return (
     <>
       <div className="relative h-96 w-full">

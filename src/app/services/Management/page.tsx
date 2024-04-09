@@ -75,19 +75,22 @@ export default function management() {
           </h1>
           Vi hjælper blandt andet med: <br />
           <ul className="list-disc pl-8  text-base md:text-lg">
-            <Link href="Management/projektledelse" className="hover:underline">
+            <Link
+              href="Management/projectManagement"
+              className="hover:underline"
+            >
               <li>Projektledelse</li>
             </Link>
-            <Link href="Management/risikoledelse">
+            <Link href="Management/riskManagement">
               <li className="hover:underline">Risikoledelse</li>
             </Link>
-            <Link href="Management/byggeledelse">
+            <Link href="Management/construction">
               <li className="hover:underline">Byggeledelse</li>
             </Link>
-            <Link href="Management/strategiudvikling">
+            <Link href="Management/strategyDevelopment">
               <li className="hover:underline">Strategiudvikling</li>
             </Link>
-            <Link href="Management/undervisning">
+            <Link href="Management/education">
               <li className="hover:underline">Undervisning</li>
             </Link>
           </ul>

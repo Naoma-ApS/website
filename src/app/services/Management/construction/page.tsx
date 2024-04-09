@@ -3,9 +3,9 @@ import cover from "@assets/coverBygge.jpeg";
 import Image1 from "@assets/byggeledelse.jpeg";
 import logo from "@assets/logoNaoma.svg";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import type { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-export default function starkstrom() {
+export default function highCurrent() {
   return (
     <>
       <div className="relative h-96 w-full">

@@ -1,4 +1,4 @@
-import { Blog } from "../types";
+import type { Blog } from "../types";
 import image8 from "@assets/BlogImages/1697022731568-1400x1076.jpg";
 import image9 from "@assets/BlogImages/mjba_siteinspection-1400x1076.jpeg";
 import image10 from "@assets/BlogImages/Skyrmbillede_2023-10-20_112142-transformed-700x538.png";
@@ -23,7 +23,7 @@ export const frontPageBlogs: Blog[] = [
     title: "Ingeniør til Kørestrøm",
     imageSrc: image8,
     alt: "Ingeniør til Kørestrøm",
-    href: "/about/jobs/korestrom",
+    href: "/about/jobs/driveCurrent",
     content: "Ingeniør til Kørestrøm",
   },
   {

@@ -43,15 +43,12 @@ export default function services() {
             <p className="text-md text-left ">
               <ul className="list-disc pl-8 text-base md:text-lg">
                 <Link
-                  href="/services/Railway/starkstrom"
+                  href="/services/Railway/highCurrent"
                   className="hover:underline"
                 >
                   <li className=" hover:scale-105">Stærkstrøm</li>
                 </Link>
-                <Link
-                  href="/services/Railway/sikkerhed"
-                  className="hover:underline"
-                >
+                <Link href="/services/Railway/risk" className="hover:underline">
                   <li className=" hover:scale-105">Jernbanesikkerhed</li>
                 </Link>
               </ul>
@@ -75,7 +72,7 @@ export default function services() {
                   </li>
                 </Link>
                 <Link
-                  href="/services/TrafficSystem/trafikAnalyse"
+                  href="/services/TrafficSystem/trafficAnalysis"
                   className="hover:underline"
                 >
                   <li className=" hover:scale-105">Trafik Analyse</li>
@@ -108,31 +105,31 @@ export default function services() {
             <p className="text-md text-left ">
               <ul className="list-disc pl-8 text-base md:text-lg">
                 <Link
-                  href="/services/Management/byggeledelse"
+                  href="/services/Management/construction"
                   className="hover:underline"
                 >
                   <li className=" hover:scale-105">Byggeledelse</li>
                 </Link>
                 <Link
-                  href="/services/Management/projektledelse"
+                  href="/services/Management/projectManagement"
                   className="hover:underline"
                 >
                   <li className=" hover:scale-105">Projektledelse</li>
                 </Link>
                 <Link
-                  href="/services/Management/risikoledelse"
+                  href="/services/Management/riskManagement"
                   className="hover:underline"
                 >
                   <li className=" hover:scale-105">Risikoledelse</li>
                 </Link>
                 <Link
-                  href="/services/Management/strategiudvikling"
+                  href="/services/Management/strategyDevelopment"
                   className="hover:underline"
                 >
                   <li className=" hover:scale-105">Strategiudvikling</li>
                 </Link>
                 <Link
-                  href="/services/Management/undervisning"
+                  href="/services/Management/education"
                   className="hover:underline"
                 >
                   <li className=" hover:scale-105">Undervisning</li>
