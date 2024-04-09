@@ -3,7 +3,7 @@ import cover from "@assets/automation.jpg";
 import image3 from "@assets/komplet.jpg";
 import image4 from "@assets/automation2.jpg";
 import { type Metadata } from "next";
-import { AutomationAccordion } from "@components/automationAccordion";
+import { AutomationAccordion } from "@components/AutomationAccordion";
 
 export const metadata: Metadata = {
   title: "Automation",
