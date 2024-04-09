@@ -4,7 +4,7 @@ import logo from "@assets/logoNaoma.svg";
 import { FaPhone } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { type StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export function Footer() {
   return (

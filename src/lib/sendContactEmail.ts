@@ -1,6 +1,6 @@
 "use server";
 
-import { ContactFormData } from "@app/contact/page";
+import {type ContactFormData } from "@app/contact/page";
 import { env } from "@env";
 import { Resend } from "resend";
 
