@@ -1,10 +1,8 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import "react-multi-carousel/lib/styles.css";
 import UpCounter from "src/components/UpCounter";
-import React, { useEffect } from "react";
+import React from "react";
 
 import Aarsleff from "@assets/LOGOer/Aarsleff_Rail_Primaer_tofarver-removebg-preview-300x300.png";
 import midtjyske from "@assets/LOGOer/Logo_midtjyske_jernbaner-removebg-preview-300x168.png";
