@@ -3,7 +3,7 @@
 import React from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 
-export function automationAccordion() {
+export function AutomationAccordion() {
   return (
     <Accordion>
       <AccordionItem
@@ -73,5 +73,3 @@ export function automationAccordion() {
     </Accordion>
   );
 }
-
-export default automationAccordion;

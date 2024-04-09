@@ -2,8 +2,8 @@ import Image from "next/image";
 import cover from "@assets/automation.jpg";
 import image3 from "@assets/komplet.jpg";
 import image4 from "@assets/automation2.jpg";
-// import { automationAccordion } from "@components/automationAccordion";
 import { type Metadata } from "next";
+import { AutomationAccordion } from "@components/automationAccordion";
 
 export const metadata: Metadata = {
   title: "Automation",
@@ -161,7 +161,7 @@ export default function automation() {
           <h2 className=" text-xl font-semibold  md:text-3xl">
             Trin til en Turnkey-løsning
           </h2>
-          {/* <automationAccordion/> */}
+          <AutomationAccordion />
         </div>
       </div>
     </>
