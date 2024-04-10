@@ -101,7 +101,7 @@ export default function HomePage() {
             <Image src={wsp} alt="Image 6" width={120} height={200} />
           </div>
         </div>
-        <hr className=" my-16" />
+        <hr className=" my-20" />
 
         {/* Løsninger til en verden i forandring */}
         <div className="flex items-center justify-center">
