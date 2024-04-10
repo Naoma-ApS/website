@@ -1,2 +1,5 @@
 User-agent: *
 Allow: /  
+
+Sitemap: https://www.naoma.dk/sitemap.xml
+Sitemap: https://naoma.dk/sitemap.xml
