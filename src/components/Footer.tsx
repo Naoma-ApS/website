@@ -28,11 +28,6 @@ export function Footer() {
           </div>
         </div>
         <div className="mr-4 mt-12 text-gray-400 md:mt-0 md:text-xl">
-          <h1 className="flex gap-4 text-lg text-black md:text-2xl ">
-            <FaClock /> Åbningstider
-          </h1>
-          <p className="my-4"> Hverdage kl. 8:00 - kl. 16:30</p>
-
           <Link href={"/contact"}>
             <h1 className="mt-4 flex gap-4 text-lg text-black hover:scale-105 hover:underline  md:text-2xl">
               <FaPhone /> Kontakt
