@@ -124,7 +124,7 @@ export default function HomePage() {
               src={image7}
               alt="Image"
               quality={100}
-              className="rounded-full"
+              className="rounded-full sm:min-w-[300px] sm:max-w-[350px]"
             />
           </div>
         </div>
