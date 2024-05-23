@@ -64,7 +64,7 @@ export default function railway() {
         <h1 className="my-5 text-xl font-semibold text-black md:text-3xl">
           Vores ekspertise og erfaring
         </h1>
-        <p>
+        <p className="flex flex-col items-center justify-center gap-6 text-base md:flex md:text-lg">
           Hos NAOMA er vi baneeksperter med blik for trygge, grønne og
           langsigtede løsninger. I ethvert projekt skaber vi en tydelig køreplan
           fra design til implementeringsfaser, hvor der naturligvis tages hensyn
@@ -73,11 +73,14 @@ export default function railway() {
           Vi er dybt dedikerede til at forme morgendagens jernbaner på en
           bæredygtig måde, som giver pålidelige løsninger og gør ambitiøse mål
           til virkelighed.
+          <Image
+            src={image2}
+            alt="image2"
+            quality={100}
+            className="rounded-lg sm:min-w-[300px] sm:max-w-[800px]"
+          />
         </p>
 
-        <div className="my-10 w-full rounded-lg">
-          <Image src={image2} alt="image2" quality={100} />
-        </div>
         <hr className=" my-20" />
 
         <h1 className=" mb-5 text-center text-3xl font-semibold text-black md:text-5xl">
