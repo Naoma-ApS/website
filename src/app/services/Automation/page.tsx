@@ -52,7 +52,7 @@ export default function automation() {
               src={image3}
               alt="image3"
               quality={100}
-              className=" rounded-lg"
+              className=" rounded-lg  sm:min-w-[300px] sm:max-w-[350px]"
             />
           </div>
           <div className="my-5 md:my-0">
@@ -153,7 +153,7 @@ export default function automation() {
               src={image4}
               alt="image4"
               quality={100}
-              className=" rounded-lg"
+              className=" rounded-lg sm:min-w-[300px] sm:max-w-[350px]"
             ></Image>
           </div>
         </div>

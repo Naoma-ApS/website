@@ -79,7 +79,7 @@ export default function AboutUsPage() {
               width={600}
               height={600}
               quality={100}
-              className="rounded-lg"
+              className="rounded-lg "
             />
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function AboutUsPage() {
               width={750}
               height={750}
               quality={100}
-              className="rounded-lg"
+              className="rounded-lg "
             />
           </div>
           <div className="w-full  md:w-3/5 ">

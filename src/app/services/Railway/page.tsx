@@ -75,7 +75,7 @@ export default function railway() {
           til virkelighed.
         </p>
 
-        <div className="w- my-10 rounded-lg">
+        <div className="my-10 w-full rounded-lg">
           <Image src={image2} alt="image2" quality={100} />
         </div>
         <hr className=" my-20" />
@@ -89,12 +89,12 @@ export default function railway() {
             <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
               Projektstyring
             </h2>
-            <div className="justify-flex flex w-full justify-center">
+            <div className="justify-flex flex min-w-full justify-center">
               <Image
                 src={image3}
                 alt="image3"
                 quality={100}
-                className="my-10 rounded-full"
+                className="my-10 max-w-[350px] rounded-full sm:min-w-[300px]"
               />
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function railway() {
                 src={image4}
                 alt="image4"
                 quality={100}
-                className="my-10 rounded-full "
+                className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px] "
               ></Image>
             </div>
           </p>
@@ -160,7 +160,7 @@ export default function railway() {
                   src={image4}
                   alt="image4"
                   quality={100}
-                  className="my-10 w-3/4 rounded-full "
+                  className="my-10 max-w-[350px] rounded-full"
                 ></Image>
               </div>
             </div>
@@ -197,7 +197,7 @@ export default function railway() {
                 src={image5}
                 alt="image5"
                 quality={100}
-                className="my-10 w-3/4 rounded-full"
+                className="my-10  max-w-[350px] rounded-full sm:min-w-[300px] "
               />
             </div>
           </div>
@@ -251,7 +251,7 @@ export default function railway() {
                 src={image6}
                 alt="image6"
                 quality={100}
-                className="my-10 rounded-full"
+                className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px]"
               ></Image>
             </div>
           </p>
@@ -268,7 +268,7 @@ export default function railway() {
                   src={image6}
                   alt="image6"
                   quality={100}
-                  className="my-10 w-3/4 rounded-full"
+                  className="my-10 max-w-[350px] rounded-full"
                 />
               </div>
             </div>

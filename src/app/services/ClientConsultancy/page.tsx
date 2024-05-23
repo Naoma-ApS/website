@@ -53,7 +53,7 @@ export default function railway() {
                 src={image3}
                 alt="image3"
                 quality={100}
-                className="my-10 w-3/4 rounded-full"
+                className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px]"
               />
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function railway() {
                 src={image4}
                 alt="image4"
                 quality={100}
-                className="my-10 rounded-full "
+                className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px]"
               ></Image>
             </div>
           </p>
@@ -109,7 +109,7 @@ export default function railway() {
                   src={image4}
                   alt="image4"
                   quality={100}
-                  className="my-10 w-3/4 rounded-full"
+                  className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px]"
                 />
               </div>
             </div>
