@@ -69,11 +69,14 @@ export function Nav() {
       )}
 
       <NavbarContent
-        className="hidden gap-4 text-sm sm:flex md:text-lg"
+        className="hidden gap-6 text-sm sm:flex md:text-lg"
         justify="center"
       >
         {menuLinks.map((link, index) => (
-          <NavbarItem key={index}>
+          <NavbarItem
+            key={index}
+            className="duration-200 hover:scale-110 hover:underline"
+          >
             <Link href={link.href}>
               <p>{link.title}</p>
             </Link>
