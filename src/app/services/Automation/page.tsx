@@ -34,11 +34,11 @@ export default function automation() {
       </div>
       <div className="mx-auto mt-10 max-w-7xl px-5 ">
         <h1 className="mb-5 mt-10 text-3xl font-semibold  md:text-6xl">
-          Innovative Automation Løsninger
+          Innovative Automationsløsninger
         </h1>
         <p className="text-base md:text-lg">
-          Vi er stolte af at kunne præsentere vores Automatiseringsdivision, der
-          tilbyder state-of-the-art-løsninger til industriautomation. Vores team
+          Vi er stolte af at kunne præsentere vores automatiseringsdivision, der
+          tilbyder state-of-the-art løsninger til industriautomation. Vores team
           af eksperter har omfattende erfaring inden for projektledelse og
           -design og arbejder med en bred vifte af brancher, herunder jernbaner,
           privat transport, fremstilling, energi og mange andre, for at levere
@@ -76,7 +76,7 @@ export default function automation() {
           Vi har arbejdet med en række forskellige brancher, herunder jernbaner,
           privat transport, fremstilling, energi og mange andre. Vi har den
           erfaring og ekspertise, der er nødvendig for at imødekomme de unikke
-          behov i hver enkelt branche og levere tilpassede løsninger, der
+          behov i hver enkelt branche og leverer tilpassede løsninger, der
           optimerer din drift.
           <br />
           <br />
