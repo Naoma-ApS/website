@@ -78,11 +78,11 @@ export default function ITS() {
             <h1 className="mb-5 text-lg font-semibold text-black md:text-2xl">
               2. Statistiske og Matematiske Modeller
             </h1>
-            Analyse af Data for Indsigter Når vi har data, bruger vi statistiske
-            og matematiske modeller til at analysere det. Disse modeller giver
-            os mulighed for at identificere mønstre og tendenser i trafikflow,
-            forudsige fremtidige trafikvolumener og identificere potentielle
-            flaskerhalser. Vi bruger en række teknikker, herunder
+            Analyse af Data for Indsigter: <br /> Når vi har data, bruger vi
+            statistiske og matematiske modeller til at analysere det. Disse
+            modeller giver os mulighed for at identificere mønstre og tendenser
+            i trafikflow, forudsige fremtidige trafikvolumener og identificere
+            potentielle flaskerhalser. Vi bruger en række teknikker, herunder
             regressionsanalyse, tidsrækkeanalyse, Gaussian mixture modeller
             (GMM) og Monte Carlo-simulering for at udtrække indsigter fra data.
           </p>
@@ -106,12 +106,12 @@ export default function ITS() {
             <h1 className="mb-5 text-lg font-semibold text-black md:text-2xl">
               3. Programmeringssprog og nyeste teknologier
             </h1>
-            Bygning af Datadrevne Løsninger For at bygge datadrevne løsninger
-            bruger vi en række programmeringssprog og de nyeste teknologier. Vi
-            arbejder med Python, R og MATLAB til at bygge statistiske modeller
-            og analysere data. Vi bruger også de nyeste AI- og ML-modeller til
-            at automatisere dataanalyse og foretage forudsigelser baseret på
-            data.
+            Bygning af Datadrevne Løsninger: <br /> For at bygge datadrevne
+            løsninger bruger vi en række programmeringssprog og de nyeste
+            teknologier. Vi arbejder med Python, R og MATLAB til at bygge
+            statistiske modeller og analysere data. Vi bruger også de nyeste AI-
+            og ML-modeller til at automatisere dataanalyse og foretage
+            forudsigelser baseret på data.
           </p>
           <p className="hidden md:block">
             <FaArrowRight className="text-3xl md:text-7xl" />
@@ -120,11 +120,11 @@ export default function ITS() {
             <h1 className="mb-5 text-lg font-semibold text-black md:text-2xl">
               4. Infusion af nyeste AI & ML tech / modeller
             </h1>
-            Strømlining af Trafikanalyse På NAOMA søger vi altid efter måder at
-            strømline trafikanalyse på. Derfor forsker og tester vi konstant de
-            nyeste AI- og ML-teknologier. Vi bruger disse teknologier til at
-            automatisere dataindsamling og -analyse, så vi kan give vores kunder
-            hurtigere og mere præcise indsigter.
+            Strømlining af Trafikanalyse: <br /> I NAOMA søger vi altid efter
+            måder at strømline trafikanalyse på. Derfor forsker og tester vi
+            konstant de nyeste AI- og ML-teknologier. Vi bruger disse
+            teknologier til at automatisere dataindsamling og -analyse, så vi
+            kan give vores kunder hurtigere og mere præcise indsigter.
           </p>
         </p>
 

@@ -66,7 +66,7 @@ export default function services() {
           <div className="col-span-1">
             <Link href="/services/TrafficSystem">
               <h2 className="mb-4 flex items-center gap-2 text-lg font-normal hover:scale-105 hover:underline md:text-2xl">
-                <FaRoad className="text-xl md:text-4xl" /> Vej system
+                <FaRoad className="text-xl md:text-4xl" /> Vejsystem
               </h2>
             </Link>
             <p className="text-md text-left ">

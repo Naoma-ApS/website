@@ -323,7 +323,7 @@ export default function railway() {
           ))}
         </div>
         <h1 className="my-5 text-3xl font-semibold text-black md:text-5xl">
-          Skab effektive og sikre jerbanesystemer
+          Skab effektive og sikre jernbanesystemer
         </h1>
         <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
           Vi hos NAOMA er dedikerede til at hjælpe vores kunder med at skabe

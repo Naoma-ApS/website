@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import React from "react";
@@ -12,16 +13,24 @@ export function AutomationAccordion() {
         title="Kravindsamling og analyse"
       >
         <p>
-          Det første trin i vores proces er kravindsamling og analyse. Vores
-          team af automatiseringseksperter arbejder tæt sammen med vores kunder
-          for at forstå deres behov og krav til projektet. Vi udfører en grundig
-          analyse af det eksisterende system eller processer for at identificere
-          områder, der kan forbedres, og muligheder for automatisering. <br />
-          <br /> Baseret på vores analyse udarbejder vi en detaljeret
-          projektplan, der beskriver omfanget af arbejdet, tidsplanen og
-          budgettet for automatiseringsprojektet. Vi samarbejder med vores
-          kunder for at sikre, at projektplanen opfylder deres forventninger og
-          giver en klar forståelse af automatiseringsmålene og leverancerne.
+          Når projektplanen er godkendt, går vi videre til design- og
+          implementeringsfasen. Vores team af automatiseringsingeniører bruger
+          deres erfaring og ekspertise til at designe en tilpasset
+          automatiseringsløsning, der opfylder vores kunders unikke behov.
+          <br /> <br />
+          Vi bruger alle de nødvendige og tilpassende teknologier og værktøjer,
+          såsom low level coding, script programmering til Programmerbare Logik
+          Controllere (PLC'er), Human-Machine Interfaces (HMI'er) og Supervisory
+          Control and Data Acquisition (SCADA) systemer, for at sikre, at vores
+          design er effektive, effektive og pålidelige. Vi arbejder tæt sammen
+          med vores kunder for at sikre, at designet opfylder deres behov og
+          overstiger deres forventninger.
+          <br /> <br />
+          Under implementeringsfasen arbejder vores team af
+          automatiseringsingeniører hårdt på at installere og konfigurere
+          automatiseringssystemet. Vi følger bedste praksis og branchestandarder
+          for at sikre, at systemet er installeret korrekt og fungerer som til
+          hensigt.
         </p>
       </AccordionItem>
       <AccordionItem

@@ -162,8 +162,8 @@ export default function HomePage() {
               </h2>
             </Link>
             <p className="md:text-base">
-              Løsninger til at klare de stigende offentlige togrejser for at
-              levere hurtigere og mere pålidelige løsninger
+              Løsninger til at klare de stigende offentlige togrejser, der
+              skaber hurtigere og mere pålidelig togtrafik.
             </p>
           </div>
 
@@ -171,12 +171,12 @@ export default function HomePage() {
           <div className="col-span-1">
             <Link href="/services/TrafficSystem">
               <h2 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
-                <FaRoad className="text-xl md:text-4xl" /> Vej system
+                <FaRoad className="text-xl md:text-4xl" /> Vejsystem
               </h2>
             </Link>
             <p className="md:text-base">
-              Transportsystemer der hjælper med at løse nogle af de trafikale
-              udfordringer, offentligt står overfor i disse år.
+              Transportsystemer, der hjælper med at løse nogle af de trafikale
+              udfordringer, offentligheden står overfor i disse år.
             </p>
           </div>
 
@@ -189,9 +189,8 @@ export default function HomePage() {
               </h2>
             </Link>
             <p className="md:text-base">
-              Skab den ændring der betyder noget. Identificere og sætte retning
-              mod de vigtigste mål. Arbejde sammen om at gøre ambitiøse mål til
-              virkelighed.
+              Samarbejde med klar strategisk retning, der sikrer at ambitiøse
+              mål gøres til virkelighed og skaber ændringer, der betyder noget.
             </p>
           </div>
 
@@ -204,7 +203,7 @@ export default function HomePage() {
               </h2>
             </Link>
             <p className="md:text-base">
-              Forkusere på energieffektivering, energiplanlægning, produtkion og
+              Fokus på energieffektivisering, energiplanlægning, produktion og
               distribution inden for bæredygtighed.
             </p>
           </div>
@@ -218,8 +217,8 @@ export default function HomePage() {
               </h2>
             </Link>
             <p className="md:text-base">
-              Helhedsorienteret bygherrerådgivning på en bredvifte af
-              kompetencer og erfaringer der sætter indi dine behov og værdier.
+              Helhedsorienteret bygherrerådgivning på en bred vifte af
+              kompetencer og erfaringer, der sætter ind i dine behov og værdier.
             </p>
           </div>
 
@@ -231,8 +230,8 @@ export default function HomePage() {
               </h2>
             </Link>
             <p className="md:text-base">
-              Optimere og effektivisere processer gennem avanceret automation,
-              der fremmer digitalisering og øger produktivitet
+              Optimering og effektivisering af processer gennem avanceret
+              automation, der fremmer digitalisering og øger produktivitet.
             </p>
           </div>
         </div>
@@ -263,7 +262,7 @@ export default function HomePage() {
             </p>
             <Link href="/about">
               <button className="rounded-full border border-black bg-black px-4 py-2 text-white duration-100 hover:scale-105 hover:shadow-xl">
-                om NAOMA
+                Om NAOMA
               </button>
             </Link>
           </div>
