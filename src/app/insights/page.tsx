@@ -25,9 +25,10 @@ export default function insight() {
         <span className="absolute inset-y-[400px] left-0 h-[95px] w-full bg-white"></span>
 
         <iframe
-          className="h-full w-full"
-          src="https://www.juicer.io/api/feeds/naoma/iframe?truncate=900"
-        />
+          src="https://www.juicer.io/api/feeds/naoma-5b5d66a5-85d7-4519-b233-54947a43f78a/iframe"
+          width="1000"
+          height="1000"
+        ></iframe>
       </div>
     </>
   );
