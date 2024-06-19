@@ -127,6 +127,39 @@ export default function railway() {
             <br />
           </p>
         </div>
+        <div>
+          <h2 className="text-left text-xl font-semibold text-black md:text-3xl">
+            Bygherrerådgivning fra start til slut
+          </h2>
+          <p className="my-5 text-base md:text-lg">
+            NAOMA tilbyder bygherrerådgivning, der styrker dig i din rolle som
+            bygherre. Med vores omfattende elektriske og tekniske ekspertise
+            samt stærke ledelseskompetencer styrer vi bygge- og anlægsprocessen
+            fra start til slut, altid med fokus på tid, pris og kvalitet. Vi
+            lægger stor vægt på, at projekter leveres til aftalt tid, inden for
+            budget og med den ønskede kvalitet. Vores tjenester dækker alle
+            projektfaser fra de første afklaringer til idriftsættelsen af det
+            færdige projekt.
+            <br />
+            <br />I de indledende faser fastlægges rammerne for projektets
+            gennemførelse. Vi sikrer og definerer strategier, der understøtter
+            en succesfuld projektgennemførelse. Når projektet skal
+            konkretiseres, sørger vi for, at alle krav bliver integreret og
+            opfyldt. Dette gælder både under projekteringen, udførelsen og
+            idriftsættelsen, hvor vi tilbyder kontrol og projektstyring.
+            <br />
+            <br />
+            Vi hjælper blandt andet med: <br />
+            <br />
+            <ul className="list-disc pl-8  text-base md:text-lg">
+              <li>Strategisk rådgivning og planlægning</li>
+              <li>Udarbejdelse af kravspecifikationer</li>
+              <li>Koordination mellem alle involverede parter</li>
+              <li>Risikovurderinger</li>
+              <li>Slutinspektion og idriftsættelse</li>
+            </ul>
+          </p>
+        </div>
       </div>
     </>
   );

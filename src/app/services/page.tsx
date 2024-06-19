@@ -98,7 +98,8 @@ export default function services() {
             </Link>
             <p className="text-md text-left ">
               <ul className="list-disc pl-8 text-base md:text-lg">
-                <li>Opdateres...</li>
+                <li>Projektudvikling og planlægning</li>
+                <li>Risikostyring</li>
               </ul>
             </p>
           </div>
@@ -187,7 +188,9 @@ export default function services() {
             </Link>
             <p className="text-md text-left ">
               <ul className="list-disc pl-8 text-base md:text-lg">
-                <li>Opdateres...</li>
+                <li>Industry 4.0</li>
+
+                <li>Turn-key-leverancer</li>
               </ul>
             </p>
           </div>
