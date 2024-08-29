@@ -24,6 +24,7 @@ import { frontPageBlogs } from "@components/Blog/blogs/frontpage";
 import { BlogCard } from "@components/Blog/BlogCard";
 import { type Metadata } from "next";
 import { FaUsersGear } from "react-icons/fa6";
+import { Button } from "@components/ui/button";
 
 export const metadata: Metadata = {
   title: "NAOMA",
@@ -262,9 +263,7 @@ export default function HomePage() {
               med at nå dine mål.
             </p>
             <Link href="/about">
-              <button className="rounded-full border border-black bg-black px-4 py-2 text-white duration-100 hover:scale-105 hover:shadow-xl">
-                Om NAOMA
-              </button>
+              <Button>Om NAOMA</Button>
             </Link>
           </div>
         </div>

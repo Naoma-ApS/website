@@ -1,6 +1,5 @@
 import { type Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
-import { nextui } from "@nextui-org/react";
 
 export default {
   content: [
@@ -14,5 +13,5 @@ export default {
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [],
 } satisfies Config;

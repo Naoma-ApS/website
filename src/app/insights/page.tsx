@@ -22,7 +22,7 @@ export default function insight() {
       </div>
       <hr className="mx-auto my-20 max-w-7xl" />
       <div className="flex h-[100vh] w-screen items-center justify-center">
-        <span className="absolute inset-y-[400px] left-0 h-[95px] w-full bg-white"></span>
+        <span className="absolute inset-y-[290px] left-0 h-[95px] w-full bg-white"></span>
 
         <iframe
           src="https://www.juicer.io/api/feeds/naoma-5b5d66a5-85d7-4519-b233-54947a43f78a/iframe"
