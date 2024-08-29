@@ -23,6 +23,7 @@ import { GrMapLocation } from "react-icons/gr";
 import { frontPageBlogs } from "@components/Blog/blogs/frontpage";
 import { BlogCard } from "@components/Blog/BlogCard";
 import { type Metadata } from "next";
+import { FaUsersGear } from "react-icons/fa6";
 
 export const metadata: Metadata = {
   title: "NAOMA",
@@ -272,27 +273,27 @@ export default function HomePage() {
         {/* // Stats section */}
         <div className="justify-center gap-20 text-center text-lg md:flex md:text-2xl">
           <UpCounter
-            icon={<GrMapLocation className="text-3xl md:text-7xl" />}
+            icon={<GrMapLocation className="text-3xl md:text-5xl" />}
             label="Vi har kunder i"
             label2="lande"
             finalCount={5}
           />
           <UpCounter
-            icon={<MdOutlineHandshake className="text-3xl md:text-7xl" />}
+            icon={<MdOutlineHandshake className="text-3xl md:text-5xl" />}
             label="Vi har succesfuldt arbejdet med"
             label2="kunder"
             finalCount={17}
           />
           <UpCounter
             icon={
-              <HiOutlinePresentationChartBar className="text-3xl md:text-7xl" />
+              <HiOutlinePresentationChartBar className="text-3xl md:text-5xl" />
             }
             label="Vi har succesfuldt afsluttet"
             label2="projekter"
             finalCount={53}
           />
           <UpCounter
-            icon={<LuCode2 className="text-3xl md:text-7xl" />}
+            icon={<FaUsersGear className="text-3xl md:text-5xl" />}
             label="Vi har mere end"
             label2="specialister"
             finalCount={11}

@@ -31,13 +31,15 @@ export default function railway() {
         </div>
       </div>
       <div className="mx-auto mt-10 max-w-7xl px-5 ">
+        <h1 className="mb-5 text-xl font-semibold text-black md:text-4xl">
+          Naoma Bygherrerådgivning - Rådgivning i Harmoni
+        </h1>
         <p className="text-base md:text-lg">
-          Hos NAOMA tilbyder vi specialiseret bygherrerådgivning til både det
-          offentligt og private kunder. Som bygherrerådgiver og tæt
-          sparringspartner sikrer vi, at det er dine interesser, der bliver
-          varetaget igennem hele forløbet. Vi er med helt fra den indledende
-          behovsafklaring til den endelige realisering og aflevering af
-          projektet.
+          Hos NAOMA tilbyder vi specialiseret bygherrerådgivning til både
+          offentlige og private kunder. Vores tilgang er centreret om ét
+          centralt princip: Rådgivning i Harmoni. Vi sikrer, at dine interesser
+          bliver varetaget gennem hele projektforløbet - fra den indledende
+          behovsafklaring til den endelige realisering og aflevering.
           <br />
           <br />
         </p>
@@ -141,12 +143,12 @@ export default function railway() {
             projektfaser fra de første afklaringer til idriftsættelsen af det
             færdige projekt.
             <br />
-            <br />I de indledende faser fastlægges rammerne for projektets
-            gennemførelse. Vi sikrer og definerer strategier, der understøtter
-            en succesfuld projektgennemførelse. Når projektet skal
-            konkretiseres, sørger vi for, at alle krav bliver integreret og
-            opfyldt. Dette gælder både under projekteringen, udførelsen og
-            idriftsættelsen, hvor vi tilbyder kontrol og projektstyring.
+            <br />I de indledende faser fastlægger vi rammerne for projektets
+            gennemførelse og definerer strategier, der understøtter en
+            succesfuld projektgennemførelse. Når projektet konkretiseres, sørger
+            vi for, at alle krav bliver integreret og opfyldt, både under
+            projekteringen, udførelsen og idriftsættelsen, hvor vi tilbyder
+            kontrol og projektstyring.
             <br />
             <br />
             Vi hjælper blandt andet med: <br />
@@ -158,6 +160,10 @@ export default function railway() {
               <li>Risikovurderinger</li>
               <li>Slutinspektion og idriftsættelse</li>
             </ul>
+            <p className="mt-5">
+              Med NAOMA ved din side er du sikret en pålidelig og kompetent
+              partner, der altid har dine interesser i fokus.
+            </p>
           </p>
         </div>
       </div>

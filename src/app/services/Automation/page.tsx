@@ -32,17 +32,19 @@ export default function automation() {
           </header>
         </div>
       </div>
-      <div className="mx-auto mt-10 max-w-7xl px-5 ">
-        <h1 className="mb-5 mt-10 text-3xl font-semibold  md:text-6xl">
+      <div className="mx-auto mt-10 max-w-7xl px-5">
+        <h1 className="mb-5 text-xl font-semibold text-black md:text-4xl">
           Innovative Automationsløsninger
         </h1>
         <p className="text-base md:text-lg">
-          Vi er stolte af at kunne præsentere vores automatiseringsdivision, der
-          tilbyder state-of-the-art løsninger til industriautomation. Vores team
-          af eksperter har omfattende erfaring inden for projektledelse og
-          -design og arbejder med en bred vifte af brancher, herunder jernbaner,
-          privat transport, fremstilling, energi og mange andre, for at levere
-          tilpassede løsninger, der opfylder hver kundes behov.
+          Vi er stolte af at kunne præsentere vores automatiseringsdivision, som
+          tilbyder state-of-the-art løsninger til industriautomation. Med
+          Rådgivning i Harmoni som vores centrale princip, sikrer vi, at dine
+          automationsprojekter bliver håndteret med omhu og præcision. Vores
+          team af eksperter har omfattende erfaring inden for projektledelse og
+          -design og arbejder på tværs af brancher som jernbaner, privat
+          transport, fremstilling, energi og mange andre for at levere
+          tilpassede løsninger, der præcist opfylder hver kundes behov.
           <br />
           <br />
         </p>
@@ -70,14 +72,15 @@ export default function automation() {
         </p>
         <hr className="my-20" />
         <h2 className=" text-xl font-semibold  md:text-3xl">
-          Erfaring inden for flere industrier
+          Erfaring på tværs af industrier
         </h2>
         <p className="text-base md:text-lg">
-          Vi har arbejdet med en række forskellige brancher, herunder jernbaner,
-          privat transport, fremstilling, energi og mange andre. Vi har den
-          erfaring og ekspertise, der er nødvendig for at imødekomme de unikke
-          behov i hver enkelt branche og leverer tilpassede løsninger, der
-          optimerer din drift.
+          Vi har arbejdet på tværs af flere forskellige brancher, herunder
+          jernbaner, privat transport, fremstilling, energi og mange andre. Med
+          Le client est le roi som vores ledende princip, har vi den nødvendige
+          erfaring og ekspertise til at imødekomme de unikke behov i hver enkelt
+          branche. Vi leverer tilpassede løsninger, der optimerer din drift og
+          sikrer effektivitet og kvalitet.
           <br />
           <br />
         </p>
@@ -128,8 +131,9 @@ export default function automation() {
           <div className="flex-1">
             <h2 className="my-5  text-xl md:mb-0 md:text-3xl">Pharmaci:</h2>
             <p className="text-base md:text-lg">
-              Udnytter teknologi til automatisering af produktions- og
-              testlinjer med håndtering og distribution af medicin.
+              Avanceret teknologi udnyttes til automatisering af produktions- og
+              testlinjer, hvilket sikrer præcis håndtering og distribution af
+              medicin i harmoni med branchens høje kvalitetsstandarder.
             </p>
           </div>
         </div>
