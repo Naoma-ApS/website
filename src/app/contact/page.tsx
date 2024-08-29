@@ -1,12 +1,15 @@
 "use client";
 
-import { Button, Input, Textarea } from "@nextui-org/react";
 import { useState } from "react";
 import Image from "next/image";
 import image from "@assets/Kontakt.jpg";
 import { useForm } from "react-hook-form";
 import sendEmail from "@lib/sendContactEmail";
 import userIcon from "@assets/user.png";
+import { Input } from "@components/ui/input";
+import { Textarea } from "@components/ui/textarea";
+import { Label } from "@components/ui/label";
+import { Button } from "@components/ui/button";
 
 export interface ContactFormData {
   email: string;
@@ -21,7 +24,7 @@ export default function ContactPage() {
   const {
     handleSubmit,
     register,
-    formState: { errors, isSubmitting },
+    formState: { isSubmitting },
   } = useForm<ContactFormData>();
 
   async function onSubmit(data: ContactFormData) {
@@ -42,7 +45,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={image}
           alt="Background Image"
@@ -66,42 +69,33 @@ export default function ContactPage() {
       <div className="mx-auto max-w-7xl">
         <div className="justify-flex flex w-full flex-col gap-2 md:flex-row">
           <div className=" md:w-9/10 my-10 justify-center px-4 py-8 md:w-4/5 md:border-r lg:py-8">
-            <div className="flex flex-col gap-4 md:gap-8">
+            <div className="flex flex-col gap-2 md:gap-4">
+              <Label>Email</Label>
               <Input
                 {...register("email", {
                   required: { value: true, message: "Email er påkrævet" },
                   validate: (email) =>
                     validateEmail(email) || "Email er ugyldig",
                 })}
-                label="Email"
-                labelPlacement="inside"
-                errorMessage={errors.email?.message}
-                required
               />
+              <Label>Emne</Label>
               <Input
                 {...register("title", {
                   required: { value: true, message: "Navn er påkrævet" },
                 })}
-                label="Emne"
-                labelPlacement="inside"
-                errorMessage={errors.title?.message}
-                required
               />
+              <Label>Besked</Label>
               <Textarea
                 {...register("message", {
                   required: { value: true, message: "Besked er påkrævet" },
                 })}
-                label="Besked"
-                errorMessage={errors.message?.message}
-                labelPlacement="inside"
-                required
               />
               <div className="flex flex-col gap-2">
                 <Button
                   type="submit"
                   disabled={isSubmitting || success}
                   onClick={handleSubmit(onSubmit)}
-                  className="w-4/5 rounded-full border border-black bg-black px-4 py-2 text-white duration-100 hover:scale-105 hover:shadow-xl md:w-2/5"
+                  className="w-4/5  md:w-2/5"
                 >
                   Send besked
                 </Button>

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function automation() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="mt-14 relative h-96 w-full">
         <Image
           src={cover}
           alt="Background Image"
