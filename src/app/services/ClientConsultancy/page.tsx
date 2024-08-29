@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function railway() {
   return (
     <>
-      <div className="mt-14 relative h-96 w-full">
-      <Image
+      <div className="relative mt-14 h-96 w-full">
+        <Image
           src={cover}
           alt="Background Image"
           layout="fill"

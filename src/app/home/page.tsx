@@ -263,9 +263,7 @@ export default function HomePage() {
               med at nå dine mål.
             </p>
             <Link href="/about">
-              <Button >
-                Om NAOMA
-              </Button>
+              <Button>Om NAOMA</Button>
             </Link>
           </div>
         </div>

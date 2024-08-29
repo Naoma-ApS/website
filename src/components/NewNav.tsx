@@ -25,27 +25,28 @@ const components: { title: string; href: string }[] = [
 
 export function Navigation() {
   return (
-    <NavigationMenu className="backdrop-blur-md fixed top-0 left-0 right-0 z-50 h-14">
+    <NavigationMenu className="fixed left-0 right-0 top-0 z-50 h-14 backdrop-blur-md">
       <NavigationMenuList className="flex w-screen gap-3">
         <div className="flex w-full justify-between gap-4">
           <NavigationMenuItem className="p-1 md:p-[7px]">
-            <Link href={"/"} >
-                <Image
-                  src={logo as StaticImport}
-                  alt="logo"
-                  width={100}
-                  height={80}
-                  className="min-w-[40%] max-w-[60%] md:max-w-[100%]"
-                />
+            <Link href={"/"}>
+              <Image
+                src={logo as StaticImport}
+                alt="logo"
+                width={100}
+                height={80}
+                className="min-w-[40%] max-w-[60%] md:max-w-[100%]"
+              />
             </Link>
           </NavigationMenuItem>
           {/* Mobile Menu */}
           <NavigationMenuItem className="sm:hidden">
-            <NavigationMenuTrigger/>
+            <NavigationMenuTrigger />
             <NavigationMenuContent>
               <ul className="grid  md:grid-cols-2 ">
                 {components.map((component, index) => (
-                  <ListItem className="hover:underline"
+                  <ListItem
+                    className="hover:underline"
                     key={index}
                     title={component.title}
                     href={component.href}
