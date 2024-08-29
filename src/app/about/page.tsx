@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function AboutUsPage() {
   return (
     <>
-      <div className="relative -mt-4 h-96 w-full md:mt-0">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={image1}
           alt="Background Image"

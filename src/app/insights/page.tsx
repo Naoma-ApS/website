@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function insight() {
   return (
     <>
-      <div className="relative h-60 w-full">
+      <div className="relative mt-14 h-96 w-full">
         <div className="absolute inset-0 flex items-center justify-center">
           <header>
             <h1 className="text-7xl font-bold text-black">Insights</h1>
