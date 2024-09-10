@@ -35,9 +35,9 @@ export function Footer() {
           </Link>
           <div className="my-4">
             <p>
-              +45 31 62 76 61
-              <br />
               +45 41 77 36 41
+              <br />
+              +45 31 62 76 61
             </p>
           </div>
           <p className="mt-4">kontakt@naoma.dk</p>
