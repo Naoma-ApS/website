@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function services() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={image}
           alt="Background Image"
@@ -66,7 +66,7 @@ export default function services() {
           <div className="col-span-1">
             <Link href="/services/TrafficSystem">
               <h2 className="mb-4 flex items-center gap-2 text-lg font-normal hover:scale-105 hover:underline md:text-2xl">
-                <FaRoad className="text-xl md:text-4xl" /> Vej system
+                <FaRoad className="text-xl md:text-4xl" /> Vejsystem
               </h2>
             </Link>
             <p className="text-md text-left ">
@@ -98,7 +98,8 @@ export default function services() {
             </Link>
             <p className="text-md text-left ">
               <ul className="list-disc pl-8 text-base md:text-lg">
-                <li>Opdateres...</li>
+                <li>Projektudvikling og planlægning</li>
+                <li>Risikostyring</li>
               </ul>
             </p>
           </div>
@@ -187,7 +188,9 @@ export default function services() {
             </Link>
             <p className="text-md text-left ">
               <ul className="list-disc pl-8 text-base md:text-lg">
-                <li>Opdateres...</li>
+                <li>Industry 4.0</li>
+
+                <li>Turn-key-leverancer</li>
               </ul>
             </p>
           </div>

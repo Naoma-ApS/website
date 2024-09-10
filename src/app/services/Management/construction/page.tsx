@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function highCurrent() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={cover}
           alt="Background Image"
@@ -64,20 +64,15 @@ export default function highCurrent() {
           højere enhed.
         </p>
         <div className="hidden md:block">
-          <p className="justify-flex my-8 flex items-center justify-center gap-5">
+          <p className="justify-flex my-8 flex items-center justify-center gap-8">
             <h1 className="text-xl font-semibold text-black md:text-3xl">
               Arbjedsprocesser
             </h1>
             <div className="text-2xl md:text-5xl">
               <FaArrowRightArrowLeft />
             </div>
-            <div className="w-1/4">
-              <Image
-                src={logo as StaticImport}
-                alt="logo"
-                quality={100}
-                className="rounded-lg"
-              />
+            <div>
+              <Image src={logo as StaticImport} alt="logo" quality={100} />
             </div>
             <div className="text-2xl md:text-5xl">
               <FaArrowRightArrowLeft />

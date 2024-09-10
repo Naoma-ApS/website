@@ -23,6 +23,8 @@ import { GrMapLocation } from "react-icons/gr";
 import { frontPageBlogs } from "@components/Blog/blogs/frontpage";
 import { BlogCard } from "@components/Blog/BlogCard";
 import { type Metadata } from "next";
+import { FaUsersGear } from "react-icons/fa6";
+import { Button } from "@components/ui/button";
 
 export const metadata: Metadata = {
   title: "NAOMA",
@@ -124,7 +126,7 @@ export default function HomePage() {
               src={image7}
               alt="Image"
               quality={100}
-              className="rounded-full"
+              className="rounded-full sm:min-w-[300px] sm:max-w-[350px]"
             />
           </div>
         </div>
@@ -162,8 +164,8 @@ export default function HomePage() {
               </h2>
             </Link>
             <p className="md:text-base">
-              Løsninger til at klare de stigende offentlige togrejser for at
-              levere hurtigere og mere pålidelige løsninger
+              Løsninger til at klare de stigende offentlige togrejser, der
+              skaber hurtigere og mere pålidelig togtrafik.
             </p>
           </div>
 
@@ -171,12 +173,12 @@ export default function HomePage() {
           <div className="col-span-1">
             <Link href="/services/TrafficSystem">
               <h2 className="mb-4 flex items-center gap-2 text-lg font-semibold hover:underline md:text-2xl">
-                <FaRoad className="text-xl md:text-4xl" /> Vej system
+                <FaRoad className="text-xl md:text-4xl" /> Vejsystem
               </h2>
             </Link>
             <p className="md:text-base">
-              Transportsystemer der hjælper med at løse nogle af de trafikale
-              udfordringer, offentligt står overfor i disse år.
+              Transportsystemer, der hjælper med at løse nogle af de trafikale
+              udfordringer, offentligheden står overfor i disse år.
             </p>
           </div>
 
@@ -189,9 +191,8 @@ export default function HomePage() {
               </h2>
             </Link>
             <p className="md:text-base">
-              Skab den ændring der betyder noget. Identificere og sætte retning
-              mod de vigtigste mål. Arbejde sammen om at gøre ambitiøse mål til
-              virkelighed.
+              Samarbejde med klar strategisk retning, der sikrer at ambitiøse
+              mål gøres til virkelighed og skaber ændringer, der betyder noget.
             </p>
           </div>
 
@@ -204,7 +205,7 @@ export default function HomePage() {
               </h2>
             </Link>
             <p className="md:text-base">
-              Forkusere på energieffektivering, energiplanlægning, produtkion og
+              Fokus på energieffektivisering, energiplanlægning, produktion og
               distribution inden for bæredygtighed.
             </p>
           </div>
@@ -218,8 +219,8 @@ export default function HomePage() {
               </h2>
             </Link>
             <p className="md:text-base">
-              Helhedsorienteret bygherrerådgivning på en bredvifte af
-              kompetencer og erfaringer der sætter indi dine behov og værdier.
+              Helhedsorienteret bygherrerådgivning på en bred vifte af
+              kompetencer og erfaringer, der sætter ind i dine behov og værdier.
             </p>
           </div>
 
@@ -231,8 +232,8 @@ export default function HomePage() {
               </h2>
             </Link>
             <p className="md:text-base">
-              Optimere og effektivisere processer gennem avanceret automation,
-              der fremmer digitalisering og øger produktivitet
+              Optimering og effektivisering af processer gennem avanceret
+              automation, der fremmer digitalisering og øger produktivitet.
             </p>
           </div>
         </div>
@@ -262,9 +263,7 @@ export default function HomePage() {
               med at nå dine mål.
             </p>
             <Link href="/about">
-              <button className="rounded-full border border-black bg-black px-4 py-2 text-white duration-100 hover:scale-105 hover:shadow-xl">
-                om NAOMA
-              </button>
+              <Button>Om NAOMA</Button>
             </Link>
           </div>
         </div>
@@ -273,27 +272,27 @@ export default function HomePage() {
         {/* // Stats section */}
         <div className="justify-center gap-20 text-center text-lg md:flex md:text-2xl">
           <UpCounter
-            icon={<GrMapLocation className="text-3xl md:text-7xl" />}
+            icon={<GrMapLocation className="text-3xl md:text-5xl" />}
             label="Vi har kunder i"
             label2="lande"
             finalCount={5}
           />
           <UpCounter
-            icon={<MdOutlineHandshake className="text-3xl md:text-7xl" />}
+            icon={<MdOutlineHandshake className="text-3xl md:text-5xl" />}
             label="Vi har succesfuldt arbejdet med"
             label2="kunder"
             finalCount={17}
           />
           <UpCounter
             icon={
-              <HiOutlinePresentationChartBar className="text-3xl md:text-7xl" />
+              <HiOutlinePresentationChartBar className="text-3xl md:text-5xl" />
             }
             label="Vi har succesfuldt afsluttet"
             label2="projekter"
             finalCount={53}
           />
           <UpCounter
-            icon={<LuCode2 className="text-3xl md:text-7xl" />}
+            icon={<FaUsersGear className="text-3xl md:text-5xl" />}
             label="Vi har mere end"
             label2="specialister"
             finalCount={11}

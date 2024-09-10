@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function railway() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={cover}
           alt="Background Image"
@@ -31,13 +31,15 @@ export default function railway() {
         </div>
       </div>
       <div className="mx-auto mt-10 max-w-7xl px-5 ">
+        <h1 className="mb-5 text-xl font-semibold text-black md:text-4xl">
+          Naoma Bygherrerådgivning - Rådgivning i Harmoni
+        </h1>
         <p className="text-base md:text-lg">
-          Hos NAOMA tilbyder vi specialiseret bygherrerådgivning til både det
-          offentligt og private kunder. Som bygherrerådgiver og tæt
-          sparringspartner sikrer vi, at det er dine interesser, der bliver
-          varetaget igennem hele forløbet. Vi er med helt fra den indledende
-          behovsafklaring til den endelige realisering og aflevering af
-          projektet.
+          Hos NAOMA tilbyder vi specialiseret bygherrerådgivning til både
+          offentlige og private kunder. Vores tilgang er centreret om ét
+          centralt princip: Rådgivning i Harmoni. Vi sikrer, at dine interesser
+          bliver varetaget gennem hele projektforløbet - fra den indledende
+          behovsafklaring til den endelige realisering og aflevering.
           <br />
           <br />
         </p>
@@ -53,7 +55,7 @@ export default function railway() {
                 src={image3}
                 alt="image3"
                 quality={100}
-                className="my-10 w-3/4 rounded-full"
+                className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px]"
               />
             </div>
           </div>
@@ -92,7 +94,7 @@ export default function railway() {
                 src={image4}
                 alt="image4"
                 quality={100}
-                className="my-10 rounded-full "
+                className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px]"
               ></Image>
             </div>
           </p>
@@ -109,7 +111,7 @@ export default function railway() {
                   src={image4}
                   alt="image4"
                   quality={100}
-                  className="my-10 w-3/4 rounded-full"
+                  className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px]"
                 />
               </div>
             </div>
@@ -125,6 +127,43 @@ export default function railway() {
             fase.
             <br />
             <br />
+          </p>
+        </div>
+        <div>
+          <h2 className="text-left text-xl font-semibold text-black md:text-3xl">
+            Bygherrerådgivning fra start til slut
+          </h2>
+          <p className="my-5 text-base md:text-lg">
+            NAOMA tilbyder bygherrerådgivning, der styrker dig i din rolle som
+            bygherre. Med vores omfattende elektriske og tekniske ekspertise
+            samt stærke ledelseskompetencer styrer vi bygge- og anlægsprocessen
+            fra start til slut, altid med fokus på tid, pris og kvalitet. Vi
+            lægger stor vægt på, at projekter leveres til aftalt tid, inden for
+            budget og med den ønskede kvalitet. Vores tjenester dækker alle
+            projektfaser fra de første afklaringer til idriftsættelsen af det
+            færdige projekt.
+            <br />
+            <br />I de indledende faser fastlægger vi rammerne for projektets
+            gennemførelse og definerer strategier, der understøtter en
+            succesfuld projektgennemførelse. Når projektet konkretiseres, sørger
+            vi for, at alle krav bliver integreret og opfyldt, både under
+            projekteringen, udførelsen og idriftsættelsen, hvor vi tilbyder
+            kontrol og projektstyring.
+            <br />
+            <br />
+            Vi hjælper blandt andet med: <br />
+            <br />
+            <ul className="list-disc pl-8  text-base md:text-lg">
+              <li>Strategisk rådgivning og planlægning</li>
+              <li>Udarbejdelse af kravspecifikationer</li>
+              <li>Koordination mellem alle involverede parter</li>
+              <li>Risikovurderinger</li>
+              <li>Slutinspektion og idriftsættelse</li>
+            </ul>
+            <p className="mt-5">
+              Med NAOMA ved din side er du sikret en pålidelig og kompetent
+              partner, der altid har dine interesser i fokus.
+            </p>
           </p>
         </div>
       </div>

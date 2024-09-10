@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function railway() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={cover}
           alt="Background Image"
@@ -33,8 +33,9 @@ export default function railway() {
           </header>
         </div>
       </div>
-      <div className="mx-auto max-w-7xl px-5">
-        <h1 className="mb-5 mt-10 text-3xl font-semibold text-black md:text-6xl">
+
+      <div className="mx-auto mt-10 max-w-7xl px-5">
+        <h1 className="mb-5 text-xl font-semibold text-black md:text-4xl">
           Vi designer fremtidens transport - én vej ad gangen
         </h1>
         <p className="text-base md:text-lg">
@@ -80,7 +81,7 @@ export default function railway() {
                 src={image3}
                 alt="image3"
                 quality={100}
-                className="my-10 rounded-full"
+                className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px]"
               />
             </div>
           </div>
@@ -114,7 +115,7 @@ export default function railway() {
                 src={image4}
                 alt="image4"
                 quality={100}
-                className="my-10 rounded-full "
+                className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px]"
               ></Image>
             </div>
           </p>
@@ -131,7 +132,7 @@ export default function railway() {
                   src={image4}
                   alt="image4"
                   quality={100}
-                  className="my-10 w-3/4 rounded-full "
+                  className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px] "
                 />
               </div>
             </div>
@@ -155,7 +156,7 @@ export default function railway() {
                 src={image5}
                 alt="image5"
                 quality={100}
-                className="my-10 w-3/4 rounded-full"
+                className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px]"
               />
             </div>
           </div>

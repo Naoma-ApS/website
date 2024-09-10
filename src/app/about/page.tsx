@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function AboutUsPage() {
   return (
     <>
-      <div className="relative -mt-4 h-96 w-full md:mt-0">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={image1}
           alt="Background Image"
@@ -79,7 +79,7 @@ export default function AboutUsPage() {
               width={600}
               height={600}
               quality={100}
-              className="rounded-lg"
+              className="rounded-lg "
             />
           </div>
         </div>
@@ -96,19 +96,21 @@ export default function AboutUsPage() {
               width={750}
               height={750}
               quality={100}
-              className="rounded-lg"
+              className="rounded-lg "
             />
           </div>
           <div className="w-full  md:w-3/5 ">
             <p className="text-base md:text-xl">
-              samarbejde med kunder, leverandører og andre interessenter vil vi
-              sikre, at vores ydelser fremstår som kvalitetsydelser, der
-              overholder gældende lov- og myndighedskrav.
+              Samarbejde med kunder, leverandører og andre interessenter sikrer,
+              at vores ydelser opnår høj kvalitet, der overholder gældende lov-
+              og myndighedskrav.
               <br />
-              <br /> Vi vil til stadighed udvikle os og være innovative gennem
-              dialog med kunder, og den erfaring vi erhverver os.
               <br />
-              <br /> Vi er åbne og modtagelige for feedback fra vores kunder og
+              Vi vil til stadighed udvikle os og være innovative gennem dialog
+              med kunder, og den erfaring vi erhverver os.
+              <br />
+              <br />
+              Vi er åbne og modtagelige for feedback fra vores kunder og
               samarbejdspartnere for at sikre en løbende forbedring af
               kvaliteten.
               <br />
@@ -130,7 +132,7 @@ export default function AboutUsPage() {
               samt kvalitets- og miljøledelsessystem. Planlægning og optimering
               af interne og eksterne ressourcer, samt optimering af vores
               processer, skal bidrage til øget kvalitet af vores produkter og
-              ydelser, og samtidigt reducere omkostninger og tidsforbrug
+              ydelser, og samtidigt reducere omkostninger og tidsforbrug.
             </p>
           </div>
         </div>
@@ -143,17 +145,17 @@ export default function AboutUsPage() {
           <div className="w-full pr-8 md:w-3/5 ">
             <ul className="list-disc pl-8 text-base md:text-xl">
               <li>
-                Hos os er feedback en rutine. Vi er åbne for feedback fra alle
-                for at sikre en løbende optimering af kvaliteten på vores
-                udførelse af metoder og ydelser, høj kundetilfredshed og
-                langvarige relationer.
+                Vi drives af en resultatorienteret og kvalitetsbevidst kultur -
+                derfor er det en naturlig del af NAOMA at sikre personlig og
+                faglig udvikling af medarbejdere.
                 <br />
                 <br />
               </li>
               <li>
-                Vi drives af en resultatorienteret og kvalitetsbevidst kultur -
-                derfor er det en naturlig del af NAOMA at sikre personlig og
-                faglig udvikling af medarbejdere.
+                Hos os er feedback en rutine. Vi er åbne for feedback fra alle
+                for at sikre en løbende optimering af kvaliteten på vores
+                udførelse af metoder og ydelser, høj kundetilfredshed og
+                langvarige relationer.
                 <br />
                 <br />
               </li>

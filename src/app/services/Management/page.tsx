@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function management() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={cover}
           alt="Background Image"
@@ -30,8 +30,8 @@ export default function management() {
           </header>
         </div>
       </div>
-      <div className="mx-auto max-w-7xl px-5">
-        <h1 className="mb-5 mt-10 text-3xl font-semibold text-black md:text-6xl">
+      <div className="mx-auto mt-10 max-w-7xl px-5">
+        <h1 className="mb-5 text-xl font-semibold text-black md:text-4xl">
           Management
         </h1>
         <p className="text-base md:text-lg">

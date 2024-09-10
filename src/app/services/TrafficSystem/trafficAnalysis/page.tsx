@@ -1,8 +1,6 @@
 import Image from "next/image";
 import cover from "@assets/trafikAnalyse.jpg";
 import { FaArrowRight } from "react-icons/fa";
-import image2 from "@assets/regression-analysis-veje-630x624.png";
-import image3 from "@assets/normal-disti-veje.png";
 import image4 from "@assets/AI-veje.png";
 import { type Metadata } from "next";
 
@@ -16,7 +14,7 @@ export const metadata: Metadata = {
 export default function ITS() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={cover}
           alt="Background Image"
@@ -56,12 +54,12 @@ export default function ITS() {
           løsninger, der virker.
         </p>
         <hr className=" my-20" />
-        <h1 className="my-5 text-xl font-semibold text-black md:text-3xl">
-          Her er, hvordan vi gør det:
+        <h1 className="mb-5 text-xl font-semibold text-black md:text-3xl">
+          Her er hvordan vi gør det:
         </h1>
-        <p className="flex items-center justify-center gap-5 text-base md:text-lg">
-          <p>
-            <h1 className="my-5 text-lg font-semibold text-black md:text-2xl">
+        <p className="flex  gap-5 text-base md:items-center md:justify-center md:text-lg">
+          <p className="w-full">
+            <h1 className="mb-5 text-lg font-semibold text-black md:text-2xl">
               1. Indsamling af Data
             </h1>
             Det første skridt i trafikanalyse er indsamling af data. Vi bruger
@@ -71,23 +69,23 @@ export default function ITS() {
             indsamle data fra flere kilder kan vi få et mere fuldstændigt
             billede af trafikmønstre og identificere områder til forbedring.
           </p>
-          <p>
+          <p className="hidden md:block">
             <FaArrowRight className="text-3xl md:text-7xl" />
           </p>
-          <p>
-            <h1 className="my-5 text-lg font-semibold text-black md:text-2xl">
+          <p className="w-full">
+            <h1 className="mb-5 text-lg font-semibold text-black md:text-2xl">
               2. Statistiske og Matematiske Modeller
             </h1>
-            Analyse af Data for Indsigter Når vi har data, bruger vi statistiske
-            og matematiske modeller til at analysere det. Disse modeller giver
-            os mulighed for at identificere mønstre og tendenser i trafikflow,
-            forudsige fremtidige trafikvolumener og identificere potentielle
-            flaskerhalser. Vi bruger en række teknikker, herunder
+            Analyse af Data for Indsigter: <br /> Når vi har data, bruger vi
+            statistiske og matematiske modeller til at analysere det. Disse
+            modeller giver os mulighed for at identificere mønstre og tendenser
+            i trafikflow, forudsige fremtidige trafikvolumener og identificere
+            potentielle flaskerhalser. Vi bruger en række teknikker, herunder
             regressionsanalyse, tidsrækkeanalyse, Gaussian mixture modeller
             (GMM) og Monte Carlo-simulering for at udtrække indsigter fra data.
           </p>
         </p>
-        <p className="justify-flex flex flex-wrap items-center justify-center gap-20 text-base md:text-lg">
+        {/* <p className="justify-flex flex flex-wrap items-center justify-center gap-20 text-base md:text-lg">
           <Image
             src={image2}
             alt="image2"
@@ -100,31 +98,31 @@ export default function ITS() {
             quality={100}
             className="my-10 w-1/4 rounded-lg"
           />
-        </p>
-        <p className="flex items-center justify-center gap-5 text-base md:text-lg">
-          <p>
-            <h1 className="my-5 text-lg font-semibold text-black md:text-2xl">
+        </p> */}
+        <p className="mt-10 flex gap-5 text-base md:items-center md:justify-center md:text-lg">
+          <p className="w-full">
+            <h1 className="mb-5 text-lg font-semibold text-black md:text-2xl">
               3. Programmeringssprog og nyeste teknologier
             </h1>
-            Bygning af Datadrevne Løsninger For at bygge datadrevne løsninger
-            bruger vi en række programmeringssprog og de nyeste teknologier. Vi
-            arbejder med Python, R og MATLAB til at bygge statistiske modeller
-            og analysere data. Vi bruger også de nyeste AI- og ML-modeller til
-            at automatisere dataanalyse og foretage forudsigelser baseret på
-            data.
+            Bygning af Datadrevne Løsninger: <br /> For at bygge datadrevne
+            løsninger bruger vi en række programmeringssprog og de nyeste
+            teknologier. Vi arbejder med Python, R og MATLAB til at bygge
+            statistiske modeller og analysere data. Vi bruger også de nyeste AI-
+            og ML-modeller til at automatisere dataanalyse og foretage
+            forudsigelser baseret på data.
           </p>
-          <p>
+          <p className="hidden md:block">
             <FaArrowRight className="text-3xl md:text-7xl" />
           </p>
-          <p>
-            <h1 className="my-5 text-lg font-semibold text-black md:text-2xl">
+          <p className="w-full">
+            <h1 className="mb-5 text-lg font-semibold text-black md:text-2xl">
               4. Infusion af nyeste AI & ML tech / modeller
             </h1>
-            Strømlining af Trafikanalyse På NAOMA søger vi altid efter måder at
-            strømline trafikanalyse på. Derfor forsker og tester vi konstant de
-            nyeste AI- og ML-teknologier. Vi bruger disse teknologier til at
-            automatisere dataindsamling og -analyse, så vi kan give vores kunder
-            hurtigere og mere præcise indsigter.
+            Strømlining af Trafikanalyse: <br /> I NAOMA søger vi altid efter
+            måder at strømline trafikanalyse på. Derfor forsker og tester vi
+            konstant de nyeste AI- og ML-teknologier. Vi bruger disse
+            teknologier til at automatisere dataindsamling og -analyse, så vi
+            kan give vores kunder hurtigere og mere præcise indsigter.
           </p>
         </p>
 

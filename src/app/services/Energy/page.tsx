@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function Energy() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={cover}
           alt="Background Image"
@@ -95,7 +95,7 @@ export default function Energy() {
                   src={vind}
                   alt="vind"
                   quality={100}
-                  className="rounded-full sm:w-1/2 "
+                  className="rounded-full sm:w-1/2 sm:min-w-[300px]   "
                 />
               </div>
             </Link>
@@ -110,7 +110,7 @@ export default function Energy() {
                   src={sol}
                   alt="sol"
                   quality={100}
-                  className="rounded-full sm:w-1/2"
+                  className="rounded-full sm:w-1/2 sm:min-w-[300px]  "
                 />
               </div>
             </Link>
@@ -127,7 +127,7 @@ export default function Energy() {
                   src={El}
                   alt="El"
                   quality={100}
-                  className="rounded-full sm:w-1/2"
+                  className="rounded-full sm:w-1/2 sm:min-w-[300px]  "
                 />
               </div>
             </Link>
@@ -143,7 +143,7 @@ export default function Energy() {
                   src={battery}
                   alt="battery"
                   quality={100}
-                  className="rounded-full grayscale sm:w-1/2"
+                  className="rounded-full grayscale sm:w-1/2 sm:min-w-[300px]"
                 />
               </div>
             </Link>

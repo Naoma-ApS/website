@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function railway() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={image}
           alt="Background Image"
@@ -39,9 +39,9 @@ export default function railway() {
           </header>
         </div>
       </div>
-      <div className="mx-auto max-w-7xl px-5">
-        <h1 className="mb-5 mt-10 text-3xl font-semibold text-black md:text-6xl">
-          Vi sporer frem mod fremtidens <br /> transport - skinnerne fører vejen
+      <div className="mx-auto mt-10 max-w-7xl px-5">
+        <h1 className="mb-5 text-xl font-semibold text-black md:text-4xl">
+          Vi sporer frem mod fremtidens transport - skinnerne fører vejen
         </h1>
         <p className="text-base md:text-lg">
           Som ingeniører er vi hver dag med til at realisere nutidens og
@@ -64,7 +64,7 @@ export default function railway() {
         <h1 className="my-5 text-xl font-semibold text-black md:text-3xl">
           Vores ekspertise og erfaring
         </h1>
-        <p>
+        <p className="flex flex-col items-center justify-center gap-6 text-base md:flex md:text-lg">
           Hos NAOMA er vi baneeksperter med blik for trygge, grønne og
           langsigtede løsninger. I ethvert projekt skaber vi en tydelig køreplan
           fra design til implementeringsfaser, hvor der naturligvis tages hensyn
@@ -73,11 +73,14 @@ export default function railway() {
           Vi er dybt dedikerede til at forme morgendagens jernbaner på en
           bæredygtig måde, som giver pålidelige løsninger og gør ambitiøse mål
           til virkelighed.
+          <Image
+            src={image2}
+            alt="image2"
+            quality={100}
+            className="rounded-lg sm:min-w-[300px] sm:max-w-[800px]"
+          />
         </p>
 
-        <div className="w- my-10 rounded-lg">
-          <Image src={image2} alt="image2" quality={100} />
-        </div>
         <hr className=" my-20" />
 
         <h1 className=" mb-5 text-center text-3xl font-semibold text-black md:text-5xl">
@@ -89,12 +92,12 @@ export default function railway() {
             <h2 className="text-center text-xl font-semibold text-black md:text-3xl">
               Projektstyring
             </h2>
-            <div className="justify-flex flex w-full justify-center">
+            <div className="justify-flex flex min-w-full justify-center">
               <Image
                 src={image3}
                 alt="image3"
                 quality={100}
-                className="my-10 rounded-full"
+                className="my-10 max-w-[350px] rounded-full sm:min-w-[300px]"
               />
             </div>
           </div>
@@ -143,7 +146,7 @@ export default function railway() {
                 src={image4}
                 alt="image4"
                 quality={100}
-                className="my-10 rounded-full "
+                className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px] "
               ></Image>
             </div>
           </p>
@@ -160,7 +163,7 @@ export default function railway() {
                   src={image4}
                   alt="image4"
                   quality={100}
-                  className="my-10 w-3/4 rounded-full "
+                  className="my-10 max-w-[350px] rounded-full"
                 ></Image>
               </div>
             </div>
@@ -197,7 +200,7 @@ export default function railway() {
                 src={image5}
                 alt="image5"
                 quality={100}
-                className="my-10 w-3/4 rounded-full"
+                className="my-10  max-w-[350px] rounded-full sm:min-w-[300px] "
               />
             </div>
           </div>
@@ -251,7 +254,7 @@ export default function railway() {
                 src={image6}
                 alt="image6"
                 quality={100}
-                className="my-10 rounded-full"
+                className="my-10 max-w-[350px] rounded-full  sm:min-w-[300px]"
               ></Image>
             </div>
           </p>
@@ -268,7 +271,7 @@ export default function railway() {
                   src={image6}
                   alt="image6"
                   quality={100}
-                  className="my-10 w-3/4 rounded-full"
+                  className="my-10 max-w-[350px] rounded-full"
                 />
               </div>
             </div>
@@ -320,7 +323,7 @@ export default function railway() {
           ))}
         </div>
         <h1 className="my-5 text-3xl font-semibold text-black md:text-5xl">
-          Skab effektive og sikre jerbanesystemer
+          Skab effektive og sikre jernbanesystemer
         </h1>
         <p className="my-10 flex items-center justify-center gap-6 text-base md:text-lg">
           Vi hos NAOMA er dedikerede til at hjælpe vores kunder med at skabe

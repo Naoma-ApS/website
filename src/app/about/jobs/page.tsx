@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function Jobs() {
   return (
     <>
-      <div className="relative h-96 w-full">
+      <div className="relative mt-14 h-96 w-full">
         <Image
           src={image1}
           alt="Background Image"

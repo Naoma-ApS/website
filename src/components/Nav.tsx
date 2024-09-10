@@ -5,81 +5,94 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@assets/logoNaoma.svg";
 import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-} from "@nextui-org/react";
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 import type { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { cn } from "@lib/utils";
 
-export function Nav() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+const components: { title: string; href: string }[] = [
+  { title: "Ydelser", href: "/services" },
+  { title: "Om NAOMA", href: "/about" },
+  { title: "Jobs", href: "/about/jobs" },
+  { title: "Insights", href: "/insights" },
+  { title: "Kontakt os", href: "/contact" },
+];
 
-  const menuLinks = [
-    { title: "Ydelser", href: "/services" },
-    { title: "Om NAOMA", href: "/about" },
-    { title: "Jobs", href: "/about/jobs" },
-    { title: "Insights", href: "/insights" },
-    { title: "Kontakt os", href: "/contact" },
-  ];
-
+export function Navigation() {
   return (
-    <Navbar
-      isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}
-      className="h-10 w-full bg-transparent backdrop-blur-md md:h-16"
-      classNames={{
-        wrapper: "max-w-[2024px]",
-      }}
-    >
-      <NavbarContent>
-        <NavbarBrand>
-          <Link href={"/"} className="text-3xl">
-            <Image
-              src={logo as StaticImport}
-              alt="logo"
-              width={100}
-              height={80}
-              className="min-w-[40%] max-w-[60%] md:max-w-[100%]"
-            />
-          </Link>
-        </NavbarBrand>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="ml-auto sm:hidden"
-        />
-      </NavbarContent>
-
-      {isMenuOpen && (
-        <NavbarMenu className="top-[36px] bg-transparent backdrop-blur-none ">
-          {menuLinks.map((link, index) => (
-            <NavbarMenuItem
-              className=" -mx-6 -my-[4px] bg-white/90 px-1 py-1 font-light"
-              key={index}
-            >
-              <Link href={link.href}>
-                <p onClick={() => setIsMenuOpen(!isMenuOpen)}>{link.title}</p>
-              </Link>
-            </NavbarMenuItem>
-          ))}
-        </NavbarMenu>
-      )}
-
-      <NavbarContent
-        className="hidden gap-4 text-sm sm:flex md:text-lg"
-        justify="center"
-      >
-        {menuLinks.map((link, index) => (
-          <NavbarItem key={index}>
-            <Link href={link.href}>
-              <p>{link.title}</p>
+    <NavigationMenu className="fixed left-0 right-0 top-0 z-50 h-14 backdrop-blur-md">
+      <NavigationMenuList className="flex w-screen gap-3">
+        <div className="flex w-full justify-between gap-4">
+          <NavigationMenuItem className="p-1 md:p-[7px]">
+            <Link href={"/"}>
+              <Image
+                src={logo as StaticImport}
+                alt="logo"
+                width={100}
+                height={80}
+                className="min-w-[40%] max-w-[60%] md:max-w-[100%]"
+              />
             </Link>
-          </NavbarItem>
-        ))}
-      </NavbarContent>
-    </Navbar>
+          </NavigationMenuItem>
+          {/* Mobile Menu */}
+          <NavigationMenuItem className="sm:hidden">
+            <NavigationMenuTrigger />
+            <NavigationMenuContent className="duration-500">
+              <ul className="grid  md:grid-cols-2 ">
+                {components.map((component, index) => (
+                  <ListItem
+                    className="hover:underline"
+                    key={index}
+                    title={component.title}
+                    href={component.href}
+                  />
+                ))}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+          <div className="hidden gap-5 p-4 sm:flex">
+            {/* Desktop Menu */}
+            {components.map((component, index) => (
+              <NavigationMenuItem key={index}>
+                <Link href={component.href} passHref legacyBehavior>
+                  <NavigationMenuLink className="text-sm  font-light duration-200 hover:scale-110 hover:underline md:text-lg">
+                    {component.title}
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            ))}
+          </div>
+        </div>
+      </NavigationMenuList>
+    </NavigationMenu>
   );
 }
+
+// ListItem Component
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
+            className,
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  );
+});
+ListItem.displayName = "ListItem";
