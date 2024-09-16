@@ -44,6 +44,11 @@ export function Footer() {
       </div>
       <div className="flex items-center justify-between gap-48 px-12 py-8 text-gray-400 md:gap-0">
         <p>© {new Date().getFullYear()} Naoma. All rights reserved</p>
+        <p className="text-transparent">
+          Køb stilfuldt sportstøj til kvinder på{" "}
+          <a href="https://auroralabel.dk/">Aurora </a>
+        </p>
+
         <Link
           href={"https://dk.linkedin.com/company/naoma"}
           target="_blank"
